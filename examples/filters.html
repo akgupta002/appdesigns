@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Dropdown - filters</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-4">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              SLIDER FILTER WIN/LOSS
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content filters-slider">
+
+                  <div class="filters-slider-header">
+                    <span class="filters-slider-header-min">0</span> -
+                    <span class="filters-slider-header-max">8000</span>
+                  </div>
+
+                  <div class="filters-slider-range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+
+                  <div class="filters-slider-footer">
+                    <div class="row">
+                      <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+                        Losing
+                      </div>
+                      <div class="col-xs-5 text-center">
+                        Winning
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="dropdown-footer text-center">
+                <a href="#" class="btn btn-secondary">CLEAR</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-4">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              SLIDER FILTER UTILIZATION
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content filters-slider">
+
+                  <div class="filters-slider-header">
+                    <span class="filters-slider-header-min">0</span> -
+                    <span class="filters-slider-header-max">50</span>%
+                  </div>
+
+                  <div class="filters-slider-range" data-range="true" data-min="0" data-max="100" data-values="[0,50]" data-step="1"></div>
+
+                  <div class="filters-slider-footer">
+
+                    <div class="filters-slider-scale">
+                      <div class="filters-slider-scale-line line-lg"></div>
+                      <div class="filters-slider-scale-line"></div>
+                      <div class="filters-slider-scale-line line-lg"></div>
+                      <div class="filters-slider-scale-line"></div>
+                      <div class="filters-slider-scale-line line-lg"></div>
+                      <div class="filters-slider-scale-line"></div>
+                      <div class="filters-slider-scale-line line-lg"></div>
+                      <div class="filters-slider-scale-line"></div>
+                      <div class="filters-slider-scale-line line-lg"></div>
+                    </div>
+
+                    <div class="filters-slider-percentages">
+                      <span>25%</span>
+                      <span>50%</span>
+                      <span>75%</span>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="dropdown-footer text-center">
+                <a href="#" class="btn btn-secondary">CLEAR</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-4">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              CHECKBOX FILTER
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <ul class="nav dropdown-nav">
+
+                    <li class="dropdown-nav-item">
+                      <div class="dropdown-nav-link">
+                        <div class="checkbox">
+                          <input type="checkbox" class="input-checkbox" id="game-area1">
+                          <label for="game-area1">GAME AREA 1</label>
+                          <span class="pull-right">100</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-nav-item">
+                      <div class="dropdown-nav-link">
+                        <div class="checkbox">
+                          <input type="checkbox" class="input-checkbox" id="game-area2">
+                          <label for="game-area2">GAME AREA 2</label>
+                          <span class="pull-right">1000</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-nav-item">
+                      <div class="dropdown-nav-link">
+                        <div class="checkbox">
+                          <input type="checkbox" class="input-checkbox" id="game-area3">
+                          <label for="game-area3">GAME AREA 3</label>
+                          <span class="pull-right">10</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-nav-item">
+                      <div class="dropdown-nav-link">
+                        <div class="checkbox">
+                          <input type="checkbox" class="input-checkbox" id="game-area4">
+                          <label for="game-area4">GAME AREA 4</label>
+                          <span class="pull-right">0</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-nav-item">
+                      <div class="dropdown-nav-link">
+                        <div class="checkbox">
+                          <input type="checkbox" class="input-checkbox" id="game-area5">
+                          <label for="game-area5">GAME AREA 5</label>
+                          <span class="pull-right">10</span>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="dropdown-footer text-center">
+                <a href="#" class="btn btn-secondary">CLEAR</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Dropdown filters have two styles: <code>Sliders</code> and <code>Checkboxes</code>. There area two types of Sliders: Win/Loss and Utilization.</p>
+
+        <p>Slider filters have low / high values and min / max values. The initial values are set to spans <code>.filters-slider-header-min</code> and <code>.filters-slider-header-min</code> as well as in <code>data-values</code> array for the <code>.filters-slider-range</code> element</p>
+
+        <p><code>.filter-slider-footer</code> contains labels and possibly scale for the slider.</p>
+
+        <p>Requires <code>dropdowns.js</code> and <code>filters.js</code></p>
+
+      </div>
+
+      <pre class="prettyprint"><code>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+    SLIDER FILTER WIN/LOSS
+  </button>
+  <div class="dropdown-menu">
+    <div class="dropdown-body">
+      <div class="dropdown-content filters-slider">
+        <div class="filters-slider-header">
+          <span class="filters-slider-header-min">0</span> -
+          <span class="filters-slider-header-max">8000</span>
+        </div>
+        <div class="filters-slider&ndash;range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+        <div class="filters-slider-footer">
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+              Losing
+            </div>
+            <div class="col-xs-5 text-center">
+              Winning
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-footer text-center">
+      <a href="#" class="btn btn-secondary">CLEAR</a>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+      <pre class="prettyprint"><code>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+    SLIDER FILTER UTILIZATION
+  </button>
+  <div class="dropdown-menu">
+    <div class="dropdown-body">
+      <div class="dropdown-content filters-slider">
+        <div class="filters-slider-header">
+          <span class="filters-slider-header-min">0</span> -
+          <span class="filters-slider-header-max">50</span>%
+        </div>
+        <div class="filters-slider&ndash;range" data-range="true" data-min="0" data-max="100" data-values="[0,50]" data-step="1"></div>
+        <div class="filters-slider-footer">
+          <div class="filters-slider-scale">
+            <div class="filters-slider-scale-line line-lg"></div>
+            <div class="filters-slider-scale-line"></div>
+            <div class="filters-slider-scale-line line-lg"></div>
+            <div class="filters-slider-scale-line"></div>
+            <div class="filters-slider-scale-line line-lg"></div>
+            <div class="filters-slider-scale-line"></div>
+            <div class="filters-slider-scale-line line-lg"></div>
+            <div class="filters-slider-scale-line"></div>
+            <div class="filters-slider-scale-line line-lg"></div>
+          </div>
+          <div class="filters-slider-percentages">
+            <span>25%</span>
+            <span>50%</span>
+            <span>75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-footer text-center">
+      <a href="#" class="btn btn-secondary">CLEAR</a>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+      <pre class="prettyprint"><code>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+    CHECKBOX FILTER
+  </button>
+  <div class="dropdown-menu">
+    <div class="dropdown-body">
+      <div class="dropdown-content">
+        <ul class="nav dropdown-nav">
+          <li class="dropdown-nav-item">
+            <div class="dropdown-nav-link">
+              <div class="checkbox">
+                <input type="checkbox" class="input-checkbox" id="game-area1">
+                <label for="game-area1">GAME AREA 1</label>
+                <span class="pull-right">100</span>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown-nav-item">
+            <div class="dropdown-nav-link">
+              <div class="checkbox">
+                <input type="checkbox" class="input-checkbox" id="game-area2">
+                <label for="game-area2">GAME AREA 2</label>
+                <span class="pull-right">1000</span>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown-nav-item">
+            <div class="dropdown-nav-link">
+              <div class="checkbox">
+                <input type="checkbox" class="input-checkbox" id="game-area3">
+                <label for="game-area3">GAME AREA 3</label>
+                <span class="pull-right">10</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown-footer text-center">
+      <a href="#" class="btn btn-secondary">CLEAR</a>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../js/dropdowns.js"></script>
+    <script src="../js/filters.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

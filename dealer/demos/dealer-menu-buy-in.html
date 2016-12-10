@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+
+  <body class="dealer dealer-menu has-header has-footer has-sidebar">
+
+    <section class="main-content">
+
+      <div class="container-fluid">
+
+        <ul class="nav dealer-menu-sidebar">
+
+          <li class="dealer-menu-sidebar-item active">
+            <a href="#" class="dealer-menu-sidebar-link">BUY IN</a>
+          </li>
+
+          <li class="dealer-menu-sidebar-item">
+            <a href="#" class="dealer-menu-sidebar-link">CREDIT</a>
+          </li>
+
+          <li class="dealer-menu-sidebar-item">
+            <a href="#" class="dealer-menu-sidebar-link">FILL</a>
+          </li>
+
+          <li class="dealer-menu-sidebar-item">
+            <a href="#" class="dealer-menu-sidebar-link">CHANGE</a>
+          </li>
+
+          <li class="dealer-menu-sidebar-item">
+            <a href="#" class="dealer-menu-sidebar-link">CAM</a>
+          </li>
+
+          <li class="dealer-menu-sidebar-item dealer-menu-sidebar-item-last">
+            <a href="#" class="dealer-menu-sidebar-link">
+              <span class="glyphicon icon-logout"></span>
+              LOG OUT
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="dealer-menu-content">
+
+          <div class="dealer-menu-header">
+
+            <div class="text-center">
+
+              <div class="btn-group" data-toggle="buttons-radio">
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-tertiary active">
+                  CASH
+                </a>
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-tertiary">
+                  NON-RFID
+                </a>
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-tertiary">
+                  MARKERS
+                </a>
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-tertiary">
+                  TICKETS
+                </a>
+
+              </div>
+
+            </div>
+
+            <a href="#" class="dealer-menu-close">
+              <span class="glyphicon icon-dealer-close"></span>
+            </a>
+
+          </div>
+
+          <div class="container-fluid">
+
+            <div class="text-center">
+
+              <div class="item-data-row">
+                <div class="item-data-label">Cash received</div>
+                <div class="item-data-value">250,000,000</div>
+              </div>
+
+              <div class="dealer-number-dial">
+
+                <div class="dealer-number-dial-row">
+                  <a href="#" class="btn btn-primary btn-number-dial">9</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">8</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">7</a>
+                </div>
+
+                <div class="dealer-number-dial-row">
+                  <a href="#" class="btn btn-primary btn-number-dial">6</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">5</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">4</a>
+                </div>
+
+                <div class="dealer-number-dial-row">
+                  <a href="#" class="btn btn-primary btn-number-dial">3</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">2</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">1</a>
+                </div>
+
+                <div class="dealer-number-dial-row">
+                  <a href="#" class="btn btn-primary btn-number-dial">00</a>
+                  <a href="#" class="btn btn-primary btn-number-dial">0</a>
+                  <a href="#" class="btn btn-primary btn-number-dial btn-contrast">
+                    <span class="glyphicon icon-dealer-backspace"></span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dealer-menu-footer">
+
+            <a href="#">
+              <span class="glyphicon icon-add-player"></span>
+            </a>
+
+            <div class="pull-right">
+              <a href="#" class="btn btn-secondary">CANCEL</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#add-player">NEXT</a>
+            </div>
+
+          </div>
+
+          <div class="modal fade vertical-center" id="add-player" tabindex="-1" role="dialog">
+
+            <a class="dealer-menu-close" data-dismiss="modal" aria-label="Close">
+              <span class="glyphicon icon-dealer-close"></span>
+            </a>
+
+            <div class="modal-dialog has-outer-footer" role="document">
+              <div class="modal-content">
+
+                <div class="modal-body modal-section vertical-align">
+
+                  <h1>
+                    <img src="../../assets/img/swipe-player-id-card.svg" class="pull-right" width="143" height="104" />
+                    Swipe<br>Player ID Card
+                  </h1>
+
+                </div>
+
+                <div class="modal-outer-footer text-right">
+                  <a href="#" class="btn btn-primary">
+                    <span class="glyphicon icon-search-btn"></span>
+                    SEARCH PLAYER
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../../js/table.js"></script>
+    <script src="../../js/buttons.js"></script>
+
+  </body>
+</html>

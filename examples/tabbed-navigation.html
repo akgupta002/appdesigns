@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body class="bg-light tabs-demo">
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Tabbed Navigation</h1>
+      </div>
+
+      <ul class="nav nav-tabs" role="tablist">
+
+        <li role="presentation" class="active">
+          <a href="#tab1" class="tab" role="tab" data-toggle="tab">TAB 1</a>
+        </li>
+
+        <li role="presentation">
+          <a href="#tab2" class="tab" role="tab" data-toggle="tab">TAB 2</a>
+        </li>
+
+        <li role="presentation">
+          <a href="#tab3" class="tab" role="tab" data-toggle="tab">TAB 3</a>
+        </li>
+
+      </ul>
+
+      <div class="tab-content main-tab-content">
+
+        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+          <div class="row">
+
+            <div class="col-xs-12">
+
+              <div class="tab-content-header clearfix">
+                <h3 class="tab-content-header-title">TAB 1</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis mattis gravida. Donec laoreet nibh lacus, ut congue lectus mollis id. Duis ac tempor est, vitae venenatis augue. Maecenas id fringilla elit. Sed imperdiet laoreet suscipit. Quisque egestas vestibulum tellus, eget euismod purus pharetra ac. Donec gravida condimentum tempus. Nulla sodales iaculis nibh, vel rhoncus enim dapibus vel. Ut nunc mi, sagittis a dictum luctus, condimentum ut lorem. Praesent ultrices at velit sit amet ornare. Etiam arcu sem, laoreet nec dolor eget, convallis sodales nisi.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="tab2">
+          <div class="row">
+
+            <div class="col-xs-12">
+
+              <div class="tab-content-header clearfix">
+                <h3 class="tab-content-header-title">TAB 2</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis mattis gravida. Donec laoreet nibh lacus, ut congue lectus mollis id. Duis ac tempor est, vitae venenatis augue. Maecenas id fringilla elit. Sed imperdiet laoreet suscipit. Quisque egestas vestibulum tellus, eget euismod purus pharetra ac. Donec gravida condimentum tempus. Nulla sodales iaculis nibh, vel rhoncus enim dapibus vel. Ut nunc mi, sagittis a dictum luctus, condimentum ut lorem. Praesent ultrices at velit sit amet ornare. Etiam arcu sem, laoreet nec dolor eget, convallis sodales nisi.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="tab3">
+          <div class="row">
+
+            <div class="col-xs-12">
+
+              <div class="tab-content-header clearfix">
+                <h3 class="tab-content-header-title">TAB 3</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis mattis gravida. Donec laoreet nibh lacus, ut congue lectus mollis id. Duis ac tempor est, vitae venenatis augue. Maecenas id fringilla elit. Sed imperdiet laoreet suscipit. Quisque egestas vestibulum tellus, eget euismod purus pharetra ac. Donec gravida condimentum tempus. Nulla sodales iaculis nibh, vel rhoncus enim dapibus vel. Ut nunc mi, sagittis a dictum luctus, condimentum ut lorem. Praesent ultrices at velit sit amet ornare. Etiam arcu sem, laoreet nec dolor eget, convallis sodales nisi.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Tabs have a navigation element <code>nav-tabs</code> and its children <code>.tab</code> elements. Tab elements refer to correct tab contents with <code>href</code> attributes.</p>
+
+        <p>Tab content is inside <code>.tab-content</code> wrapper and moreover in <code>.tab-pane</code> elements. They toggle classes <code>.active</code> and <code>.in</code> for visibility.</p>
+
+      </div>
+
+      <pre class="prettyprint"><code>
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active">
+    <a href="#tab1" class="tab" aria-controls="tab1" role="tab" data-toggle="tab">TAB 1</a>
+  </li>
+  <li role="presentation">
+    <a href="#tab2" class="tab" aria-controls="tab2" role="tab" data-toggle="tab">TAB 2</a>
+  </li>
+  <li role="presentation">
+    <a href="#tab3" class="tab" aria-controls="tab3" role="tab" data-toggle="tab">TAB 3</a>
+  </li>
+</ul>
+<div class="tab-content main-tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+    <h3>TAB 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis mattis gravida.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab2">
+    <h3>TAB 2</h3>
+    <p>Donec laoreet nibh lacus, ut congue lectus mollis id. Duis ac tempor est, vitae venenatis augue.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab3">
+    <h3>TAB 3</h3>
+    <p>Maecenas id fringilla elit. Sed imperdiet laoreet suscipit.</p>
+  </div>
+</div>
+      </code></pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

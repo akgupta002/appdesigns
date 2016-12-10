@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Perfect Pay UI Library</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+  <body class="has-header has-sub-header has-supervisor-footer bg-light">
+
+    <header class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="nav navbar-nav">
+
+          <ul class="breadcrumbs clearfix">
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link"><span class="glyphicon icon-breadcrumbs-casino"></span></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link">Area 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link">Pit 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <span class="breadcrumb-item-link">Table 001</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown dropdown-center application-menu">
+
+            <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-application-menu"></span>
+              Casino Manager
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="application-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-casino-manager"></span>
+                          </div>
+                          Casino Manager
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-configurations"></span>
+                          </div>
+                          Configuration
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application YX
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application XY
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="navbar-search">
+
+            <div class="navbar-input-search-wrapper input-search-wrapper">
+              <input type="text" class="form-control input-text navbar-input-search input-search" placeholder="Search..." />
+              <span class="glyphicon icon-search-input"></span>
+
+              <a class="input-search-clear">
+                <span class="glyphicon icon-close-sm"></span>
+              </a>
+            </div>
+
+            <a class="navbar-search-show">
+              <span class="glyphicon icon-search navbar-icon-search"></span>
+            </a>
+
+          </li>
+
+          <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+
+            <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="navbar-casino-alerts-indicator has-alerts"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="casino-alerts">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="dropdown-alert-filters-header clearfix">
+                    <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                    <span class="dropdown-alert-filter-separator">|</span>
+                    <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                    <a class="dropdown-alert-filter-link pull-right">SEE ALL (5)</a>
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-high">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#casino-alert1">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="casino-alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#casino-alert2">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="casino-alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#casino-alert3">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="casino-alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#casino-alert4">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="casino-alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#casino-alert5">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="casino-alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="dropdown dropdown-right user-menu">
+
+            <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Mark F. <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="user-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Change language</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">View account</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </header><!-- .navbar -->
+
+
+    <header class="navbar navbar-fixed-top sub-navbar">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <span class="navbar-brand">
+            <a href="#" class="header-back-link">
+              <span class="glyphicon icon-lsaquo"></span> TABLE 001
+            </a>
+          </span>
+        </div>
+
+        <ul class="nav navbar-nav navbar-left">
+          <li class="sub-navbar-data-group">
+            <div class="dropdown">
+
+              <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="item-data-label sub-navbar-data-label">Status</div>
+                <div class="item-data-value sub-navbar-data-value">OPEN <span class="caret"></span>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="table-status-menu">
+
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+
+                    <p class="dropdown-label">Close table?</p>
+                    <p class="dropdown-text">Table can't be closed while chips on the table.</p>
+
+                  </div>
+                </div>
+
+                <div class="dropdown-footer">
+                  <button class="btn btn-primary btn-close-dropdown" type="button">
+                    CANCEL
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="dropdown">
+
+              <a href="#" class="dropdown-toggle user-menu-toggle" id="game-limits-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="item-data-label sub-navbar-data-label">Game</div>
+                <div class="item-data-value sub-navbar-data-value">500,000-100,000,000 <span class="caret"></span>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="table-status-menu">
+
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+
+                    <p class="dropdown-label">Choose table limit</p>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                    <a href="#" class="dropdown-item-box">
+                      $250,000 - $50,000,000
+                      <span class="caret caret-right pull-right"></span>
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="dropdown">
+
+              <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="item-data-label sub-navbar-data-label">Gaming Day</div>
+                <div class="item-data-value sub-navbar-data-value">06/10 <span class="caret"></span>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="table-status-menu">
+
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+                    <ul class="nav dropdown-nav">
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">05/10</a>
+                      </li>
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">06/10</a>
+                      </li>
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">07/10</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="dropdown">
+
+              <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="item-data-label sub-navbar-data-label">Dealer</div>
+                <div class="item-data-value sub-navbar-data-value">Kelly C. <span class="caret"></span>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="table-status-menu">
+
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+                    <ul class="nav dropdown-nav">
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">Kelly C.</a>
+                      </li>
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">Elvis P.</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-right dropdown-lg table-alerts">
+
+            <a href="#" class="dropdown-toggle alerts-menu-toggle" type="button" id="table-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="alert-indicator has-alerts">
+                <div class="alert-count">5</div>
+              </div>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="table-alerts">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="dropdown-alert-filters-header clearfix">
+                    <a class="dropdown-alert-filter-link active" data-target="#table-alert-filters-high">HIGH (2)</a>
+                    <span class="dropdown-alert-filter-separator">|</span>
+                    <a class="dropdown-alert-filter-link" data-target="#table-alert-filters-low">LOW (3)</a>
+                    <a class="dropdown-alert-filter-link pull-right">SEE ALL (5)</a>
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse in" id="table-alert-filters-high">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#table-alert1">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="table-alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#table-alert2">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="table-alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse" id="table-alert-filters-low">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#table-alert3">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="table-alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#table-alert4">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="table-alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#table-alert5">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="table-alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="dropdown dropdown-right">
+
+            <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-action-menu"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="action-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Chip inventory</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Create a tournament</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Roll all tables</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Another global function</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </header><!-- .sub-navbar -->
+
+
+    <section class="main-content">
+
+      <div class="container-fluid">
+
+        <header class="content-header player-cards-content-header clearfix">
+
+          <a href="#" class="btn btn-primary btn-round" data-toggle="modal" data-target="#bet-management">
+            <span class="glyphicon icon-bet-management"></span>
+          </a>
+
+          <div class="pull-right">
+
+            <div class="btn-group" data-toggle="buttons-radio">
+              <a href="#player-card-front" role="button" data-toggle="button" class="btn btn-toggle btn-toggle-player-cards btn-primary" aria-controls="player-card-front">
+                BETS
+              </a>
+              <a href="#player-card-back" role="button" data-toggle="button" class="btn btn-toggle btn-toggle-player-cards btn-primary active" aria-controls="player-card-back">
+                PLAYERS
+              </a>
+            </div>
+
+          </div>
+
+        </header>
+
+        <div class="game-player-cards flip-game-player-cards">
+
+          <div class="game-player-card">
+
+            <header class="game-player-card-number">1</header>
+
+            <div class="game-player-card-wrapper">
+
+              <div class="game-player-card-container">
+
+                <div class="game-player-card-content card-front">
+
+                  <header class="game-player-card-title">
+                    <h3>JACK N.</h3>
+                  </header>
+
+                  <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="Jack N." />
+
+                  <div class="game-player-backbetter">
+                    <header class="game-player-card-title">
+                      <p>ANONYMOUS</p>
+                    </header>
+
+                    <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="Anonymous" />
+                  </div>
+
+                  <div class="game-player-backbetter">
+                    <header class="game-player-card-title">
+                      <p>ANONYMOUS</p>
+                    </header>
+
+                    <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="Anonymous" />
+                  </div>
+
+                </div>
+
+                <div class="game-player-card-content card-back">
+
+                  <header class="game-player-card-title">
+                    <h3>3 PLAYERS</h3>
+                  </header>
+
+                  <div class="game-player-data game-player-bet-data">
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">P</div>
+                      <div class="item-data-value">200,000,000</div>
+
+                      <div class="game-player-bet-data-indicators">
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">B</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">PP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">BP</div>
+                      <div class="item-data-value">100,000,000</div>
+
+                      <div class="game-player-bet-data-indicators">
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">T</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="game-player-card">
+
+            <header class="game-player-card-number">2</header>
+
+            <div class="game-player-card-wrapper">
+
+              <div class="game-player-card-container">
+
+                <div class="game-player-card-content card-front">
+
+                  <header class="game-player-card-title">
+                    <h3>JOHN F.</h3>
+                  </header>
+
+                  <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="John F." />
+
+                  <div class="game-player-data">
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Rating:</div>
+                      <div class="item-data-value">15</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Chips in:</div>
+                      <div class="item-data-value">300,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Win/Loss:</div>
+                      <div class="item-data-value">(100,350)</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Turnover:</div>
+                      <div class="item-data-value">70,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Avg. bet:</div>
+                      <div class="item-data-value">500,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Start time:</div>
+                      <div class="item-data-value">13:21</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="game-player-card-content card-back">
+
+                  <header class="game-player-card-title">
+                    <h3>JOHN F.</h3>
+                  </header>
+
+                  <div class="game-player-data game-player-bet-data">
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">P</div>
+                      <div class="item-data-value">300,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">B</div>
+                      <div class="item-data-value">50,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">PP</div>
+                      <div class="item-data-value">100,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">BP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">T</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="game-player-card empty">
+            <header class="game-player-card-number">3</header>
+            <div class="game-player-card-wrapper">
+              <div class="game-player-card-container">
+                <div class="game-player-card-content card-front"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-player-card">
+
+            <header class="game-player-card-number">5</header>
+
+            <div class="game-player-card-wrapper">
+
+              <div class="game-player-card-container">
+
+                <div class="game-player-card-content card-front">
+
+                  <header class="game-player-card-title">
+                    <h3>MIQUEL P.</h3>
+                  </header>
+
+                  <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="Miquel P." />
+
+                  <div class="game-player-backbetter">
+                    <header class="game-player-card-title">
+                      <p>ANONYMOUS</p>
+                    </header>
+
+                    <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="Anonymous" />
+                  </div>
+
+                </div>
+
+                <div class="game-player-card-content card-back">
+
+                  <header class="game-player-card-title">
+                    <h3>2 PLAYERS</h3>
+                  </header>
+
+                  <div class="game-player-data game-player-bet-data">
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">P</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">B</div>
+                      <div class="item-data-value">150,000,000</div>
+
+                      <div class="game-player-bet-data-indicators">
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">PP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">BP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">T</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="game-player-card empty">
+            <header class="game-player-card-number">6</header>
+            <div class="game-player-card-wrapper">
+              <div class="game-player-card-container">
+                <div class="game-player-card-content card-front"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-player-card">
+
+            <header class="game-player-card-number">7</header>
+
+            <div class="game-player-card-wrapper">
+
+              <div class="game-player-card-container">
+
+                <div class="game-player-card-content card-front">
+
+                  <header class="game-player-card-title">
+                    <h3>RICHARD T.</h3>
+                  </header>
+
+                  <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="John F." />
+
+                  <div class="game-player-data">
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Rating:</div>
+                      <div class="item-data-value">25</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Chips in:</div>
+                      <div class="item-data-value">250,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Win/Loss:</div>
+                      <div class="item-data-value">(100,350)</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Turnover:</div>
+                      <div class="item-data-value">70,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Avg. bet:</div>
+                      <div class="item-data-value">500,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Start time:</div>
+                      <div class="item-data-value">13:21</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="game-player-card-content card-back">
+
+                  <header class="game-player-card-title">
+                    <h3>RICHARD T.</h3>
+                  </header>
+
+                  <div class="game-player-data game-player-bet-data">
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">P</div>
+                      <div class="item-data-value">250,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">B</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">PP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">BP</div>
+                      <div class="item-data-value">25,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">T</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="game-player-card">
+
+            <header class="game-player-card-number">8</header>
+
+            <div class="game-player-card-wrapper">
+
+              <div class="game-player-card-container">
+
+                <div class="game-player-card-content card-front">
+
+                  <header class="game-player-card-title">
+                    <h3>GABRIELA K.</h3>
+                  </header>
+
+                  <img class="game-player-image" src="/assets/img/game-player-default.svg" alt="John F." />
+
+                  <div class="game-player-data">
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Rating:</div>
+                      <div class="item-data-value">10</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Chips in:</div>
+                      <div class="item-data-value">200,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Win/Loss:</div>
+                      <div class="item-data-value">(100,350)</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Turnover:</div>
+                      <div class="item-data-value">70,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Avg. bet:</div>
+                      <div class="item-data-value">500,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row clearfix">
+                      <div class="item-data-label">Start time:</div>
+                      <div class="item-data-value">13:21</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="game-player-card-content card-back">
+
+                  <header class="game-player-card-title">
+                    <h3>GABRIELA K.</h3>
+                  </header>
+
+                  <div class="game-player-data game-player-bet-data">
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">P</div>
+                      <div class="item-data-value">350,000,000</div>
+
+                      <div class="game-player-bet-data-indicators">
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">B</div>
+                      <div class="item-data-value">50,000,000</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                      <div class="item-data-label">PP</div>
+                      <div class="item-data-value">100,000,000</div>
+
+                      <div class="game-player-bet-data-indicators">
+                        <div class="game-player-bet-data-indicator"></div>
+                        <div class="game-player-bet-data-indicator"></div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">BP</div>
+                    </div>
+
+                    <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                      <div class="item-data-label">T</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><!-- .container -->
+
+      <div class="bet-management modal fade scale-in" id="bet-management" tabindex="-1" role="dialog">
+
+        <a href="#" class="btn btn-primary btn-sm close-full-width-modal" data-dismiss="modal" aria-label="Close">
+          <span class="glyphicon icon-close"></span>
+        </a>
+
+        <div class="modal-dialog full-width-dialog" role="document">
+
+          <header class="bet-management-header text-center">
+            BET MANAGEMENT
+          </header>
+
+          <header class="content-header player-cards-content-header clearfix">
+
+            <div class="text-center">
+
+              <a class="btn btn-primary btn-margins">
+                BOOK ALL
+              </a>
+
+              <a class="btn btn-primary btn-margins">
+                SETTLE ALL
+              </a>
+
+              <a class="btn btn-alert btn-margins">
+                CANCEL ALL BETS
+              </a>
+
+            </div>
+
+          </header>
+
+          <div class="game-player-cards">
+
+            <div class="game-player-card">
+
+              <header class="game-player-card-number"></header>
+
+              <div class="game-player-card-wrapper">
+
+                <div class="game-player-card-container">
+
+                  <div class="game-player-card-content">
+
+                    <header class="game-player-card-title">
+                      <h3>3 PLAYERS</h3>
+                    </header>
+
+                    <div class="text-center">
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-book"></span>
+                        </span>
+                        Book
+                      </a>
+
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-settle"></span>
+                        </span>
+                        Settle
+                      </a>
+                    </div>
+
+                    <div class="game-player-data game-player-bet-data">
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">P</div>
+                        <div class="item-data-value">200,000,000</div>
+
+                        <div class="game-player-bet-data-indicators">
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">B</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">PP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">BP</div>
+                        <div class="item-data-value">100,000,000</div>
+
+                        <div class="game-player-bet-data-indicators">
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">T</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <footer class="game-player-card-footer text-center">
+                <a href="#" class="btn-wrapper btn-margins game-player-card-footer-link">
+                  <span class="btn btn-alert btn-round btn-icon">
+                    <span class="glyphicon icon-cancel"></span>
+                  </span>
+                  Cancel Bets
+                </a>
+              </footer>
+
+            </div>
+
+
+            <div class="game-player-card">
+
+              <header class="game-player-card-number"></header>
+
+              <div class="game-player-card-wrapper">
+
+                <div class="game-player-card-container">
+
+                  <div class="game-player-card-content">
+
+                    <header class="game-player-card-title">
+                      <h3>JOHN F.</h3>
+                    </header>
+
+                    <div class="text-center">
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-book"></span>
+                        </span>
+                        Book
+                      </a>
+
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-settle"></span>
+                        </span>
+                        Settle
+                      </a>
+                    </div>
+
+                    <div class="game-player-data game-player-bet-data">
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">P</div>
+                        <div class="item-data-value">300,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">B</div>
+                        <div class="item-data-value">50,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">PP</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">BP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">T</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <footer class="game-player-card-footer text-center">
+                <a href="#" class="btn-wrapper btn-margins game-player-card-footer-link">
+                  <span class="btn btn-alert btn-round btn-icon">
+                    <span class="glyphicon icon-cancel"></span>
+                  </span>
+                  Cancel Bets
+                </a>
+              </footer>
+
+            </div>
+
+
+            <div class="game-player-card empty"></div>
+
+
+            <div class="game-player-card">
+
+              <header class="game-player-card-number"></header>
+
+              <div class="game-player-card-wrapper">
+
+                <div class="game-player-card-container">
+
+                  <div class="game-player-card-content">
+
+                    <header class="game-player-card-title">
+                      <h3>2 PLAYERS</h3>
+                    </header>
+
+                    <div class="text-center">
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-book"></span>
+                        </span>
+                        Book
+                      </a>
+
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-settle"></span>
+                        </span>
+                        Settle
+                      </a>
+                    </div>
+
+                    <div class="game-player-data game-player-bet-data">
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">P</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">B</div>
+                        <div class="item-data-value">150,000,000</div>
+
+                        <div class="game-player-bet-data-indicators">
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">PP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">BP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">T</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <footer class="game-player-card-footer text-center">
+                <a href="#" class="btn-wrapper btn-margins game-player-card-footer-link">
+                  <span class="btn btn-alert btn-round btn-icon">
+                    <span class="glyphicon icon-cancel"></span>
+                  </span>
+                  Cancel Bets
+                </a>
+              </footer>
+
+            </div>
+
+
+            <div class="game-player-card empty"></div>
+
+
+            <div class="game-player-card">
+
+              <header class="game-player-card-number"></header>
+
+              <div class="game-player-card-wrapper">
+
+                <div class="game-player-card-container">
+
+                  <div class="game-player-card-content">
+
+                    <header class="game-player-card-title">
+                      <h3>RICHARD T.</h3>
+                    </header>
+
+                    <div class="text-center">
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-book"></span>
+                        </span>
+                        Book
+                      </a>
+
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-settle"></span>
+                        </span>
+                        Settle
+                      </a>
+                    </div>
+
+                    <div class="game-player-data game-player-bet-data">
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">P</div>
+                        <div class="item-data-value">250,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">B</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">PP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">BP</div>
+                        <div class="item-data-value">25,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">T</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <footer class="game-player-card-footer text-center">
+                <a href="#" class="btn-wrapper btn-margins game-player-card-footer-link">
+                  <span class="btn btn-alert btn-round btn-icon">
+                    <span class="glyphicon icon-cancel"></span>
+                  </span>
+                  Cancel Bets
+                </a>
+              </footer>
+
+            </div>
+
+
+            <div class="game-player-card">
+
+              <header class="game-player-card-number"></header>
+
+              <div class="game-player-card-wrapper">
+
+                <div class="game-player-card-container">
+
+                  <div class="game-player-card-content">
+
+                    <header class="game-player-card-title">
+                      <h3>GABRIELA K.</h3>
+                    </header>
+
+                    <div class="text-center">
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-book"></span>
+                        </span>
+                        Book
+                      </a>
+
+                      <a href="#" class="btn-wrapper btn-margins">
+                        <span class="btn btn-primary btn-round btn-icon">
+                          <span class="glyphicon icon-settle"></span>
+                        </span>
+                        Settle
+                      </a>
+                    </div>
+
+                    <div class="game-player-data game-player-bet-data">
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">P</div>
+                        <div class="item-data-value">350,000,000</div>
+
+                        <div class="game-player-bet-data-indicators">
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">B</div>
+                        <div class="item-data-value">50,000,000</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                        <div class="item-data-label">PP</div>
+                        <div class="item-data-value">100,000,000</div>
+
+                        <div class="game-player-bet-data-indicators">
+                          <div class="game-player-bet-data-indicator"></div>
+                          <div class="game-player-bet-data-indicator"></div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">BP</div>
+                      </div>
+
+                      <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                        <div class="item-data-label">T</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <footer class="game-player-card-footer text-center">
+                <a href="#" class="btn-wrapper btn-margins game-player-card-footer-link">
+                  <span class="btn btn-alert btn-round btn-icon">
+                    <span class="glyphicon icon-cancel"></span>
+                  </span>
+                  Cancel Bets
+                </a>
+              </footer>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer class="navbar-default navbar-fixed-bottom footer supervisor-footer">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-xs-1">
+            <header class="supervisor-footer-header">
+              <h3>SHOE</h3>
+            </header>
+
+            <div class="supervisor-footer-content invert dropup dropdown-block">
+
+              <a class="dropdown-toggle" id="dropdup-shoe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="supervisor-footer-data-row">
+                  <div class="item-data-label">
+                    Game
+                  </div>
+                  <div class="item-data-value">
+                    12 <span class="caret"></span>
+                  </div>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdup-shoe">
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Shoe ID:</span>
+                      <span class="item-data-value">24912412241</span>
+                    </div>
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Shoe W/L:</span>
+                      <span class="item-data-value">(100,000)</span>
+                    </div>
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Cards:</span>
+                      <span class="item-data-value">321</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="dropdown-footer">
+                  <button class="btn btn-primary" type="button">
+                    BURN CARDS
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-11">
+            <div class="row">
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>CHIP TRAY</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Total
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Variance
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>SENSORS</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          On antenna
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Differential
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>GAME HISTORY</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Result
+                        </div>
+                        <div class="item-data-value">
+                          P, PP, T
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          W/L
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../../js/player-cards.js"></script>
+    <script src="../../js/dropdowns.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/alerts.js"></script>
+    <script src="../../js/buttons.js"></script>
+    <script src="../../js/forms.js"></script>
+    <script src="../../js/main.js"></script>
+
+  </body>
+</html>

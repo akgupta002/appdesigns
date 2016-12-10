@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Table with fixed Header</title>
+        <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div class="table-section">
+            <div class="table-wrapper has-filters-above has-fixed-footer">
+                <table class="table-default table-tables table-header-fixed">
+                    <thead>
+                        <tr>
+                            <th>Game ID
+                                <div>Game ID<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Shoe ID
+                                <div>Shoe ID<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Start Time
+                                <div>Start Time<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Supervisor
+                                <div>Supervisor<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Dealer
+                                <div>Dealer<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Limits
+                                <div>Limits<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Total Wagered
+                                <div>Total Wagered<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Casino W/L
+                                <div>Casino W/L<span class="caret column-sorting"></span></div>
+                            </th>
+                            <th>Result(s)
+                                <div>Result(s)<span class="caret column-sorting"></span></div>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class='click-show-modal' data-toggle='modal' data-target='#modalGameDetails'>
+                            <td>8759685</td>
+                            <td>Shoe 19</td>
+                            <td>11:09</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759686</td>
+                            <td>Shoe 63</td>
+                            <td>11:24</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759687</td>
+                            <td>Shoe 66</td>
+                            <td>11:39</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759688</td>
+                            <td>Shoe 70</td>
+                            <td>11:56</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759695</td>
+                            <td>Shoe 76</td>
+                            <td>12:10</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759696</td>
+                            <td>Shoe 80</td>
+                            <td>12:42</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759697</td>
+                            <td>Shoe 98</td>
+                            <td>13:18</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759698</td>
+                            <td>Shoe 105</td>
+                            <td>13:43</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8759699</td>
+                            <td>Shoe 119</td>
+                            <td>14:05</td>
+                            <td>Username (Id #)</td>
+                            <td>Username (Id #)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <!-- HTML tags and codes from Config app > System tab > Alerts tab -->
+
+        <div ng-if="selectedTab=='ALERTS'" ng-init="vm.getAlertData('table')" class="table-fixed-header-section">
+            <fieldset ng-disabled="!isAlertOptionsAvailable" class="table-bottom-border">
+                <div class="table-content-wrapper has-filters-above">
+                    <div class="table-responsive">
+                        <table class="table-default table-alerts">
+                            <thead>
+                            <tr>
+                                <th style="width:15%">
+                                    <span translate="application.app.CONFIGURATION_LABELS.SYSTEM.CATEGORY"></span>
+                                </th>
+                                <th style="width:20%">
+                                    <span translate="application.app.CONFIGURATION_LABELS.SYSTEM.SUB_CATEGORY"></span>
+                                </th>
+                                <th style="width:15%">
+                                    <span translate="application.app.ALERTS_LABELS.SEVERITY.TITLE"></span>
+                                </th>
+                                <th style="width:20%">
+                                    <span translate="application.app.CONFIGURATION_LABELS.SYSTEM.ALERT_LABEL"></span>
+                                </th>
+                                <th style="width:35%" >
+                                    <span translate="application.app.CONFIGURATION_LABELS.SYSTEM.KNOWLEDGEBASE"></span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="alert in alertData" ng-if="alertData.length > 0">
+                                <td ng-init="vm.displayeMetaJson($index, alert.displayMeta)">{{alert.displayMeta.category}}</td>
+                                <td ng-init="vm.displayeMetaJson($index, alert.displayMeta)">{{alert.displayMeta.subcategory}}</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle btn-alerts" data-toggle="dropdown" data-toggle="tooltip" data-placement="top" title="{{alert.alertSeverity=='HIGH'?'HIGH':(alert.alertSeverity=='CRITICAL'?'CRITICAL':'LOW')}}">
+                                    <span class="table-alerts-indicator open pull-left"
+                                          ng-class="{'critical':alert.alertSeverity=='CRITICAL','low':alert.alertSeverity=='LOW','high':alert.alertSeverity=='HIGH'}">{{alert.alertSeverity?'':'application.app.common.labels.NONE' | translate}}</span>
+                                            <!-- OPEN -->
+                                            <span class="caret" style="top:0;"></span>
+                                        </button>
+                                        <div class="dropdown-menu" ng-style="{'min-width':'150px'}">
+                                            <div class="dropdown-body">
+                                                <div class="dropdown-content">
+                                                    <ul class="nav dropdown-select-nav">
+                                                        <li class="dropdown-nav-item" ng-if="alert.alertSeverity!='CRITICAL'">
+                                                            <a href="javascript:void(0)" ng-click="vm.changeSeverity($index, alert.eventTypeId, 'CRITICAL')" class="dropdown-nav-link" title="{{'application.app.ALERTS_LABELS.SEVERITY.CRITICAL' | translate}}">
+                                                                <span class="table-alerts-indicator open critical"></span>
+                                                                <!-- ACKNOWLEDGED -->
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-nav-item" ng-if="alert.alertSeverity!='HIGH'">
+                                                            <a href="javascript:void(0)" ng-click="vm.changeSeverity($index, alert.eventTypeId, 'HIGH')" class="dropdown-nav-link" title="{{'application.app.ALERTS_LABELS.SEVERITY.HIGH' | translate}}">
+                                                                <span class="table-alerts-indicator open high"></span>
+                                                                <!-- ACKNOWLEDGED -->
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-nav-item" ng-if="alert.alertSeverity!='LOW'">
+                                                            <a href="javascript:void(0)" ng-click="vm.changeSeverity($index, alert.eventTypeId, 'LOW')" class="dropdown-nav-link" title="{{'application.app.ALERTS_LABELS.SEVERITY.LOW' | translate}}">
+                                                                <span class="table-alerts-indicator open low"></span>
+                                                                <!-- CLOSED -->
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-nav-item" ng-if="alert.alertSeverity">
+                                                            <a href="javascript:void(0)" ng-click="vm.changeSeverity($index, alert.eventTypeId, '')" class="dropdown-nav-link" title="{{'application.app.common.labels.NONE' | translate}}">
+                                                                <span class="table-alerts-indicator" translate="application.app.common.labels.NONE"></span>
+                                                                <!-- CLOSED -->
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span translate="{{alert.eventType}}.Alert_Type_Title">{{alert.eventType}}</span>
+                                </td>
+                                <td>
+                                    <span translate="{{alert.eventType}}.Alert_Product_Knowledge_Base">{{alert.eventType}}</span>
+                                </td>
+                            </tr>
+
+                            <tr  ng-if="alertData.length < 1">
+                                <td colspan="5" translate="application.app.common.labels.NO_RECORD_FOUND"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </div>
+        <!-- End HTML codes -->
+
+        <script src="../vendor/jquery-1.11.3.js"></script>
+        <script src="../vendor/jquery-ui.js"></script>
+        <script src="../vendor/jquery.keyboard-focus.js"></script>
+        <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+        <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+        <script src="../js/demo.js"></script>
+
+        <!-- Documentation purpose only -->
+        <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+        <script src="../vendor/prettify/js/prettify.js"></script>
+        <script>$(function() { prettyPrint() })</script>
+    </body>
+</html>

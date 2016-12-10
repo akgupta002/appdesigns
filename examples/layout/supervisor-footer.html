@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+
+  <body class="has-supervisor-footer">
+
+    <section class="main-content">
+
+    <div class="container">
+    </div><!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Supervisor footer is fixed to the bottom of the screen and has high enough z-index to keep it on top of most elements.</p>
+
+        <p>When using the supervisor footer, body should have class name <code>.has-supervisor-footer</code>. This gives <code>.main-content</code> the same amount of bottom padding as the height of the supervisor footer so that content wouldn't be hidden behind the supervisor footer.</p>
+
+      </div>
+
+      <pre class="prettyprint"><code>
+<footer class="navbar-default navbar-fixed-bottom footer supervisor-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-1">
+        <header class="supervisor-footer-header">
+          <h3>SHOE</h3>
+        </header>
+        <div class="supervisor-footer-content invert dropup dropdown-block">
+          <a class="dropdown-toggle" id="dropdup-shoe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="supervisor-footer-data-row">
+              <div class="item-data-label">
+                Game
+              </div>
+              <div class="item-data-value">
+                12 <span class="caret"></span>
+              </div>
+            </div>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdup-shoe">
+            ...
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-11">
+        <div class="row">
+          <div class="col-xs-4">
+            <header class="supervisor-footer-header">
+              <h3>CHIP TRAY</h3>
+            </header>
+            <div class="supervisor-footer-content">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="supervisor-footer-data-row">
+                    <div class="item-data-label">
+                      Total
+                    </div>
+                    <div class="item-data-value">
+                      100,000,000
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="supervisor-footer-data-row">
+                    <div class="item-data-label">
+                      Variance
+                    </div>
+                    <div class="item-data-value">
+                      100,000,000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            ...
+          </div>
+          <div class="col-xs-4">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      </code></pre>
+
+    </section>
+
+    <footer class="navbar-default navbar-fixed-bottom footer supervisor-footer">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-xs-1">
+            <header class="supervisor-footer-header">
+              <h3>SHOE</h3>
+            </header>
+
+            <div class="supervisor-footer-content invert dropup dropdown-block">
+
+              <a class="dropdown-toggle" id="dropdup-shoe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="supervisor-footer-data-row">
+                  <div class="item-data-label">
+                    Game
+                  </div>
+                  <div class="item-data-value">
+                    12 <span class="caret"></span>
+                  </div>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdup-shoe">
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Shoe ID:</span>
+                      <span class="item-data-value">24912412241</span>
+                    </div>
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Shoe W/L:</span>
+                      <span class="item-data-value">(100,000)</span>
+                    </div>
+
+                    <div class="shoe-data-row clearfix">
+                      <span class="item-data-label">Cards:</span>
+                      <span class="item-data-value">321</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="dropdown-footer">
+                  <button class="btn btn-primary" type="button">
+                    BURN CARDS
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-11">
+            <div class="row">
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>CHIP TRAY</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Total
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Variance
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>SENSORS</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          On antenna
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Differential
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+                <header class="supervisor-footer-header">
+                  <h3>GAME HISTORY</h3>
+                </header>
+
+                <div class="supervisor-footer-content">
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          Result
+                        </div>
+                        <div class="item-data-value">
+                          P, PP, T
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+                        <div class="item-data-label">
+                          W/L
+                        </div>
+                        <div class="item-data-value">
+                          100,000,000
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../js/dropdowns.js"></script>
+    <script src="../../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../../vendor/prettify/css/prettify.css" />
+    <script src="../../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

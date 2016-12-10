@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Fixed alert bar</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-12">
+
+          <a href="#" class="btn btn-secondary btn-margins demo-toggle-alert-bar">TOGGLE ALERT BAR VISIBILITY</a>
+
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Element should be placed to the end of body. Content is optimized for text and buttons, but is not restrticted only to those.</p>
+
+        <p>Visibility can be toggled with class name <code>.visible</code>, for example by calling a jQuery function:</p>
+
+        <pre><code>$('.fixed-alert-bar').toggleClass('visible');</code></pre>
+
+      </div>
+
+      <pre class="prettyprint"><code>
+<div class="fixed-alert-bar navbar-fixed-bottom">
+  <span class="fixed-alert-bar-content">SEAT 3: Rating cancelled</span>
+  <div class="fixed-alert-bar-btns">
+    <a href="#" class="btn btn-secondary btn-margins">CANCEL</a>
+    <a href="#" class="btn btn-primary btn-margins">OK</a>
+  </div>
+</div>
+      </code></pre>
+
+    </div>
+
+    <div class="fixed-alert-bar navbar-fixed-bottom">
+      <span class="fixed-alert-bar-content">SEAT 3: Rating cancelled</span>
+
+      <div class="fixed-alert-bar-btns">
+        <a href="#" class="btn btn-secondary btn-margins demo-toggle-alert-bar">CANCEL</a>
+        <a href="#" class="btn btn-primary btn-margins demo-toggle-alert-bar">OK</a>
+      </div>
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>
