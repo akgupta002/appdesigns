@@ -312,9 +312,7 @@
               <div class="dropdown-body">
                 <div class="dropdown-content">
                   <ul class="nav dropdown-nav">
-                    <li class="dropdown-nav-item">
-                      <a href="#" class="dropdown-nav-link">Promotions</a>
-                    </li>
+
                     <li class="dropdown-nav-item">
                       <a href="#" class="dropdown-nav-link">Chip inventory</a>
                     </li>
@@ -340,6 +338,82 @@
 
     </header><!-- .sub-navbar -->
 
+    <div class="modal fade" id="modal-promotions" tabindex="-1" role="dialog" aria-labelledby="modal-promotions">
+      <div class="modal-dialog" role="document" style="width:90%;">
+        <div class="modal-content">
+
+          <header class="modal-header">
+            <h4 class="modal-title">Promotions</h4>
+          </header>
+
+          <div class="clearfix"></div>
+
+          <header class="row">
+            <div class="col-xs-12">
+              <div class="pull-right">
+
+                <a class="tab-content-action-link collapsed" role="button" data-toggle="collapse" href="#filters-table-promotions" aria-expanded="false" aria-controls="filters-table-promotions">
+                  <span class="caret"></span> Filters
+                </a>
+
+              </div>
+            </div>
+
+          </header>
+          <div class="collapse table-filters" id="filters-table-promotions">
+            <div class="row table-filters-content">
+              <div class="col-xs-2">
+
+                <div class="filter-title">
+                  Status
+                </div>
+
+                <div class="dropdown dropdown-block">
+                  <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-pstatus-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    All <span class="caret"></span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="filters-pstatus-filter">
+                    <div class="dropdown-body">
+                      <div class="dropdown-content">
+                        <ul class="nav dropdown-nav">
+
+                          <li class="dropdown-nav-item">
+                            <div class="dropdown-nav-link">
+                              <div class="checkbox">
+                                <input type="checkbox" class="input-checkbox" id="game-area1">
+                                <label for="game-area1">Active</label>
+                                <span class="pull-right">100</span>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="clearfix"></div>
+
+          <div class="modal-body">
+
+            <p>Wide content triggers the modal window to expand by width to fit the content</p>
+            <img src="http://placehold.it/800x300" />
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <section class="main-content">
 
@@ -358,6 +432,10 @@
         </ul>
 
         <div class="tab-content main-tab-content">
+
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-promotions">
+            Promotions
+          </button>
 
           <div role="tabpanel" class="tab-pane fade in active" id="tab1">
 
@@ -1968,6 +2046,8 @@
 
     </section>
 
+
+
     <script src="../../vendor/jquery-1.11.3.js"></script>
     <script src="../../vendor/jquery-ui.js"></script>
     <script src="../../vendor/jquery.keyboard-focus.js"></script>
@@ -1975,12 +2055,14 @@
     <script src="../../vendor/jquery.stickytableheaders.min.js"></script>
     <script src="../../js/dropdowns.js"></script>
     <script src="../../js/header.js"></script>
+    <script src="../../js/modals.js"></script>
     <script src="../../js/buttons.js"></script>
     <script src="../../js/filters.js"></script>
     <script src="../../js/alerts.js"></script>
     <script src="../../js/forms.js"></script>
     <script src="../../js/table.js"></script>
     <script src="../../js/main.js"></script>
+
 
   </body>
 </html>

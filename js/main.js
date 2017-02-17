@@ -16,28 +16,28 @@ $(function () {
 
 // DATETIME PICKER
 
-$('#start-time-picker, #stop-time-picker, #roll-time-picker').datetimepicker({
-    language: 'en',
-    pickDate: false,
-    pickSeconds: false,
-    pick12HourFormat: false
-  });
-
-  $('#gaming-day-picker').datetimepicker({
-    language: 'en',
-    pickTime: false,
-    format: "dd-MM-yyyy"
-  });
-
-$('#roll-time-picker-1,#roll-time-picker-2,#roll-time-picker-3,#roll-time-picker-4').datetimepicker({
-    language: 'en',
-    pickDate: false,
-    pickSeconds: false,
-    pick12HourFormat: false
-  });
+// $('#start-time-picker, #stop-time-picker, #roll-time-picker').datetimepicker({
+//     language: 'en',
+//     pickDate: false,
+//     pickSeconds: false,
+//     pick12HourFormat: false
+//   });
+//
+//   $('#gaming-day-picker').datetimepicker({
+//     language: 'en',
+//     pickTime: false,
+//     format: "dd-MM-yyyy"
+//   });
+//
+// $('#roll-time-picker-1,#roll-time-picker-2,#roll-time-picker-3,#roll-time-picker-4').datetimepicker({
+//     language: 'en',
+//     pickDate: false,
+//     pickSeconds: false,
+//     pick12HourFormat: false
+//   });
 
   //TREEGRID
-    $('.tree').treegrid();
+  //   $('.tree').treegrid();
     $('#checkbox0').on('click', toggleCheckboxActionsL0);
     $('#checkbox1').on('click', toggleCheckboxActionsL1);
     $('#checkbox2, #checkbox11').on('click', toggleCheckboxActionsL2);
