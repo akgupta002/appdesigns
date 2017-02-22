@@ -9,95 +9,6 @@
     <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
 
-    <style>
-    .bonus-nav {
-        /* #7E1419 = hsl(357, 73%, 29%) */
-        background: hsl(357, 73%, 29%);
-        border-radius: 0;
-    }
-    .bonus-breadcrumbs {
-        display:inline-block;
-        overflow: hidden;
-        border-radius: 4px;
-        counter-reset: flag;
-        top: 2px;
-        left: 2px;
-        position: relative;
-    }
-    .bonus-breadcrumbs .step {
-        float:left;
-        color: white;
-        /* need left padding to accomodate the step-numbers */
-        padding: 0 20px 0 30px;
-        /* #bb9156 = hsl(35, 43%, 54%) */
-        /* changed to some brighter and dull color */
-        background-color: hsl(35, 35%, 80%);
-        position: relative;
-        line-height:36px;
-        font-size: 15px;
-        min-width: 100px;
-        cursor: default;
-        /*margin-right: 20px;*/
-    }
-    .bonus-breadcrumbs .step:first-child {
-        /* first-child does not need left-padding */
-        padding-left: 20px;
-    }
-    .bonus-breadcrumbs .step:after {
-        content: "";
-        position: absolute;
-        top:-2px;
-        right: -15px;
-        width: 40px;
-        height: 40px;
-        transform: scale(0.707) rotate(45deg);
-        z-index:1;
-        /* #bb9156 = hsl(35, 43%, 54%) */
-        /* changed to some brighter and dull color */
-        background-color: hsl(35, 35%, 80%);
-        border-radius: 0 5px 0 50px;
-        /* #7E1419 = hsl(357, 73%, 29%) */
-        box-shadow: 3px -3px 0 hsl(357, 73%, 29%);
-        cursor: default;
-    }
-    .bonus-breadcrumbs .step:last-child:after{
-        content: none;
-    }
-    .bonus-breadcrumbs .step:before {
-        content: counter(flag);
-        content:"";
-        counter-increment: flag;
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;
-        line-height: 1.5;
-        margin: 8px 0;
-        position: absolute;
-        top: 0;
-        left: 30px;
-        font-weight: bold;
-    }
-    .bonus-breadcrumbs .step.active,
-    .bonus-breadcrumbs .step.active:after,
-    .bonus-breadcrumbs .step:hover,
-    .bonus-breadcrumbs .step:hover:after {
-        /* #bb9156 = hsl(35, 43%, 54%) */
-        /* hence choosing some brighter color on hover */
-        background-color: hsl(35, 43%, 64%);
-        cursor: pointer;
-    }
-    .bonus-breadcrumbs .step.active,
-    .bonus-breadcrumbs .step.active:after {
-        cursor: default;
-    }
-    .bonus-breadcrumbs .step.visited,
-    .bonus-breadcrumbs .step.visited:after {
-        /* #bb9156 = hsl(35, 43%, 54%) */
-        /* changed to some darker color */
-        background-color: hsl(35, 43%, 44%);
-        cursor:pointer;
-    }
-    </style>
 
   </head>
 
@@ -111,7 +22,7 @@
                   <div class="step visited">Multipliers</div>
                   <div class="step active">Bonus</div>
                   <div class="step">Table Types</div>
-                  <div class="step">Bonus</div>
+                  <div class="step disable">Bonus</div>
               </nav>
           </div>
       </header>
