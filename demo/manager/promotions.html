@@ -451,7 +451,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="table-responsive">
-                  <table class="table-default" style="background-color: #eee7dd;">
+                  <table class="table-default" style="background-color: #eee7dd; min-height: 50vh;">
                     <thead>
                     <tr>
                       <th class="sorting">Status</th>
@@ -459,18 +459,17 @@
                       <th>Name</th>
                       <th>Date</th>
                       <th>Groups</th>
-                      <th>Amount</th>
+                      <th class="text-center">Amount</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                      <td>Active
-                        <div class="dropdown dropdown-right">
+                      <td>
+                        <div class="dropdown status">
                           <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
-                            <div class="users has-error">
-                              <span class="icon-status enabled"></span>
+                            <div class="icon active pull-left">
                             </div>
-                            <span class="caret"></span>
+                            <div class="caret pull-right"></div>
                           </button>
                           <div class="dropdown-menu">
                             <div class="dropdown-body">
@@ -478,10 +477,58 @@
                                 <ul class="nav dropdown-select-nav">
                                   <li class="dropdown-nav-item">
                                     <a class="dropdown-nav-link">
-                                      <div class="user has-error">
-                                        <span class="icon-status enabled"></span>
-                                        <span translate="">Inactive</span>
-                                      </div>
+
+                                        <span class="icon saved"></span>
+                                        <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon terminated"></span>-->
+                                      <!--<span class="status-lable">Terminated</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon cancelled"></span>-->
+                                      <!--<span class="status-lable">Cancelled</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
                                     </a>
                                   </li>
 
@@ -496,7 +543,288 @@
                       <td>Promo CNY</td>
                       <td>22-Jan-2017</td>
                       <td>VIP Group</td>
-                      <td>Amount</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="dropdown status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon terminated"></span>-->
+                                      <!--<span class="status-lable">Terminated</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon cancelled"></span>-->
+                                      <!--<span class="status-lable">Cancelled</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="dropdown status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon terminated"></span>-->
+                                  <!--<span class="status-lable">Terminated</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon cancelled"></span>-->
+                                  <!--<span class="status-lable">Cancelled</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="dropup status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret caret-up pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon terminated"></span>-->
+                                  <!--<span class="status-lable">Terminated</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon cancelled"></span>-->
+                                  <!--<span class="status-lable">Cancelled</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
 
                     </tr>
                     </tbody>
