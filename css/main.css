@@ -5097,3 +5097,23 @@ while scrolling;
 .total-amount-band .tooltip.bottom > .tooltip-arrow {
   border-bottom-color: #7e1419;
 }
+
+.list-item .flex {
+  line-height: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flex.header {
+  background-color: #eee7dd;
+  border-radius:4px;
+  line-height:3;
+}
+
+.header .flex-column {
+  font-weight: 700;
+  color: #bb9156;
+}
+.list-item .tab-content-header-title {
+  text-transform: none;
+}
