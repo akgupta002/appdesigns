@@ -4,6 +4,21 @@
 
 $(function () {
 
+    $("#section-2").fadeToggle(100);
+
+    $("#section-1 tr").on("click",function(){
+        var $this = $(this);
+        $this.closest("#section-1").fadeToggle(500,function(){
+            $("#section-2").fadeToggle(400);
+        });
+    });
+    $("#section-2 tr").on("click",function(){
+        var $this = $(this);
+        $this.closest("#section-2").fadeToggle(500,function(){
+            $("#section-1").fadeToggle(400);
+        });
+    });
+
   // TOOLTIPS
   // ========
 
