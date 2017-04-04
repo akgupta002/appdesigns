@@ -5602,8 +5602,12 @@ while scrolling;
 .status-active {
   background-image: url("../assets/icons/icon-active.svg"); }
 
+.voucher.expanded {
+  background-color: rgba(187, 145, 86, 0.1); }
+  .voucher.expanded > td {
+    color: gray; }
 .voucher:hover {
-  background-color: rgba(187, 145, 86, 0.2); }
+  background-color: rgba(187, 145, 86, 0.1); }
 
 .table-wrapper {
   position: relative;

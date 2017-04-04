@@ -14,6 +14,8 @@ $(function () {
             $arrow.addClass("caret-right");
         }
 
+        $this.toggleClass("expanded");
+
     });
 
     $("#section-2").fadeToggle(100);
