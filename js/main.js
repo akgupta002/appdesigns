@@ -4,6 +4,18 @@
 
 $(function () {
 
+    $(".voucher").on('click',function(){
+        var $this = $(this),
+            $arrow = $this.find(".caret");
+
+        if($arrow.hasClass("caret-right")){
+            $arrow.removeClass("caret-right");
+        } else {
+            $arrow.addClass("caret-right");
+        }
+
+    });
+
     $("#section-2").fadeToggle(100);
 
     $("#section-1 tr").on("click",function(){
