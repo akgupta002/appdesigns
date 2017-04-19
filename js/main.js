@@ -4,7 +4,7 @@
 
 $(function () {
 
-    $(".voucher").on('click',function(){
+    $(".toggleCollapse").on('click',function(){
         var $this = $(this),
             $arrow = $this.find(".caret");
 
@@ -16,6 +16,18 @@ $(function () {
 
         $this.toggleClass("expanded");
 
+    });
+
+    $("tr.voucher").on('click',function(){
+       var $this = $(this);
+        var $siblings = $this.siblings();
+        var $siblingsType = $siblings.hasClass('voucher');
+
+        if($siblings.hasClass('selected')){
+            $siblings.removeClass('selected');
+        }
+
+        $this.toggleClass("selected");
     });
 
     $("#section-2").fadeToggle(100);
