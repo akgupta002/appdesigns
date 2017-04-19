@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f85f063-6753-4fc6-8489-040a09501a48" name="Default" comment="CCAS-" />
-    <list id="af90afc5-7bc3-4c2f-8a10-a93168b3f083" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_modal.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_modal.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
     <ignored path="wdtsdesigns.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -337,7 +333,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7f85f063-6753-4fc6-8489-040a09501a48" name="Default" comment="" />
-      <changelist id="af90afc5-7bc3-4c2f-8a10-a93168b3f083" name="New changelist" comment="" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1487174669762</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -352,7 +348,7 @@
       <workItem from="1491243425625" duration="6715000" />
       <workItem from="1491284595236" duration="1097000" />
       <workItem from="1491366011689" duration="3166000" />
-      <workItem from="1492506652869" duration="6245000" />
+      <workItem from="1492506652869" duration="6274000" />
     </task>
     <task id="LOCAL-00001" summary="CCAS-9929 HTML file for Print/voucher selection to print">
       <created>1492626749676</created>
@@ -361,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492626749676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New changelist">
+      <created>1492626789454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492626789454</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82486000" />
+    <option name="totallyTimeSpent" value="82515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
@@ -421,7 +424,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="CCAS-9929 HTML file for Print/voucher selection to print" />
-    <option name="LAST_COMMIT_MESSAGE" value="CCAS-9929 HTML file for Print/voucher selection to print" />
+    <MESSAGE value="New changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="New changelist" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
