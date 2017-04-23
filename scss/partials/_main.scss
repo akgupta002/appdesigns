@@ -5118,3 +5118,48 @@ while scrolling;
   text-transform: none;
 }
 
+.lucky-chip-animation {
+  width: 700px;
+  height: 700px;
+  background: url("../assets/img/lucky-chips-sprite.png") left center;
+  animation: chip-animation-100 0.9s steps(10) infinite;
+
+  &.one-half {
+    width: 350px;
+    height: 350px;
+    background: url("../assets/img/lucky-chips-sprite@0,5x.png") left center;
+    animation: chip-animation-50 0.9s steps(10) infinite;
+  }
+
+  &.one-fourth {
+    width: 174px;
+    height: 180px;
+    background: url("../assets/img/lucky-chips-sprite@0,25x.png") left center;
+    animation: chip-animation-25 0.9s steps(10) infinite;
+  }
+}
+
+@keyframes chip-animation-25 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -1800px;
+  }
+}
+@keyframes chip-animation-50 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -3600px;
+  }
+}
+@keyframes chip-animation-100 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -7200px;
+  }
+}
