@@ -5534,31 +5534,41 @@ while scrolling;
   text-transform: none; }
 
 .lucky-chip-animation {
-  width: 700px;
-  height: 700px;
-  background: url("../assets/img/lucky-chips-sprite.png") left center;
+  width: 720px;
+  height: 720px;
+  background: url("../assets/img/lucky-chips-sprite-700.png") left center;
   animation: chip-animation-100 0.9s steps(10) infinite; }
-  .lucky-chip-animation.one-half {
-    width: 350px;
-    height: 350px;
+  .lucky-chip-animation.size50 {
+    width: 176px;
+    height: 176px;
     background: url("../assets/img/lucky-chips-sprite@0,5x.png") left center;
     animation: chip-animation-50 0.9s steps(10) infinite; }
-  .lucky-chip-animation.one-fourth {
-    width: 174px;
-    height: 180px;
+  .lucky-chip-animation.size25 {
+    width: 88px;
+    height: 88px;
     background: url("../assets/img/lucky-chips-sprite@0,25x.png") left center;
     animation: chip-animation-25 0.9s steps(10) infinite; }
+  .lucky-chip-animation.size10 {
+    width: 35px;
+    height: 35px;
+    background: url("../assets/img/lucky-chips-sprite@0,1x.png") left center;
+    animation: chip-animation-10 0.9s steps(10) infinite; }
 
+@keyframes chip-animation-10 {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -350px; } }
 @keyframes chip-animation-25 {
   from {
     background-position: 0px; }
   to {
-    background-position: -1800px; } }
+    background-position: -875px; } }
 @keyframes chip-animation-50 {
   from {
     background-position: 0px; }
   to {
-    background-position: -3600px; } }
+    background-position: -1750px; } }
 @keyframes chip-animation-100 {
   from {
     background-position: 0px; }

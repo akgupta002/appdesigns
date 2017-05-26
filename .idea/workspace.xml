@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f85f063-6753-4fc6-8489-040a09501a48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/lucky-chip-animation.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scss/partials/main.css" afterPath="$PROJECT_DIR$/scss/partials/main-backup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/supervisor/history-new.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/img/lucky-chips-sprite.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_main.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_modal.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_modal.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/lucky-chips-sprite@0,25x.png" afterPath="$PROJECT_DIR$/assets/img/lucky-chips-sprite@0,25x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/lucky-chips-sprite@0,5x.png" afterPath="$PROJECT_DIR$/assets/img/lucky-chips-sprite@0,5x.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/lucky-chip-animation.html" afterPath="$PROJECT_DIR$/examples/lucky-chip-animation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partials/_main.scss" afterPath="$PROJECT_DIR$/scss/partials/_main.scss" />
     </list>
@@ -33,33 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_modal.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/partials/_modal.scss">
+      <file leaf-file-name="history-new.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/supervisor/history-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="114" column="1" selection-start-line="99" selection-start-column="0" selection-end-line="114" selection-end-column="1" />
-              <folding>
-                <marker date="1492627624000" expanded="true" signature="1589:1750" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="176" column="92" selection-start-line="176" selection-start-column="92" selection-end-line="176" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table-fixed-header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/table-fixed-header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="251" column="45" selection-start-line="244" selection-start-column="8" selection-end-line="251" selection-end-column="45" />
+            <state relative-caret-position="1635">
+              <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -68,22 +48,22 @@
       <file leaf-file-name="lucky-chip-animation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/lucky-chip-animation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+            <state relative-caret-position="210">
+              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="issue-print-voucher.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/issue-print-voucher.html">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
-              <caret line="259" column="54" selection-start-line="259" selection-start-column="54" selection-end-line="259" selection-end-column="54" />
+            <state relative-caret-position="30">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -92,21 +72,29 @@
       <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/partials/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="5133" column="16" selection-start-line="5133" selection-start-column="16" selection-end-line="5133" selection-end-column="16" />
+            <state relative-caret-position="507">
+              <caret line="5172" column="8" selection-start-line="5172" selection-start-column="8" selection-end-line="5172" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="3000">
+              <caret line="200" column="71" selection-start-line="200" selection-start-column="71" selection-end-line="200" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/supervisor/history.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4620">
+              <caret line="308" column="40" selection-start-line="308" selection-start-column="40" selection-end-line="308" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,9 +132,11 @@
         <option value="$PROJECT_DIR$/scss/partials/_table-header-fix.scss" />
         <option value="$PROJECT_DIR$/examples/issue-print-voucher.html" />
         <option value="$PROJECT_DIR$/scss/partials/_modal.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scss/partials/_main.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/demo/supervisor/history-new" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/demo/supervisor/history-new.html" />
+        <option value="$PROJECT_DIR$/scss/partials/_main.scss" />
         <option value="$PROJECT_DIR$/examples/lucky-chip-animation.html" />
       </list>
     </option>
@@ -160,7 +150,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="833" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,7 +178,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,16 +252,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supervisor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="/opt/wdts/casinomanager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lucky Chip Animation" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -364,7 +386,12 @@
       <workItem from="1491197754030" duration="17607000" />
       <workItem from="1491243425625" duration="6715000" />
       <workItem from="1491284595236" duration="359000" />
-      <workItem from="1492627338530" duration="10608000" />
+      <workItem from="1492627338530" duration="10952000" />
+      <workItem from="1493094995975" duration="830000" />
+      <workItem from="1493369016045" duration="3879000" />
+      <workItem from="1493710168873" duration="266000" />
+      <workItem from="1493802895354" duration="1327000" />
+      <workItem from="1495780705401" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="CCAS-9929 Merged branch">
       <created>1492627655741</created>
@@ -384,10 +411,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83002000" />
+    <option name="totallyTimeSpent" value="89671000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22762509" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -395,7 +422,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2820513" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28146145" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -451,13 +478,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/manager/promotions-ver2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9555">
-          <caret line="637" column="43" selection-start-line="637" selection-start-column="43" selection-end-line="637" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/manager/promotions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -476,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76755">
           <caret line="5117" column="23" selection-start-line="5117" selection-start-column="23" selection-end-line="5117" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73575">
           <caret line="4905" column="9" selection-start-line="4905" selection-start-column="9" selection-end-line="4905" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/supervisor/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28185">
-          <caret line="1879" column="16" selection-start-line="1895" selection-start-column="4" selection-end-line="1895" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/lists.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -679,9 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-654">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-172">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,6 +738,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="5879" column="0" selection-start-line="5879" selection-start-column="0" selection-end-line="5879" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/partials/main-backup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/lucky-chips-sprite.png" />
+    <entry file="file://$PROJECT_DIR$/scss/partials/_table-header-fix.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/bonuses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="264" column="46" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/issue-print-voucher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3885">
+          <caret line="259" column="54" selection-start-line="259" selection-start-column="54" selection-end-line="259" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/table-fixed-header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="251" column="45" selection-start-line="244" selection-start-column="8" selection-end-line="251" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/partials/_modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="114" column="1" selection-start-line="99" selection-start-column="0" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/supervisor/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="308" column="40" selection-start-line="308" selection-start-column="40" selection-end-line="308" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="200" column="71" selection-start-line="200" selection-start-column="71" selection-end-line="200" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lucky-chip-animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/supervisor/history-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -742,102 +831,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partials/main-backup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/lucky-chips-sprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partials/_table-header-fix.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="176" column="92" selection-start-line="176" selection-start-column="92" selection-end-line="176" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/table-fixed-header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="251" column="45" selection-start-line="244" selection-start-column="8" selection-end-line="251" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/bonuses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3960">
-          <caret line="264" column="46" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/issue-print-voucher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="259" column="54" selection-start-line="259" selection-start-column="54" selection-end-line="259" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partials/_modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="114" column="1" selection-start-line="99" selection-start-column="0" selection-end-line="114" selection-end-column="1" />
-          <folding>
-            <marker date="1492627624000" expanded="true" signature="1589:1750" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/lucky-chip-animation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/partials/_main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="5133" column="16" selection-start-line="5133" selection-start-column="16" selection-end-line="5133" selection-end-column="16" />
+        <state relative-caret-position="507">
+          <caret line="5172" column="8" selection-start-line="5172" selection-start-column="8" selection-end-line="5172" selection-end-column="8" />
           <folding />
         </state>
       </provider>
