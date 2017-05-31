@@ -5534,46 +5534,66 @@ while scrolling;
   text-transform: none; }
 
 .lucky-chip-animation {
-  width: 720px;
-  height: 720px;
-  background: url("../assets/img/lucky-chips-sprite-700.png") left center;
-  animation: chip-animation-100 0.9s steps(10) infinite; }
-  .lucky-chip-animation.size50 {
-    width: 176px;
-    height: 176px;
-    background: url("../assets/img/lucky-chips-sprite@0,5x.png") left center;
-    animation: chip-animation-50 0.9s steps(10) infinite; }
-  .lucky-chip-animation.size25 {
-    width: 88px;
-    height: 88px;
-    background: url("../assets/img/lucky-chips-sprite@0,25x.png") left center;
-    animation: chip-animation-25 0.9s steps(10) infinite; }
+  width: 352px;
+  height: 352px;
+  background: url("../assets/img/lucky-chips-sprite.png") left center;
+  animation: chip-animation 2s steps(11) infinite; }
   .lucky-chip-animation.size10 {
     width: 35px;
     height: 35px;
     background: url("../assets/img/lucky-chips-sprite@0,1x.png") left center;
-    animation: chip-animation-10 0.9s steps(10) infinite; }
+    animation: chip-animation-10 1.6s steps(11) infinite; }
+  .lucky-chip-animation.size25 {
+    width: 88px;
+    height: 88px;
+    background: url("../assets/img/lucky-chips-sprite@0,25x.png") left center;
+    animation: chip-animation-25 1.4s steps(11) infinite; }
+  .lucky-chip-animation.size50 {
+    width: 176px;
+    height: 176px;
+    background: url("../assets/img/lucky-chips-sprite@0,5x.png") left center;
+    animation: chip-animation-50 1.8s steps(11) infinite; }
+  .lucky-chip-animation.size200 {
+    width: 720px;
+    height: 720px;
+    background: url("../assets/img/lucky-chips-sprite-700.png") left center;
+    animation: chip-animation-200 1s steps(10) infinite; }
+  .lucky-chip-animation.zoom-me {
+    transform: scale(0.1);
+    animation: zoom-me 2s ease-out, chip-animation 4s steps(11) infinite; }
 
+@keyframes chip-animation {
+  0%,50% {
+    background-position: 0px; }
+  100% {
+    background-position: -3849px; } }
 @keyframes chip-animation-10 {
-  from {
+  0%,50% {
     background-position: 0px; }
-  to {
-    background-position: -350px; } }
+  100% {
+    background-position: -385px; } }
 @keyframes chip-animation-25 {
-  from {
+  0%,50% {
     background-position: 0px; }
-  to {
-    background-position: -875px; } }
+  100% {
+    background-position: -962px; } }
 @keyframes chip-animation-50 {
-  from {
+  0%,50% {
     background-position: 0px; }
-  to {
-    background-position: -1750px; } }
-@keyframes chip-animation-100 {
-  from {
+  100% {
+    background-position: -1924px; } }
+@keyframes chip-animation-200 {
+  0% {
     background-position: 0px; }
-  to {
+  100% {
     background-position: -7200px; } }
+@keyframes zoom-me {
+  0% {
+    transform: scale(0.1); }
+  50% {
+    transform: scale(5); }
+  60%,100% {
+    transform: scale(2); } }
 .modal-vouchers .modal-dialog:not(.fluid-dialog):not(.full-width-dialog) {
   overflow: hidden; }
 .modal-vouchers .modal-dialog {
