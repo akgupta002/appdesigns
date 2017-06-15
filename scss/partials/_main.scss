@@ -125,6 +125,43 @@ a.underlined {
   font-weight: 900;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Chinese';
+  src: url("../assets/fonts/STSong.ttf") format("truetype");
+  font-weight: 400; }
+
+
+@font-face {
+  font-family: 'ChineseTC';
+  src: url("../assets/fonts/STSong-TC-Bold.ttf") format("truetype");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'ChineseTC';
+  src: url("../assets/fonts/STSong-TC-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'ChineseTC';
+  src: url("../assets/fonts/STSong-TC-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'ChineseSC';
+  src: url("../assets/fonts/STSong-SC-Black.ttf") format("truetype");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'ChineseSC';
+  src: url("../assets/fonts/STSong-SC-Bold.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'ChineseSC';
+  src: url("../assets/fonts/STSong-SC-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+
 h1 {
   margin: 10px 0;
   font-size: 36px;
@@ -5118,95 +5155,339 @@ while scrolling;
   text-transform: none;
 }
 
-.lucky-chip-animation {
-  width: 352px;
-  height: 352px;
-  background: url("../assets/img/lucky-chips-sprite.png") left center;
-  animation: chip-animation 2s steps(11) infinite;
 
-  &.size10 {
-    width: 35px;
-    height: 35px;
-    background: url("../assets/img/lucky-chips-sprite@0,1x.png") left center;
-    animation: chip-animation-10 1.6s steps(11) infinite;
-  }
+.icon-stamp {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  display: block;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  margin: 4px;
+  padding: 20px;
+}
 
-  &.size25 {
-    width: 88px;
-    height: 88px;
-    background: url("../assets/img/lucky-chips-sprite@0,25x.png") left center;
-    animation: chip-animation-25 1.4s steps(11) infinite;
-  }
+.icon-rate {
+  width: 18px;
+  height: 18px;
+  background-color: #6ede6e;
+  border: 2px solid #009900;
+  display: inline-block;
+  border-radius: 50%;
+}
 
-  &.size50 {
-    width: 176px;
-    height: 176px;
-    background: url("../assets/img/lucky-chips-sprite@0,5x.png") left center;
-    animation: chip-animation-50 1.8s steps(11) infinite;
-  }
+.icon-stamp.icon-update {
+  padding: 10px;
+}
 
-  &.size200 {
-    width: 720px;
-    height: 720px;
-    background: url("../assets/img/lucky-chips-sprite-700.png") left center;
-    animation: chip-animation-200 1s steps(10) infinite;
-  }
+.trend-title {
+  font-family: 'Chinese';
+  font-size: 72px;
+  font-weight:900;
+  color: #333;
+  text-align: center;
+  position: relative;
+  line-height: 1;
+  height:72px;
+  left: calc(50vw - 180px);
+}
 
-  &.zoom-me {
-    transform: scale(0.1);
-    animation: zoom-me 2s ease-out,
-                chip-animation 4s steps(11) infinite; ;
+.trend-title .text-shadow {
+  position:absolute;
+  top:0;
+  left:0;
+  text-shadow: 2px 2px 10px #000;
+  z-index:1;
+}
+
+.trend-title .gradient {
+  position:absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(0deg, #ffff00 0%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index:2;
+}
+
+.banner-wrapper {
+  margin: 0 auto;
+  min-height: 200px;
+  min-width: 200px;
+  position: relative;
+}
+
+.banner {
+  background: url("../assets/img/banner-edited.png") no-repeat top left transparent;
+  z-index: 10;
+  min-height: 648px;
+  background-position:top;
+  background-size:100%;
+  transform: translate(0,1000px) scale(0);
+  transition: all 1000ms cubic-bezier(0.5,0,0,1);
+
+  &.show-me {
+    transform: translate(0,0) scale(1);
   }
 }
 
-@keyframes chip-animation {
-  0%,50% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: -3849px;
-  }
-}
-@keyframes chip-animation-10 {
-  0%,50% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: -385px;
+.banner1 {
+  background: url("../assets/img/banner-rounded.png") no-repeat top left transparent;
+  z-index: 10;
+  min-height: 648px;
+  background-position:center;
+  background-size:100%;
+  transform: translate(0,1000px) scale(0);
+  transition: all 1000ms cubic-bezier(0.5,0,0,1);
+
+  .show-me & {
+    transform: translate(0,0) scale(1);
   }
 }
-@keyframes chip-animation-25 {
-  0%,50% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: -962px;
+
+.deck-playing-cards {
+  width: 100%;
+  min-height: 250px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  display:flex;
+  flex:1;
+  padding: 0 10em;
+  z-index:20;
+}
+
+.card {
+  position: relative;
+  background: transparent left top no-repeat;
+  background-size:cover;
+  margin-left:1em;
+  margin-right:1em;
+  box-shadow: 0 0 20px #000;
+  border-radius: 8px;
+}
+
+.card-d1 { background-image:url("../assets/cards/Ace_Diamonds.png"); }
+.card-d2 { background-image:url("../assets/cards/2_Diamonds.png"); }
+.card-d3 { background-image:url("../assets/cards/3_Diamonds.png"); }
+.card-d4 { background-image:url("../assets/cards/4_Diamonds.png"); }
+.card-d5 { background-image:url("../assets/cards/5_Diamonds.png"); }
+.card-d6 { background-image:url("../assets/cards/6_Diamonds.png"); }
+.card-d7 { background-image:url("../assets/cards/7_Diamonds.png"); }
+.card-d8 { background-image:url("../assets/cards/8_Diamonds.png"); }
+.card-d9 { background-image:url("../assets/cards/9_Diamonds.png"); }
+.card-d10 { background-image:url("../assets/cards/10_Diamonds.png"); }
+.card-d11 { background-image:url("../assets/cards/Jack_Diamonds.png"); }
+.card-d12 { background-image:url("../assets/cards/Queen_Diamonds.png"); }
+.card-d13 { background-image:url("../assets/cards/King_Diamonds.png"); }
+
+.show-2cards {
+  width: 180px !important;
+  height: 246px !important;
+  opacity:0;
+}
+
+.show-3cards {
+  width: 108px !important;
+  height: 147.6px !important;
+  opacity:1;
+}
+
+.player-cards,
+.banker-cards,
+.show-area {
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.show-area {
+  flex: 1;
+}
+
+.player-cards,
+.banker-cards {
+  flex: 2;
+}
+
+.player-cards {
+  .show-2cards {
+    transform: translateX(246%) rotateZ(-15deg);
+    transition: all 0.4s ease 1900ms;
+
+    &:nth-last-child(1){
+      transform: translateX(130%) rotateZ(-15deg);
+      transition: all 0.4s ease 2100ms;
+    }
   }
 }
-@keyframes chip-animation-50 {
-  0%,50% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: -1924px;
-  }
-}
-@keyframes chip-animation-200 {
-  0% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: -7200px;
+
+.banker-cards {
+  .show-2cards {
+    transform: translateX(-130%) rotateZ(15deg);
+    transition: all 0.4s ease 2000ms;
+
+    &:nth-last-child(1){
+      transform: translateX(-246%) rotateZ(15deg);
+      transition: all 0.4s ease 2200ms;
+    }
   }
 }
-@keyframes zoom-me {
-  0% {
-    transform: scale(0.1);
+
+.show-me {
+  .player-cards,
+  .banker-cards {
+    .show-2cards {
+      opacity:1;
+      transform: translateX(0) rotateZ(0deg);
+
+      &:nth-last-child(1){
+        transform: translateX(0) rotateZ(0deg);
+      }
+    }
   }
-  50% {
-    transform: scale(5);
+}
+
+.winning-chip {
+  background-color: orange;
+  background-size: 530px 530px;
+  position: absolute;
+  left:42%;
+  top: 8em;
+  //top: 12em;
+  width: 220px;
+  height: 220px;
+  border:2px solid maroon;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #000;
+  animation: rotating 360s linear 1 4000ms;
+  opacity: 0;
+  z-index:30;
+}
+
+.winning-chip1 {
+  background: url("../assets/img/ball-banker.png") no-repeat transparent;
+  background-size: 106%;
+  background-position: -6px;
+  position: absolute;
+  left:63.5%;
+  top: 60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #000;
+  z-index:30;
+  opacity:0;
+  transform: translate(0,0) scale(0.1) rotateY(0deg);
+  transition: all 1s ease 3s;
+
+  .show-me & {
+    opacity: 1;
+    transform: translate(-295px, 120px) scale(1.5) rotateY(360deg);
   }
-  60%,100% {
+}
+
+.winning-chip1-shadow {
+  background:none;
+  box-shadow: 0 0 20px #fff;
+  z-index:28;
+  opacity:0;
+  width:300px;
+  height:300px;
+  top:130px;
+  left:39.5%;
+  position: absolute;
+  border-radius:50%;
+  transition: all 1s ease 3700ms;
+
+  .show-me & {
+    opacity:1;
+    box-shadow: 1000px 0 80px #fff;
+  }
+}
+.banner1-glow {
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  position:absolute;
+  top:0;
+  left:50%;
+  min-width:20px;
+  min-height:100px;
+  border-radius:50%;
+  width: 1%;
+  height:100%;
+  z-index: 31;
+  opacity:0;
+  margin-top: -100px;
+
+  .show-me & {;
+    animation: animate-glow 0.8s ease-in-out;
+    animation-delay: 3.5s;
+  }
+}
+
+@keyframes animate-glow {
+  from {
+    opacity:0;
+    width:1%;
+    top:220px;
+    height: 40vh;
+  }
+
+  20%{
+    opacity:1;
+    width:1%;
+    left:50%;
+    top:220px;
+    height: 40vh;
+  }
+
+  60% {
+    opacity:1;
+  }
+
+  to {
+    opacity:0;
+    width:100%;
+    left:100%;
+    top:0;
+    height: 100vh;
+  }
+
+}
+@keyframes rotating {
+  from {
+    transform: translateY(-200px) scale(0.1);
+  }
+  0.1% {
+    opacity:1;
+    transform: translateY(0px) scale(1);
+  }
+  0.25% {
     transform: scale(2);
   }
+  0.4% {
+    transform: rotateY(0deg);
+  }
+  0.5% {
+    transform: rotateY(-359deg);
+  }
+  0.75% {
+    transform: scale(1.8);
+  }
+  0.8% {
+    opacity:1;
+    transform: scale(1);
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+@media (max-width:1920px) {
+
 }
