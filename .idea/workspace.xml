@@ -1,92 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f85f063-6753-4fc6-8489-040a09501a48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_animation.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/f2997026c1b55ddccd38b44496fedaedfd2af2e0/_main.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/.get_date.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/10_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/10_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/10_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/10_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/2_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/2_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/2_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/2_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/3_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/3_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/3_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/3_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/4_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/4_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/4_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/4_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/5_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/5_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/5_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/5_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/6_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/6_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/6_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/6_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/7_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/7_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/7_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/7_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/8_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/8_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/8_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/8_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/9_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/9_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/9_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/9_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Ace_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Ace_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Ace_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Ace_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Jack_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Jack_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Jack_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Jack_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/King_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/King_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/King_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/King_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Queen_Clubs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Queen_Diamonds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Queen_Hearts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cards/Queen_Spades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-rate-new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-rate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-update-new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-update.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/Trendboard_BG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/Trendboard_banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/ball-banker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/banner-edited.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/banner-glow-once.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/banner-glow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/banner-rounded.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Classic-Song-ti-Font.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/STSong.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-rate-new.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/icons/icon-update-new.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/others.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/trend-header-ui.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/trendui.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/partials/_animation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/b34724d0fc186e8ef2454a72fcf9722e706f7015/main.scssc" afterPath="$PROJECT_DIR$/.sass-cache/b34724d0fc186e8ef2454a72fcf9722e706f7015/main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/layout/config-menu.html" afterPath="$PROJECT_DIR$/examples/layout/config-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/lucky-chip-animation.html" afterPath="$PROJECT_DIR$/examples/lucky-chip-animation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/zoom-in-animation.html" afterPath="$PROJECT_DIR$/examples/zoom-in-animation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partials/_main.scss" afterPath="$PROJECT_DIR$/scss/partials/_main.scss" />
-    </list>
+    <list default="true" id="7f85f063-6753-4fc6-8489-040a09501a48" name="Default" comment="" />
     <ignored path="wdtsdesigns.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -133,8 +48,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="196" column="80" selection-start-line="196" selection-start-column="80" selection-end-line="196" selection-end-column="80" />
+            <state relative-caret-position="-22">
+              <caret line="187" column="23" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -314,6 +229,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".sass-cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f2997026c1b55ddccd38b44496fedaedfd2af2e0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wdtsdesigns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".sass-cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -410,7 +357,7 @@
       <workItem from="1492627338530" duration="10608000" />
       <workItem from="1496723889698" duration="6766000" />
       <workItem from="1496833441700" duration="22334000" />
-      <workItem from="1497252901759" duration="15802000" />
+      <workItem from="1497252901759" duration="16984000" />
     </task>
     <task id="LOCAL-00001" summary="CCAS-9929 Merged branch">
       <created>1492627655741</created>
@@ -426,23 +373,30 @@
       <option name="project" value="LOCAL" />
       <updated>1492627914818</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CCAS-10716A Banner added">
+      <created>1497522209696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497522209696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135905000" />
+    <option name="totallyTimeSpent" value="137087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22762509" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22762509" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42760488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42760488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -489,7 +443,8 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="CCAS-9929 Merged branch" />
     <MESSAGE value="CCAS-9929 SCSS compiled to CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="CCAS-9929 SCSS compiled to CSS" />
+    <MESSAGE value="CCAS-10716A Banner added" />
+    <option name="LAST_COMMIT_MESSAGE" value="CCAS-10716A Banner added" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -807,6 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-173">
           <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -814,6 +770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,6 +778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -857,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="196" column="80" selection-start-line="196" selection-start-column="80" selection-end-line="196" selection-end-column="80" />
+        <state relative-caret-position="-22">
+          <caret line="187" column="23" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
           <folding />
         </state>
       </provider>
