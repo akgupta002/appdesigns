@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Form elements</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-6">
+
+                <h2>Text input</h2>
+
+                <div class="form-group">
+                    <label for="input1">NORMAL</label>
+                    <input type="text" class="form-control input-text" id="input1" placeholder="Placeholder" />
+                </div>
+
+                <div class="form-group has-error">
+                    <label for="input2">HAS ERROR</label>
+                    <input type="text" class="form-control input-text" id="input2" placeholder="Placeholder" value="Error" />
+
+                    <span class="form-control-indicator">!</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="input3">DISABLED</label>
+                    <input type="text" class="form-control input-text" id="input3" placeholder="Placeholder" disabled="disabled" />
+                </div>
+
+                <div class="form-group">
+                    <label for="input4">READONLY</label>
+                    <input type="text" class="form-control input-text" id="input4" placeholder="Placeholder" readonly="readonly" value="Readonly" />
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+
+                <h2>Textarea</h2> ∫
+
+                <div class="form-group is-correct">
+                    <label for="textarea1">NORMAL</label>
+                    <textarea class="form-control textarea" id="textarea1" placeholder="Placeholder"></textarea>
+
+                    <span class="form-control-indicator">
+              <span class="glyphicon icon-check"></span>
+                    </span>
+                </div>
+
+                <div class="form-group has-error">
+                    <label for="textarea2">HAS ERROR</label>
+                    <textarea class="form-control textarea" id="textarea2" placeholder="Placeholder">Error</textarea>
+
+                    <span class="form-control-indicator">!</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="textarea3">DISABLED</label>
+                    <textarea class="form-control textarea" id="textarea3" placeholder="Placeholder" disabled="disabled"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="textarea4">READONLY</label>
+                    <textarea class="form-control textarea" id="textarea4" placeholder="Placeholder" readonly="readonly">Readonly</textarea>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-3">
+
+                <h2>Checkbox</h2>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" id="checkbox1">
+                        <label for="checkbox1">NORMAL</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" id="checkbox2" checked="checked">
+                        <label for="checkbox2">CHECKED</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" id="checkbox3" data-checked="partially">
+                        <label for="checkbox3">PARTIALLY CHECKED</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox has-error">
+                        <input type="checkbox" class="input-checkbox" id="checkbox4">
+                        <label for="checkbox4">ERROR</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" id="checkbox5" disabled="disabled">
+                        <label for="checkbox5">DISABLED</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" id="checkbox6" disabled="disabled" checked="checked">
+                        <label for="checkbox6">DISABLED AND CHECKED</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <h2>Radio</h2>
+
+                <div class="form-group">
+                    <div class="radio">
+                        <input type="radio" class="input-radio" name="radio-group1" id="radio1">
+                        <label for="radio1">NORMAL</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio">
+                        <input type="radio" class="input-radio" name="radio-group1" id="radio2" checked="checked">
+                        <label for="radio2">CHECKED</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio has-error">
+                        <input type="radio" class="input-radio" name="radio-group1" id="radio3">
+                        <label for="radio3">ERROR</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio">
+                        <input type="radio" class="input-radio" name="radio-group2" id="radio4" disabled="disabled">
+                        <label for="radio4">DISABLED</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio">
+                        <input type="radio" class="input-radio" name="radio-group2" id="radio5" disabled="disabled" checked="checked">
+                        <label for="radio5">DISABLED AND CHECKED</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <h2>Toggle button</h2>
+
+                <div class="form-group">
+                    <div class="toggle">
+                        <input class="input-toggle" id="toggle1" type="checkbox">
+                        <label class="toggle-btn" for="toggle1"></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="toggle">
+                        <input class="input-toggle" id="toggle2" type="checkbox" checked="checked">
+                        <label class="toggle-btn" for="toggle2"></label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <h2>Number selector</h2>
+
+                <div class="form-group">
+
+                    <div class="number-selector">
+
+                        <input type="text" class="form-control input-text input-number-selector" id="number-selector" placeholder="0" value="10" />
+
+                        <div class=number-selector-btns>
+
+                            <a href="#" class="number-selector-btn number-selector-increase">
+                                <span class="caret caret-up"></span>
+                            </a>
+
+                            <a href="#" class="number-selector-btn number-selector-decrease">
+                                <span class="caret"></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h2>Date/Time Picker</h2>
+
+                <div id="datetimepicker1" class="input-append date datetimepicker">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-text input-datetimepicker" data-format="MM/dd/yyyy hh:mm:ss PP" />
+                        <a class="add-on input-group-addon">
+                            <span class="glyphicon icon-calendar"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-10">
+
+                <h2>Primary buttons</h2>
+
+                <div class="form-group">
+                    <button class="btn btn-primary btn-margins">NORMAL</button>
+                    <a href="#" class="btn btn-primary btn-margins">ANCHOR TAG</a>
+                    <button class="btn btn-primary btn-margins" disabled="disabled">DISABLED</button>
+                    <a class="btn btn-primary btn-margins disabled">ANCHOR TAG</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <h2>Secondary buttons</h2>
+
+                <div class="form-group">
+                    <button class="btn btn-secondary btn-margins">NORMAL</button>
+                    <a href="#" class="btn btn-secondary btn-margins">ANCHOR TAG</a>
+                    <button class="btn btn-secondary btn-margins" disabled="disabled">DISABLED</button>
+                    <a class="btn btn-secondary btn-margins disabled">ANCHOR TAG</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <h2>Cancel/Delete buttons</h2>
+
+                <div class="form-group">
+                    <button class="btn btn-alert btn-margins">NORMAL</button>
+                    <a href="#" class="btn btn-alert btn-margins">ANCHOR TAG</a>
+                    <button class="btn btn-alert btn-margins" disabled="disabled">DISABLED</button>
+                    <a class="btn btn-alert btn-margins disabled">ANCHOR TAG</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+        <div class="well">
+
+            <p>Form elements are mostly wrapped with <code>.form-group</code> element. It can receive classes <code>.has-error</code> and <code>.is-correct</code> depending on the state. <code>.form-control-indicator</code> element can be used to emphasize
+                the state.</p>
+
+            <p>Requires <code>forms.js</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="form-group">
+  <label for="input1">NORMAL</label>
+  <input type="text" class="form-control input-text" id="input1" placeholder="Placeholder" />
+</div>
+<div class="form-group has-error">
+  <label for="input2">HAS ERROR</label>
+  <input type="text" class="form-control input-text" id="input2" placeholder="Placeholder" value="Error" />
+  <span class="form-control-indicator">!</span>
+</div>
+      </code></pre>
+
+        <pre class="prettyprint"><code>
+<div class="form-group is-correct">
+  <label for="textarea1">NORMAL</label>
+  <textarea class="form-control textarea" id="textarea1" placeholder="Placeholder"></textarea>
+  <span class="form-control-indicator">
+    <span class="glyphicon icon-check"></span>
+  </span>
+</div>
+<div class="form-group has-error">
+  <label for="textarea2">HAS ERROR</label>
+  <textarea class="form-control textarea" id="textarea2" placeholder="Placeholder">Error</textarea>
+  <span class="form-control-indicator">!</span>
+</div>
+      </code></pre>
+
+        <div class="well">
+
+            <p>Checkboxes have a wrapper <code>.checkbox</code> and radios have <code>.radio</code>, which assist on the special styling of the elements.</p>
+
+            <p>The attribute <code>data-checked="partially"</code> is used for the custom checkbox used in the alerts screen.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="form-group">
+  <div class="checkbox">
+    <input type="checkbox" class="input-checkbox" id="checkbox1">
+    <label for="checkbox1">NORMAL</label>
+  </div>
+</div>
+<div class="form-group">
+  <div class="checkbox">
+    <input type="checkbox" class="input-checkbox" id="checkbox3" data-checked="partially">
+    <label for="checkbox3">PARTIALLY CHECKED</label>
+  </div>
+</div>
+      </code></pre>
+
+        <pre class="prettyprint"><code>
+<div class="form-group">
+  <div class="radio">
+    <input type="radio" class="input-radio" name="radio-group1" id="radio1">
+    <label for="radio1">NORMAL</label>
+  </div>
+</div>
+      </code></pre>
+
+        <div class="well">
+
+            <p>Toggle buttons are different kind of checkboxes, which visualize the state of the input more. They have a wrapper <code>.toggle</code> and label <code>.toggle-btn</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="form-group">
+  <div class="toggle">
+    <input class="input-toggle" id="toggle1" type="checkbox">
+    <label class="toggle-btn" for="toggle1"></label>
+  </div>
+</div>
+<div class="form-group">
+  <div class="toggle">
+    <input class="input-toggle" id="toggle2" type="checkbox" checked="checked">
+    <label class="toggle-btn" for="toggle2"></label>
+  </div>
+</div>
+      </code></pre>
+
+        <div class="well">
+
+            <p>Number selector input has class name <code>.input-number-selector</code> and a <code>placeholder</code> and initial <code>value</code> attributes.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="form-group">
+  <div class="number-selector">
+    <input type="text" class="form-control input-text input-number-selector" id="number-selector" placeholder="0" value="10" />
+    <div class=number-selector-btns>
+      <a href="#" class="number-selector-btn number-selector-increase">
+        <span class="caret caret-up"></span>
+      </a>
+      <a href="#" class="number-selector-btn number-selector-decrease">
+        <span class="caret"></span>
+      </a>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+        <div class="well">
+
+            <p>Date / Time picker input needs the attribute <code>data-format</code> to tell the plugin the desired format of the date.</p>
+
+            <p>Requires <code>bootstrap-datetimepicker.min.js</code> and needs to be initialized in the code with a reference to the ID of the wrapper:</p>
+
+            <pre>$('#datetimepicker1').datetimepicker({
+  language: 'en',
+  pick12HourFormat: true
+});</pre>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div id="datetimepicker1" class="input-append date datetimepicker">
+  <div class="input-group">
+    <input type="text" class="form-control input-text input-datetimepicker" data-format="MM/dd/yyyy hh:mm:ss PP" />
+    <a class="add-on input-group-addon">
+      <span class="glyphicon icon-calendar"></span>
+    </a>
+  </div>
+</div>
+      </code></pre>
+
+        <div class="well">
+
+            <p>Buttons are normally <code>button</code> or <code>a</code> elements, but basically any element can be styled to look like a button with <code>.btn</code> class.</p>
+
+            <p>Buttons have 3 main themes, <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-alert</code>. In addition <code>.btn-tertiary</code> is used on the dealer screens.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<button class="btn btn-primary btn-margins">NORMAL</button>
+<a href="#" class="btn btn-primary btn-margins">ANCHOR TAG</a>
+      </code></pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/dropdowns.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>
+        $(function() {
+            prettyPrint()
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Perfect Pay UI Library</title>
+        <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="modal fade" id="modal-remove-group" tabindex="-1" role="dialog" aria-labelledby="removeAccessGroupModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content sm-paddings">
+
+                        <div class="modal-header no-border thick-band">
+                            <span class="close" data-dismiss='modal'>&times;</span>
+                        </div>
+
+                        <div class="modal-body text-center">
+                            <span class="glyphicon glyphicon-trash"></span>
+                            <h4> Do you want to remove this group?</h4>
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                            <a id='remove-btn' href="#" class="btn btn-primary btn-margins" data-dismiss="modal">REMOVE</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-add-group" tabindex="-1" role="dialog" aria-labelledby="addAccessGroupModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content sm-paddings">
+
+                        <div class="modal-header highlight text-center">
+                            <h4 class="modal-title" id="myModalLabel">New Access Group</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="input-name">Name</label>
+                                <input type="text" class="form-control input-text" id="input-name" placeholder="Enter New Name" value=''/>
+                                <div class="error-text fade">
+                                    <p>
+                                        <span class="glyphicon icon-error">!</span>Entered Name is not correct. Try again.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                            <a id='create-btn' href="#" class="btn btn-primary btn-margins" data-dismiss="modal">CREATE</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-save-group" tabindex="-1" role="dialog" aria-labelledby="editAccessGroupModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content sm-paddings">
+
+                        <div class="modal-header highlight text-center">
+                            <h4 class="modal-title" id="myModalLabel">New Access Group</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="input-name">Name</label>
+                                <input type="text" class="form-control input-text" id="input-name" placeholder="Enter New Name" value=''/>
+                                <div class="error-text fade">
+                                    <p>
+                                        <span class="glyphicon icon-error">!</span>Entered Name is not correct. Try again.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                            <a id='save-btn' href="#" class="btn btn-primary btn-margins" data-dismiss="modal">SAVE</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-header">
+                <h1>Topology</h1>
+            </div>
+            <div class="btn btn-primary toggle-menu-btn">
+                <span class="glyphicon icon-list"></span>
+            </div>
+            <div class="sidebar-nav" style="display:none;">
+                <ul class="master">
+                    <li id='node-0' draggable="true" ondragstart="dragstart_handler(event);">
+                        <a href="#">MGM</a>
+                        <ul id='node-1'>
+                            <li id='node-1-1' draggable="true" ondragstart="dragstart_handler(event);">
+                                <a href="#">Casino</a>
+                                <ul id='node-2'>
+                                    <li id='node-2-1' draggable="true" ondragstart="dragstart_handler(event);">
+                                        <a href="#">VIP</a>
+                                        <ul id='node-3'>
+                                            <li id='node-3-1' draggable="true" ondragstart="dragstart_handler(event);">
+                                                <a href="#">Pit 1</a>
+                                                <ul>
+                                                    <li id='node-0-1-1-1-1' draggable="true">
+                                                        <span href="#">Table 1</span>
+                                                    </li>
+                                                    <li id='node-0-1-1-1-2' draggable="true">
+                                                        <span href="#">Table 2</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id='node-3-2' draggable="true" ondragstart="dragstart_handler(event);">
+                                                <a href="#">Pit 2</a>
+                                                <ul id='node-4'>
+                                                    <li id='node-4-1' draggable="true" ondragstart="dragstart_handler(event);">
+                                                        <span href="#">Table 3</span>
+                                                    </li>
+                                                    <li id='node-4-2' draggable="true" ondragstart="dragstart_handler(event);">
+                                                        <span href="#">Table 4</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id='node-2-2' draggable="true" ondragstart="dragstart_handler(event);">
+                                        <a href="#">MASS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id='node-1-2' draggable="true" ondragstart="dragstart_handler(event);">
+                                <a href="#">Treasury</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="target" class="access-group-list">
+
+                    Access Groups
+                    <span class='pull-right'>
+                        <span class="glyphicon glyphicon-plus add-btn" data-toggle="modal" data-target="#modal-add-group" title="Create an access group"></span>
+                    </span>
+
+                </div>
+                <div class="new-group">
+                    <div class="new-list-item fade">
+                        <div class="group-name pull-left"></div>
+                        <div class="group-icons pull-right fade">
+                            <span class="glyphicon glyphicon-pencil" title="Edit the group name"></span>
+                            <span class="glyphicon glyphicon-remove" title="Remove this group"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../vendor/jquery-1.11.3.js"></script>
+        <script src="../vendor/jquery-ui.js"></script>
+        <script src="../vendor/jquery.keyboard-focus.js"></script>
+        <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+        <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+        <script src="../js/dropdowns.js"></script>
+        <script src="../js/alerts.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/demo.js"></script>
+        <script src="../js/topology.js"></script>
+
+    </body>
+</html>

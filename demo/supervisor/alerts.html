@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Perfect Pay UI Library</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+  <body class="has-header has-sub-header">
+
+    <header class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+
+        <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown dropdown-center application-menu">
+
+            <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-application-menu"></span>
+              Casino Manager
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="application-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-casino-manager"></span>
+                          </div>
+                          Casino Manager
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-configurations"></span>
+                          </div>
+                          Configuration
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application YX
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application XY
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="navbar-search">
+
+            <div class="navbar-input-search-wrapper input-search-wrapper">
+              <input type="text" class="form-control input-text navbar-input-search input-search" placeholder="Search..." />
+              <span class="glyphicon icon-search-input"></span>
+
+              <a class="input-search-clear">
+                <span class="glyphicon icon-close-sm"></span>
+              </a>
+            </div>
+
+            <a class="navbar-search-show">
+              <span class="glyphicon icon-search navbar-icon-search"></span>
+            </a>
+
+          </li>
+
+          <li class="dropdown dropdown-right user-menu">
+
+            <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Mark F. <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="user-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Change language</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">View account</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </header><!-- .navbar -->
+
+
+    <header class="navbar navbar-fixed-top sub-navbar">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <span class="navbar-brand">
+            <a href="#" class="header-back-link">
+              <span class="glyphicon icon-lsaquo"></span> CHIP TRAY
+            </a>
+          </span>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-right">
+
+            <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-action-menu"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="action-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Chip inventory</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Create a tournament</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Roll all tables</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Another global function</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </header><!-- .sub-navbar -->
+
+
+    <section class="main-content">
+
+      <div class="container-fluid">
+
+        <header class="content-header clearfix">
+
+          <h3 class="tab-content-header-title">5 table alerts</h3>
+
+          <div class="pull-right">
+
+            <button class="btn btn-primary table-action-option hideable not-visible" type="button">
+              MARK AS READ
+            </button>
+
+            <button class="btn btn-primary table-action-option hideable not-visible" type="button">
+              CLOSE
+            </button>
+
+            <a class="table-action-option collapsed" role="button" data-toggle="collapse" href="#filters-alerts" aria-expanded="false" aria-controls="filters-alerts">
+              <span class="caret"></span> FILTERS
+            </a>
+
+          </div>
+
+        </header>
+
+        <div class="collapse table-filters" id="filters-alerts">
+          <div class="row table-filters-content">
+
+            <div class="col-xs-2">
+
+              <div class="filter-title">
+                AREA
+              </div>
+
+              <div class="dropdown dropdown-block">
+
+                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-area-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  ANY <span class="caret"></span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="filters-area-filter">
+
+                  <div class="dropdown-body">
+                    <div class="dropdown-content">
+
+                      <ul class="nav dropdown-nav">
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-area1">
+                              <label for="game-area1">AREA 1</label>
+                              <span class="pull-right">100</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-area2">
+                              <label for="game-area2">AREA 2</label>
+                              <span class="pull-right">1000</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-area3">
+                              <label for="game-area3">AREA 3</label>
+                              <span class="pull-right">10</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-area4">
+                              <label for="game-area4">AREA 4</label>
+                              <span class="pull-right">0</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-area5">
+                              <label for="game-area5">AREA 5</label>
+                              <span class="pull-right">10</span>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </div>
+                  </div>
+
+                  <div class="dropdown-footer text-center">
+                    <a href="#" class="btn btn-secondary">CLEAR</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-2">
+
+              <div class="filter-title">
+                STATUS
+              </div>
+
+              <div class="dropdown dropdown-block">
+
+                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-status-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  ANY <span class="caret"></span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="filters-status-filter">
+
+                  <div class="dropdown-body">
+                    <div class="dropdown-content">
+
+                      <ul class="nav dropdown-nav">
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-status1">
+                              <label for="game-status1">OPEN</label>
+                              <span class="pull-right">100</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-status2">
+                              <label for="game-status2">CLOSED</label>
+                              <span class="pull-right">1000</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-status3">
+                              <label for="game-status3">SLEEP MODE</label>
+                              <span class="pull-right">10</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-status4">
+                              <label for="game-status4">POWERED OFF</label>
+                              <span class="pull-right">0</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown-nav-item">
+                          <div class="dropdown-nav-link">
+                            <div class="checkbox">
+                              <input type="checkbox" class="input-checkbox" id="game-status5">
+                              <label for="game-status5">TOURNAMENT</label>
+                              <span class="pull-right">10</span>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </div>
+                  </div>
+
+                  <div class="dropdown-footer text-center">
+                    <a href="#" class="btn btn-secondary">CLEAR</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-2">
+
+              <div class="filter-title">
+                WIN/LOSS
+              </div>
+
+              <div class="dropdown dropdown-block">
+
+                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-winloss-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  0-8000 <span class="caret"></span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="filters-winloss-filter">
+
+                  <div class="dropdown-body">
+                    <div class="dropdown-content filters-slider">
+
+                      <div class="filters-slider-header">
+                        <span class="filters-slider-header-min">0</span> -
+                        <span class="filters-slider-header-max">8000</span>
+                      </div>
+
+                      <div class="filters-slider-range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+
+                      <div class="filters-slider-footer">
+                        <div class="row">
+                          <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+                            Losing
+                          </div>
+                          <div class="col-xs-5 text-center">
+                            Winning
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="dropdown-footer text-center">
+                    <a href="#" class="btn btn-secondary">CLEAR</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-2">
+
+              <div class="filter-title">
+                VARIANCE
+              </div>
+
+              <div class="dropdown dropdown-block">
+
+                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-variance-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  0-8000 <span class="caret"></span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="filters-variance-filter">
+
+                  <div class="dropdown-body">
+                    <div class="dropdown-content filters-slider">
+
+                      <div class="filters-slider-header">
+                        <span class="filters-slider-header-min">0</span> -
+                        <span class="filters-slider-header-max">8000</span>
+                      </div>
+
+                      <div class="filters-slider-range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+
+                      <div class="filters-slider-footer">
+                        <div class="row">
+                          <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+                            Losing
+                          </div>
+                          <div class="col-xs-5 text-center">
+                            Winning
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="dropdown-footer text-center">
+                    <a href="#" class="btn btn-secondary">CLEAR</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-4">
+
+              <div class="filter-title">
+                GAMING DAY
+              </div>
+
+              <div class="btn-group" data-toggle="buttons-radio">
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary">
+                  4/10
+                </a>
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary active">
+                  5/10
+                </a>
+
+                <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary">
+                  6/10
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table-default table-alerts table-clickable sticky-table-header">
+            <thead>
+
+              <tr>
+                <th class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox0">
+                    <label for="checkbox0"></label>
+                  </div>
+                </th>
+                <th>PRIORITY <span class="caret"></span></th>
+                <th>ALERT</th>
+                <th>SOURCE</th>
+                <th>TIME</th>
+                <th>STATUS</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse1">
+                  <span class="table-alerts-indicator critical"></span>
+                  Critical
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse1">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse1 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse1">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse1">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse1">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse1 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse2">
+                  <span class="table-alerts-indicator critical"></span>
+                  Critical
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse2">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse2 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse2">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse2">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse2">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse2 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox3">
+                    <label for="checkbox3"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse3">
+                  <span class="table-alerts-indicator high"></span>
+                  High
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse3">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse3 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse3">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse3">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse3">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse3 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox4">
+                    <label for="checkbox4"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse4">
+                  <span class="table-alerts-indicator high"></span>
+                  High
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse4">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse4 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse4">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse4">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse4">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse4 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox5">
+                    <label for="checkbox5"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse5">
+                  <span class="table-alerts-indicator low"></span>
+                  Low
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse5">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse5 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse5">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse5">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse5">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse5 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox6">
+                    <label for="checkbox6"></label>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse6">
+                  <span class="table-alerts-indicator low"></span>
+                  Low
+                </td>
+
+                <td class="wide" data-toggle="collapse" data-target=".collapse6">
+                  Connectivity failure
+                  <div class="table-alerts-text">
+                    <div class="excerpt collapse collapse6 in">Lorem ipsum dolor sit amet, consectetur...</div>
+                    <div class="body collapse collapse6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                  </div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse6">
+                  Table 001
+                  <div class="table-alerts-text">Area 1 / Pit 1</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse6">
+                  01:24:22 PM
+                  <div class="table-alerts-text">10/10/2015</div>
+                </td>
+
+                <td data-toggle="collapse" data-target=".collapse6">
+                  New
+                </td>
+
+                <td class="table-alerts-buttons">
+                  <div class="table-alerts-buttons-container collapse collapse6 fade">
+                    <div class="table-alerts-buttons-wrapper">
+                      <a href="#" class="btn btn-secondary">MARK AS UNREAD</a>
+                      <a href="#" class="btn btn-primary btn-close">CLOSE</a>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
+
+      </div><!-- .container -->
+
+    </section>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../../js/table.js"></script>
+    <script src="../../js/dropdowns.js"></script>
+    <script src="../../js/buttons.js"></script>
+    <script src="../../js/filters.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/forms.js"></script>
+    <script src="../../js/main.js"></script>
+
+  </body>
+</html>

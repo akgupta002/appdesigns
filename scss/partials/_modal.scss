@@ -1,0 +1,129 @@
+.modal-vouchers {
+  .modal-dialog:not(.fluid-dialog):not(.full-width-dialog) {
+    overflow:hidden;
+  }
+  .modal-dialog {
+    max-height: 90%;
+    position:relative;
+    width: calc(100vw - 200px);
+  }
+
+  .modal-content {
+    padding: 0 20px;
+  }
+  .modal-body {
+    margin-bottom:70px;
+  }
+  .dummy-para {
+    margin-bottom: 0;
+
+    ~ .btn {
+      padding: 5px;
+    }
+  }
+  .table-wrapper {
+    padding-top: 4em;
+  }
+  .sorting-btns {
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 10px;
+    height: 100%;
+
+    .caret {
+      border-width: 4px;
+      margin-left:0;
+      position:absolute;
+
+      &-up {
+        top:13px;
+      }
+      &-down {
+        top:19px;
+      }
+    }
+  }
+  td > .caret {
+    position: relative;
+    margin-left:0;
+    margin-right: -8px;
+    top: 8px;
+
+    &-right {
+      margin-right:-5px;
+      top:5px;
+    }
+  }
+  .table-default thead {
+    background-color: transparent;
+  }
+
+  .has-fixed-header .container1 {
+    height: calc(100vh - 322px);
+  }
+
+  .well {
+    border-color: #eee7dd;
+    background-color: #eee7dd;
+    padding: 4px;
+  }
+  td[colspan="9"] {
+    padding:0 20px;
+  }
+  .modal-footer {
+    background-color: white;
+    position:absolute;
+    bottom:5px;
+    left:15px;
+    right:15px;
+    height:70px;
+  }
+}
+
+.voucher-indicator {
+  display: inline-block;
+  width:14px;
+  height:14px;
+  margin-right: 4px;
+  margin-left: -8px;
+  vertical-align: 0%;
+}
+.status {
+  &-issued {
+    background-image: url("../assets/icons/icon-created.svg");
+  }
+  &-active {
+    background-image: url("../assets/icons/icon-active.svg");
+  }
+}
+.voucher {
+  &.expanded {
+    background-color: rgba(187,145,86,0.1);
+
+    >td {
+      color: gray;
+    }
+  }
+  &:hover {
+    background-color: rgba(187,145,86,0.1);
+  }
+
+  &.selected {
+    background-color: rgba(187,145,86,0.3);
+  }
+}
+
+
+
+.modal-footer.affix-bottom {
+  bottom: 0;
+  position: absolute;
+  width: calc(100vw - 100px);
+}
+
+
+
+
+
+

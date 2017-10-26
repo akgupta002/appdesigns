@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Popover</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-4">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              LEFT DROPDOWN
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-4 text-center">
+
+          <div class="dropdown dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              CENTER DROPDOWN
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-4">
+
+          <div class="dropdown pull-right dropdown-right">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              RIGHT DROPDOWN
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="demo-dropdown-placeholder"><!-- Demo Placeholder --></div>
+
+      <div class="row">
+
+        <div class="col-xs-6">
+
+          <div class="dropdown dropside">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              LEFT SIDE DROPDOWN
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-6">
+
+          <div class="dropdown dropside pull-right dropside-right">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              RIGHT SIDE DROPDOWN
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="demo-dropdown-placeholder"><!-- Demo Placeholder --></div>
+
+      <div class="row">
+
+        <div class="col-xs-6">
+
+          <div class="dropup">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              LEFT DROPUP
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-6">
+
+          <div class="dropup pull-right dropdown-right">
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              RIGHT DROPUP
+            </button>
+
+            <div class="dropdown-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <p><button class="btn btn-primary demo-toggle-dropdown-height">TOGGLE HEIGHT</button></p>
+                  <div class="demo-tall-dropdown-content"></div>
+                </div>
+              </div>
+
+              <div class="dropdown-footer">
+                <button class="btn btn-secondary btn-close-dropdown">CLOSE</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Wrapper can be any element, but it needs to have class name <code>.dropdown</code>. Toggle element needs to contain attribure <code>data-toggle="dropdown"</code> and be located inside the wrapper.</p>
+
+        <p>Possible positioning classes for the wrapper: <code>.dropdown-center</code>, <code>.dropdown-right</code>, <code>.dropside</code>, <code>.dropside-right</code> and <code>.dropup</code>. These classes position the dropdown element relative to the wrapper.</p>
+
+        <p>Dropdown closes from a click outside the dropdown or from an element inside the wrapper with class name <code>.btn-close-dropdown</code></p>
+
+        <p>Requires <code>dropdowns.js</code></p>
+
+      </div>
+
+      <pre class="prettyprint"><code>
+<div class="dropdown">
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    Toggle dropdown
+  </button>
+  <div class="dropdown-menu">
+    <div class="dropdown-header">
+      {Dropdown header}
+    </div>
+    <div class="dropdown-body">
+      <div class="dropdown-content">
+        {Dropdown content}
+      </div>
+    </div>
+    <div class="dropdown-footer">
+      {Dropdown footer}
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/dropdowns.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

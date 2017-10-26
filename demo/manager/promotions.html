@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Perfect Pay UI Library</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+  <body class="has-header has-sub-header">
+
+    <header class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="nav navbar-nav">
+
+          <ul class="breadcrumbs clearfix">
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link"><span class="glyphicon icon-breadcrumbs-casino"></span></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link">Area 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-item-link">Pit 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <span class="breadcrumb-item-link">Table 001</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown dropdown-center application-menu">
+
+            <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-application-menu"></span>
+              Casino Manager
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="application-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-casino-manager"></span>
+                          </div>
+                          Casino Manager
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-configurations"></span>
+                          </div>
+                          Configuration
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="clearfix">
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application YX
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="application-menu-item application-menu-separator-top">
+
+                        <a href="#" class="application-menu-item-link">
+                          <div class="application-menu-item-icon">
+                            <span class="glyphicon icon-application-placeholder"></span>
+                          </div>
+                          Application XY
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="navbar-search">
+
+            <div class="navbar-input-search-wrapper input-search-wrapper">
+              <input type="text" class="form-control input-text navbar-input-search input-search" placeholder="Search..." />
+              <span class="glyphicon icon-search-input"></span>
+
+              <a class="input-search-clear">
+                <span class="glyphicon icon-close-sm"></span>
+              </a>
+            </div>
+
+            <a class="navbar-search-show">
+              <span class="glyphicon icon-search navbar-icon-search"></span>
+            </a>
+
+          </li>
+
+          <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+
+            <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="navbar-casino-alerts-indicator has-alerts"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="casino-alerts">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+
+                  <div class="dropdown-alert-filters-header clearfix">
+                    <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                    <span class="dropdown-alert-filter-separator">|</span>
+                    <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                    <a class="dropdown-alert-filter-link pull-right">SEE ALL (5)</a>
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-high">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#alert3">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#alert4">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                    <div class="dropdown-item-box dropdown-alert-box">
+
+                      <header class="dropdown-alert-box-header clearfix">
+                        <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                        <span class="dropdown-alert-box-time pull-right">2 h</span>
+                      </header>
+
+                      <div class="dropdown-alert-box-body clearfix">
+                        <a class="dropdown-alert-box-expand-link" data-target="#alert5">Area 1 / Pit 2</a>
+                        <div class="dropdown-alert-box-expandable collapse" id="alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                        <button class="btn btn-primary pull-right" type="button">DONE</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="dropdown dropdown-right user-menu">
+
+            <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Mark F. <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="user-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Change language</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">View account</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </header><!-- .navbar -->
+
+
+    <header class="navbar navbar-fixed-top sub-navbar">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <span class="navbar-brand">
+            <img src="../../assets/img/logo-mgm-grand.svg" class="navbar-brand-logo">
+          </span>
+        </div>
+
+        <ul class="nav navbar-nav navbar-left">
+          <li  class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Tables open</div>
+            <div class="item-data-value sub-navbar-data-value">122/159</div>
+          </li>
+
+          <li  class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Staff/Players</div>
+            <div class="item-data-value sub-navbar-data-value">108/1108</div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Last 6 hours</div>
+            <div class="item-data-value sub-navbar-data-value">2,500,000</div>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-right">
+
+            <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-action-menu"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="action-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Chip inventory</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Create a tournament</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Roll all tables</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Another global function</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </header><!-- .sub-navbar -->
+
+    <div class="modal fade" id="modal-promotions" tabindex="-1" role="dialog" aria-labelledby="modal-promotions" style="border-radius: 6px;">
+      <div class="modal-dialog" role="document" style="width:90%;">
+        <div class="modal-content">
+
+          <header class="modal-header">
+            <h4 class="modal-title">Promotions</h4>
+          </header>
+
+          <div class="clearfix"></div>
+
+          <header class="row">
+            <div class="col-xs-12">
+              <div class="pull-right">
+
+                <a class="tab-content-action-link collapsed" role="button" data-toggle="collapse" href="#filters-table-promotions" aria-expanded="false" aria-controls="filters-table-promotions">
+                  <span class="caret"></span> Filters
+                </a>
+
+              </div>
+            </div>
+
+          </header>
+          <div class="collapse table-filters" id="filters-table-promotions">
+            <div class="row table-filters-content">
+              <div class="col-xs-2">
+
+                <div class="filter-title">
+                  <span translate="">Status</span>
+                </div>
+
+                <div class="dropdown dropdown-block">
+                  <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-pstatus-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    All <span class="caret"></span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="filters-pstatus-filter">
+                    <div class="dropdown-body">
+                      <div class="dropdown-content">
+                        <ul class="nav dropdown-nav">
+
+                          <li class="dropdown-nav-item">
+                            <div class="dropdown-nav-link">
+                              <div class="checkbox">
+                                <input type="checkbox" class="input-checkbox" id="game-area1">
+                                <label for="game-area1">Active</label>
+                                <span class="pull-right">100</span>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-2">
+
+                <div class="filter-title">
+                  <span translate="">Date From</span>
+                </div>
+
+                <!--<div class="dropdown dropdown-block dropdown-right">-->
+                  <div class="input-append date datetimepicker">
+                    <div class="input-group">
+                      <input type="text" class="form-control input-text input-datetimepicker empty" data-format="MM/dd/yyyy hh:mm:ss PP">
+                      <a class="add-on input-group-addon">
+                        <span class="glyphicon icon-calendar"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                <!--</div>-->
+
+              </div>
+              <div class="col-xs-2">
+
+                <div class="filter-title">
+                  <span translate="">Date To</span>
+                </div>
+
+                <!--<div class="dropdown dropdown-block dropdown-right">-->
+                  <div class="input-append date datetimepicker">
+                    <div class="input-group">
+                      <input type="text" class="form-control input-text input-datetimepicker empty" data-format="MM/dd/yyyy hh:mm:ss PP">
+                      <a class="add-on input-group-addon">
+                        <span class="glyphicon icon-calendar"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                <!--</div>-->
+
+              </div>
+
+              <div class="buttons-wrapper" style="margin: 20px 15px 0 0;">
+                <button type="button" class="btn btn-primary btn-margins" translate="">Apply Filter</button>
+                <button type="button" class="btn btn-secondary" translate="">Clear Filter</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="clearfix"></div>
+
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="table-responsive">
+                  <table class="table-default" style="background-color: #eee7dd; min-height: 50vh;">
+                    <thead>
+                    <tr>
+                      <th class="sorting">Status</th>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Groups</th>
+                      <th class="text-center">Amount</th>
+                      <th>
+                        <!-- Intentionally left blank -->
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="">
+                      <td class="" data-toggle="collapse" data-target=".collapse1">
+                        <div class="dropdown status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                        <span class="icon saved"></span>
+                                        <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon terminated"></span>-->
+                                      <!--<span class="status-lable">Terminated</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon cancelled"></span>-->
+                                      <!--<span class="status-lable">Cancelled</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td data-toggle="collapse" data-target=".collapse1">1001</td>
+                      <td data-toggle="collapse" data-target=".collapse1">Promo CNY</td>
+                      <td data-toggle="collapse" data-target=".collapse1">22-Jan-2017</td>
+                      <td data-toggle="collapse" data-target=".collapse1">VIP Group</td>
+                      <td data-toggle="collapse" data-target=".collapse1">
+                        <div class="text-center" data-target=".collapse1">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+                      <td data-toggle="collapse" data-target=".collapse1">
+                        <span class="caret caret-right pull-right"></span>
+                      </td>
+
+                    </tr>
+                    <tr class="collapse1 collapse" aria-expanded="false" style="height: 0;">
+                      <td colspan="7">
+                        <h3>Promotional Details</h3>
+                        <table class="table-default">
+                          <thead>
+                          <tr>
+                            <th>Table</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Player ID</th>
+                            <th>Player Name</th>
+                            <th>PP ID</th>
+                            <th>Amount Paid</th>
+                            <th>Player W/L</th>
+                            <th>Player Theo Win</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>Tab01</td>
+                            <td>22-Jan-2017</td>
+                            <td>01:05</td>
+                            <td>1234</td>
+                            <td>Alex Chang</td>
+                            <td>123</td>
+                            <td>5,000</td>
+                            <td>8,000</td>
+                            <td>2,000</td>
+                          </tr>
+                          <tr>
+                            <td>Tab02</td>
+                            <td>22-Jan-2017</td>
+                            <td>02:15</td>
+                            <td>1259</td>
+                            <td>Steve Chang</td>
+                            <td>234</td>
+                            <td>2,000</td>
+                            <td>4,000</td>
+                            <td>1,000</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="dropdown status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon terminated"></span>-->
+                                      <!--<span class="status-lable">Terminated</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                    <!--<a class="dropdown-nav-link">-->
+
+                                      <!--<span class="icon cancelled"></span>-->
+                                      <!--<span class="status-lable">Cancelled</span>-->
+
+                                    <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+                      <td data-toggle="collapse">
+                        <span class="caret caret-right pull-right"></span>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="dropdown status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon terminated"></span>-->
+                                  <!--<span class="status-lable">Terminated</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon cancelled"></span>-->
+                                  <!--<span class="status-lable">Cancelled</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+                      <td data-toggle="collapse">
+                        <span class="caret caret-right pull-right"></span>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="dropup status">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-placement="top">
+                            <div class="icon active pull-left">
+                            </div>
+                            <div class="caret caret-up pull-right"></div>
+                          </button>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-body">
+                              <div class="dropdown-content">
+                                <ul class="nav dropdown-select-nav">
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon saved"></span>
+                                      <span class="status-lable">Saved</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon created"></span>
+                                      <span class="status-lable">Created</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon scheduled"></span>
+                                      <span class="status-lable">Scheduled</span>
+
+                                    </a>
+                                  </li>
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon active"></span>
+                                      <span class="status-lable">Active</span>
+
+                                    </a>
+                                  </li>
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon terminated"></span>-->
+                                  <!--<span class="status-lable">Terminated</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <!--<li class="dropdown-nav-item">-->
+                                  <!--<a class="dropdown-nav-link">-->
+
+                                  <!--<span class="icon cancelled"></span>-->
+                                  <!--<span class="status-lable">Cancelled</span>-->
+
+                                  <!--</a>-->
+                                  <!--</li>-->
+                                  <li class="dropdown-nav-item">
+                                    <a class="dropdown-nav-link">
+
+                                      <span class="icon completed"></span>
+                                      <span class="status-lable">Completed</span>
+
+                                    </a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>1001</td>
+                      <td>Promo CNY</td>
+                      <td>22-Jan-2017</td>
+                      <td>VIP Group</td>
+                      <td>
+                        <div class="text-center">10,000</div>
+                        <div class="total-amount-band">
+                          <span class="pull-right" style="padding-top:4px;" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">100%</span>
+                          <span class="part-amount-band" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            40%
+                          </span>
+                        </div>
+                      </td>
+                      <td data-toggle="collapse">
+                        <span class="caret caret-right pull-right"></span>
+                      </td>
+
+                    </tr>
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="main-content">
+
+      <div class="container-fluid">
+
+        <ul class="nav nav-tabs" role="tablist">
+
+          <li role="presentation" class="active">
+            <a href="#tab1" class="tab" aria-controls="tab1" role="tab" data-toggle="tab">OVERVIEW</a>
+          </li>
+
+          <li role="presentation">
+            <a href="#tab2" class="tab" aria-controls="tab2" role="tab" data-toggle="tab">TABLES</a>
+          </li>
+
+        </ul>
+
+        <div class="tab-content main-tab-content">
+
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-promotions">
+            Promotions
+          </button>
+
+          <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+
+            <div class="row">
+
+              <div class="col-xs-8">
+
+                <header class="content-header tab-content-header clearfix">
+
+                  <h3 class="tab-content-header-title">12 Gaming areas</h3>
+
+                  <div class="dropdown dropdown-select pull-right">
+
+                    <span class="dropdown-prefix">
+                      Sort by
+                    </span>
+
+                    <button class="btn btn-secondary dropdown-toggle select-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      AREA
+                      <span class="caret"></span>
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdown2">
+
+                      <div class="dropdown-body">
+                        <div class="dropdown-content">
+                          <ul class="nav dropdown-select-nav">
+
+                            <li class="dropdown-nav-item">
+                              <a href="#" class="dropdown-nav-link">Tables</a>
+                            </li>
+
+                            <li class="dropdown-nav-item">
+                              <a href="#" class="dropdown-nav-link">Utilization</a>
+                            </li>
+
+                            <li class="dropdown-nav-item">
+                              <a href="#" class="dropdown-nav-link">Win / Loss</a>
+                            </li>
+
+                            <li class="dropdown-nav-item">
+                              <a href="#" class="dropdown-nav-link">Turnover</a>
+                            </li>
+
+                            <li class="dropdown-nav-item">
+                              <a href="#" class="dropdown-nav-link">Players</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </header>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Area 1</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">124/200</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">72%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">389</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Area 2</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">45/120</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">45%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">232</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Area 3</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">42/90</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">35%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">121</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Area 4</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">20/35</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">35%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">65</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Vip Room 1</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">9/15</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">67%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">16</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="item-view-row">
+
+                  <h3 class="item-view-row-header">Vip Room 2</h3>
+
+                  <div class="row">
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Tables</div>
+                      <div class="item-data-value item-view-data-value">9/15</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Utilization</div>
+                      <div class="item-data-value item-view-data-value">67%</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Win / Loss</div>
+                      <div class="item-data-value item-view-data-value">$120,000</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="item-data-label item-view-data-label">Turnover</div>
+                      <div class="item-data-value item-view-data-value">2,500,000</div>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <div class="item-data-label item-view-data-label">Players</div>
+                      <div class="item-data-value item-view-data-value">16</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-xs-4">
+
+                <header class="content-header tab-content-header before-list-header clearfix">
+
+                  <h3 class="tab-content-header-title">Players</h3>
+
+                </header>
+
+                <h4 class="list-header">WINNING TOP 10</h4>
+
+                <ul class="list-unstyled list-players">
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">James Stevenson</a>
+                    <span class="pull-right">$123,400</span>
+                  </li>
+                </ul>
+
+                <h4 class="list-header">LOSING TOP 10</h4>
+
+                <ul class="list-unstyled list-players">
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                  <li class="list-item">
+                    <a href="#" class="item-data-label">Lisa Smith</a>
+                    <span class="pull-right">($20,000)</span>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane fade" id="tab2">
+
+            <div class="row">
+
+              <div class="col-xs-12">
+
+                <header class="content-header tab-content-header clearfix">
+
+                  <h3 class="tab-content-header-title">34 Tables</h3>
+
+                  <div class="pull-right">
+
+                    <a class="tab-content-action-link collapsed" role="button" data-toggle="collapse" href="#filters-table-tables" aria-expanded="false" aria-controls="filters-table-tables">
+                      <span class="caret"></span> FILTERS
+                    </a>
+
+                    <div class="btn-group" data-toggle="buttons-radio">
+                      <a href="#game-table-view-grid" role="button" data-toggle="button" class="btn btn-toggle btn-sm btn-primary active" aria-controls="game-table-view-grid">
+                        <span class="glyphicon icon-grid"></span>
+                      </a>
+                      <a href="#game-table-view-list" role="button" data-toggle="button" class="btn btn-toggle btn-sm btn-primary" aria-controls="game-table-view-list">
+                        <span class="glyphicon icon-list"></span>
+                      </a>
+                    </div>
+
+                  </div>
+
+                </header>
+
+                <div class="collapse table-filters" id="filters-table-tables">
+                  <div class="row table-filters-content">
+
+                    <div class="col-xs-2">
+
+                      <div class="filter-title">
+                        AREA
+                      </div>
+
+                      <div class="dropdown dropdown-block">
+
+                        <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-area-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          ANY <span class="caret"></span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="filters-area-filter">
+
+                          <div class="dropdown-body">
+                            <div class="dropdown-content">
+
+                              <ul class="nav dropdown-nav">
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-area1">
+                                      <label for="game-area1">AREA 1</label>
+                                      <span class="pull-right">100</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-area2">
+                                      <label for="game-area2">AREA 2</label>
+                                      <span class="pull-right">1000</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-area3">
+                                      <label for="game-area3">AREA 3</label>
+                                      <span class="pull-right">10</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-area4">
+                                      <label for="game-area4">AREA 4</label>
+                                      <span class="pull-right">0</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-area5">
+                                      <label for="game-area5">AREA 5</label>
+                                      <span class="pull-right">10</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                              </ul>
+
+                            </div>
+                          </div>
+
+                          <div class="dropdown-footer text-center">
+                            <a href="#" class="btn btn-secondary">CLEAR</a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-2">
+
+                      <div class="filter-title">
+                        STATUS
+                      </div>
+
+                      <div class="dropdown dropdown-block">
+
+                        <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-status-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          ANY <span class="caret"></span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="filters-status-filter">
+
+                          <div class="dropdown-body">
+                            <div class="dropdown-content">
+
+                              <ul class="nav dropdown-nav">
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-status1">
+                                      <label for="game-status1">OPEN</label>
+                                      <span class="pull-right">100</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-status2">
+                                      <label for="game-status2">CLOSED</label>
+                                      <span class="pull-right">1000</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-status3">
+                                      <label for="game-status3">SLEEP MODE</label>
+                                      <span class="pull-right">10</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-status4">
+                                      <label for="game-status4">POWERED OFF</label>
+                                      <span class="pull-right">0</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <div class="dropdown-nav-link">
+                                    <div class="checkbox">
+                                      <input type="checkbox" class="input-checkbox" id="game-status5">
+                                      <label for="game-status5">TOURNAMENT</label>
+                                      <span class="pull-right">10</span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                              </ul>
+
+                            </div>
+                          </div>
+
+                          <div class="dropdown-footer text-center">
+                            <a href="#" class="btn btn-secondary">CLEAR</a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-2">
+
+                      <div class="filter-title">
+                        WIN/LOSS
+                      </div>
+
+                      <div class="dropdown dropdown-block">
+
+                        <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-winloss-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          0-8000 <span class="caret"></span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="filters-winloss-filter">
+
+                          <div class="dropdown-body">
+                            <div class="dropdown-content filters-slider">
+
+                              <div class="filters-slider-header">
+                                <span class="filters-slider-header-min">0</span> -
+                                <span class="filters-slider-header-max">8000</span>
+                              </div>
+
+                              <div class="filters-slider-range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+
+                              <div class="filters-slider-footer">
+                                <div class="row">
+                                  <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+                                    Losing
+                                  </div>
+                                  <div class="col-xs-5 text-center">
+                                    Winning
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="dropdown-footer text-center">
+                            <a href="#" class="btn btn-secondary">CLEAR</a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-2">
+
+                      <div class="filter-title">
+                        VARIANCE
+                      </div>
+
+                      <div class="dropdown dropdown-block">
+
+                        <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-variance-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          0-8000 <span class="caret"></span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="filters-variance-filter">
+
+                          <div class="dropdown-body">
+                            <div class="dropdown-content filters-slider">
+
+                              <div class="filters-slider-header">
+                                <span class="filters-slider-header-min">0</span> -
+                                <span class="filters-slider-header-max">8000</span>
+                              </div>
+
+                              <div class="filters-slider-range" data-range="true" data-min="-10000" data-max="10000" data-values="[0, 8000]" data-step="500"></div>
+
+                              <div class="filters-slider-footer">
+                                <div class="row">
+                                  <div class="col-xs-5 col-xs-offset-1 text-center separator-right">
+                                    Losing
+                                  </div>
+                                  <div class="col-xs-5 text-center">
+                                    Winning
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="dropdown-footer text-center">
+                            <a href="#" class="btn btn-secondary">CLEAR</a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-4">
+
+                      <div class="filter-title">
+                        GAMING DAY
+                      </div>
+
+                      <div class="btn-group" data-toggle="buttons-radio">
+
+                        <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary">
+                          4/10
+                        </a>
+
+                        <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary active">
+                          5/10
+                        </a>
+
+                        <a href="#" role="button" data-toggle="button" class="btn btn-toggle btn-secondary">
+                          6/10
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="fade in active" id="game-table-view-grid">
+                  <div class="game-table-cards clearfix">
+
+                    <div class="game-table-card open">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 001</h3>
+
+                        <div class="alert-indicator has-alerts">
+                          <div class="alert-count">3</div>
+                        </div>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player seated"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1 seated"></div>
+                          <div class="game-table-player main-player seated"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player seated"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2 seated"></div>
+                          <div class="game-table-player back-better-1 seated"></div>
+                          <div class="game-table-player main-player seated"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player seated starred"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 002</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 003</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 004</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 005</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 006</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 007</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-table-card closed">
+
+                      <header class="game-table-card-header">
+
+                        <h3>TABLE 008</h3>
+
+                      </header>
+
+                      <div class="game-table-visualizer">
+
+                        <div class="game-table"></div>
+
+                        <div class="game-table-player-group game-table-player-group-1">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-2">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-3">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-4">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-5">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-6">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                        <div class="game-table-player-group game-table-player-group-7">
+                          <div class="game-table-player back-better-2"></div>
+                          <div class="game-table-player back-better-1"></div>
+                          <div class="game-table-player main-player"></div>
+                        </div>
+
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Win / Loss</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Limits</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Variance</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                      <div class="game-table-card-data-row">
+                        <div class="item-data-label">Game Day</div>
+                        <div class="item-data-value">100,000,000</div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="fade hidden" id="game-table-view-list">
+                  <div class="table-responsive">
+
+                    <table class="table-default table-tables sticky-table-header">
+                      <thead>
+
+                        <tr>
+                          <th>Area</th>
+                          <th>Table</th>
+                          <th>Status</th>
+                          <th>Win/Loss</th>
+                          <th>Variance</th>
+                          <th>Gaming Day</th>
+                          <th>Limits</th>
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 001</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 002</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 003</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 004</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 005</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 006</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 007</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 008</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 009</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 010</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 011</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 012</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 013</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 014</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 015</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 016</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 017</span></td>
+                          <td>Closed</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 018</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 019</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 020</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 021</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 022</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 023</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                        <tr>
+                          <td>Zone 3 / Area 2 / Pit 1</td>
+                          <td><span class="highlight">Table 024</span></td>
+                          <td>Open</td>
+                          <td>120,000,000</td>
+                          <td>12,000,000</td>
+                          <td>11/06</td>
+                          <td>500,000-100,000,000</td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><!-- .container -->
+
+    </section>
+
+
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../../js/table.js"></script>
+    <script src="../../js/dropdowns.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/modals.js"></script>
+    <script src="../../js/buttons.js"></script>
+    <script src="../../js/filters.js"></script>
+    <script src="../../js/alerts.js"></script>
+    <script src="../../js/forms.js"></script>
+    <script src="../../js/main.js"></script>
+
+
+  </body>
+</html>

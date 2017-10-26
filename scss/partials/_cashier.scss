@@ -1,0 +1,111 @@
+//ns should be used: 'buyin'
+
+.navbar {
+  height: 50px;
+}
+
+.nav-justified {
+  > li {
+    border-right: 1px solid #7d161b;
+
+    > a
+    {
+      line-height: 35px;
+      padding: 8px 12px;
+      margin:0;
+      width: 100%;
+      color: #bb9156;
+      height: 50px;
+    }
+
+    > a,
+    &.active > a,
+    &.active > a:hover
+    {
+      border: 0;
+      border:none;
+    }
+
+    > a,
+    &.active > a,
+    &.active > a:hover
+    {
+      background: none;
+      border-radius: 0;
+    }
+
+    > a,
+    > a:hover,
+    > a:not(.btn):hover,
+    > a:not(.btn):focus
+    {
+      background-color: #9c1c23;
+    }
+
+    &.active > a,
+    &.active > a:hover,
+    > a:hover,
+    > a:not(.btn):hover,
+    > a:not(.btn):focus
+    {
+      color: white;
+    }
+
+    &.active > a,
+    &.active > a:hover
+    {
+      background-color: #bb9156;
+    }
+  }
+}
+
+//fix the height of buyin-categories
+.buyin-categories {
+  height: 50px;
+  background-color: rgba(187, 145, 86, .2);
+
+ //align radio buttons horizontally
+ .form-group {
+   display: inline-block;
+   padding-right: 30px;
+   margin-bottom: 0;
+
+   &:first-child {
+     padding-left: 15px;
+   }
+ }
+
+ //increase the size of radio buttons
+ .radio {
+   line-height: 50px;
+
+   label {
+     line-height: 30px;
+     padding-left: 15px;
+
+     //enlarge the radio button size
+     &:before {
+       width: 30px;
+       height: 30px;
+       border-width: 3px;
+     }
+   }
+
+   //resize of radio clicked state
+   .input-radio:checked + label:after {
+     top: 7px;
+     left: 7px;
+     width: 16px;
+     height: 16px;
+   }
+
+   //resize and aligning radio hotspot
+   input[type='radio']{
+     top: 12px;
+     left: 0;
+     width: 30px;
+     height: 30px;
+     margin: 0;
+   }
+ }
+}

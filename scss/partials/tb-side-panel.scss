@@ -1,0 +1,97 @@
+//Style for #tb-edit-panel
+
+.has-drop-shadow {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.rt-bdr {
+  border-right: 1px dashed #bb9156;
+}
+
+.btm-bdr {
+  border-bottom: 1px dashed #bb9156;
+}
+
+.tb-result-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 520px;
+  margin:0;
+  padding: 15px;
+  position: relative;
+  width: 450px;
+  transition: all 400ms ease-in;
+
+  header, main, footer {
+    margin-bottom: 15px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+  }
+
+  #btn-edit {
+    left: 0;
+    transition: left 200ms ease-out;
+    transition-delay: 200ms;
+  }
+
+  &.hide-panel {
+    margin-left: -500px !important;
+
+    #btn-edit {
+      left: 125px;
+    }
+  }
+}
+
+.box, .inner-box {
+  display: flex;
+}
+
+.box {
+  border: 2px solid #bb9156;
+  border-radius: 6px;
+  position: relative;
+}
+
+.inner-box {
+  height: auto;
+  flex-direction: column;
+  width: 33.33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-most-box {
+  min-height: 75px;
+  padding: 15px;
+  width:100%;
+
+  .btn {
+    height: 44px;
+    width: 100%;
+    background-color: rgba(187, 145, 86, 0.15);
+    color: rgba(187, 145, 86, 0.5);
+    border: none;
+
+    &:hover {
+      background-color: rgba(187, 145, 86, 0.5);
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      color: rgba(187, 145, 86, 1);
+      cursor: move;
+    }
+  }
+}
+
+.down-arw:after {
+  content: '';
+  border-bottom: 0;
+  border-top: 8px solid #bb9156;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 48%;
+  bottom: -10px;
+}

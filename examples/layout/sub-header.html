@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+
+  <body class="has-sub-header">
+
+    <header class="navbar navbar-fixed-top sub-navbar">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <span class="navbar-brand">
+            <img src="../../assets/img/logo-mgm-grand.svg" class="navbar-brand-logo">
+          </span>
+        </div>
+
+        <ul class="nav navbar-nav navbar-left">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Tables open</div>
+            <div class="item-data-value sub-navbar-data-value">122/159</div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Staff/Players</div>
+            <div class="item-data-value sub-navbar-data-value">108/1108</div>
+          </li>
+
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Last 6 hours</div>
+            <div class="item-data-value sub-navbar-data-value">2,500,000</div>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-right">
+
+            <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon icon-action-menu"></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="action-menu">
+
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Chip inventory</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Create a tournament</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Roll all tables</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Another global function</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </header><!-- .sub-navbar -->
+
+
+    <section class="main-content">
+
+      <div class="container">
+      </div><!-- .container -->
+
+
+      <!-- Documentation -->
+
+      <div class="container documentation">
+
+        <div class="well">
+
+          <p>Sub-header is fixed to the top of the screen below the header and has high enough z-index to keep it on top of most elements.</p>
+
+          <p>When using the sub-header, body should have class name <code>.has-sub-header</code>. This gives <code>.main-content</code> the same amount of top padding as the height of the sub-header so that content wouldn't be hidden behind the sub-header.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<header class="navbar navbar-fixed-top sub-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-brand">
+        <img src="../../assets/img/logo-mgm-grand.svg" class="navbar-brand-logo">
+      </span>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+      <li class="sub-navbar-data-group">
+        <div class="item-data-label sub-navbar-data-label">Tables open</div>
+        <div class="item-data-value sub-navbar-data-value">122/159</div>
+      </li>
+
+      <li class="sub-navbar-data-group">
+        <div class="item-data-label sub-navbar-data-label">Staff/Players</div>
+        <div class="item-data-value sub-navbar-data-value">108/1108</div>
+      </li>
+
+      <li class="sub-navbar-data-group">
+        <div class="item-data-label sub-navbar-data-label">Last 6 hours</div>
+        <div class="item-data-value sub-navbar-data-value">2,500,000</div>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown dropdown-right">
+        <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="glyphicon icon-action-menu"></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="action-menu">
+          ...
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
+        </code></pre>
+
+      </div>
+
+    </section>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../js/dropdowns.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../../vendor/prettify/css/prettify.css" />
+    <script src="../../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+/*
+Styles for Winning banners for Banker/Player/Tie
+*/
+.tb-flat-banner-wrapper {
+    height: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 800; }
+.tb-flat-banner-wrapper .game-results {
+    height: 100%;
+    margin-top: 6%;
+    position: absolute;
+    width: 100%;
+    z-index: 20; }
+.tb-flat-banner-wrapper .game-results .player-cards {
+    left: 8%;
+    width: 28%; }
+.tb-flat-banner-wrapper .game-results .banker-cards {
+    right: 13%;
+    width: 28%; }
+.tb-flat-banner-wrapper .player-cards,
+.tb-flat-banner-wrapper .banker-cards {
+    position: absolute;
+    top: 0; }
+.tb-flat-banner-wrapper .card {
+    box-shadow: 1em 0 4em rgba(0, 0, 0, 0.9);
+    height: 30em;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 22em; }
+.tb-flat-banner-wrapper .card.rot90 {
+    box-shadow: 1em 0 4em rgba(0, 0, 0, 0.9);
+    left: 31%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg); }
+.tb-flat-banner-wrapper .winning-chip {
+    background-color: dimgrey;
+    border-radius: 50%;
+    box-shadow: 4em 4em 8em rgba(0, 0, 0, 0.5);
+    height: 65em;
+    left: 35%;
+    opacity: 1;
+    position: absolute;
+    top: -1.5em;
+    width: 65em;
+    z-index: 30; }
+.tb-flat-banner-wrapper .winning-chip .ch {
+    position: absolute;
+    font-size: 40em;
+    left: 17%;
+    text-shadow: 10px 10px 10px yellow, -10px -10px 10px yellow; }
+.tb-flat-banner-wrapper .winning-chip.for-player .ch, .tb-flat-banner-wrapper .winning-chip.for-tie .ch {
+    left: 19%; }
+.tb-flat-banner-wrapper .winning-chip.for-big6 .ch {
+    font-size: 25em;
+    left: 13%;
+    top: -20%; }
+.tb-flat-banner-wrapper .winning-chip.for-big6 .ch > span {
+    font-size: 2em;
+    top: 150px;
+    position: relative; }
+
+.tb-flat-banners {
+    height: 100%;
+    left: 8%;
+    position: absolute;
+    width: 80%;
+    z-index: 10; }
+
+@media (max-width: 2600px) {
+    .tb-flat-banner-wrapper {
+        height: 700px;
+        top: 30%; }
+    .tb-flat-banner-wrapper .game-results {
+        margin-top: 6%; }
+    .tb-flat-banner-wrapper .game-results .player-cards {
+        left: 10%;
+        width: 28%; }
+    .tb-flat-banner-wrapper .game-results .banker-cards {
+        right: 13%;
+        width: 28%; }
+    .tb-flat-banner-wrapper .player-cards,
+    .tb-flat-banner-wrapper .banker-cards {
+        top: 0; }
+    .tb-flat-banner-wrapper .card {
+        box-shadow: 1em 0 4em rgba(0, 0, 0, 0.9);
+        height: 20.5em;
+        margin-left: 1em;
+        margin-right: 2em;
+        width: 15.1em; }
+    .tb-flat-banner-wrapper .card.rot90 {
+        box-shadow: 1em 0 4em rgba(0, 0, 0, 0.9);
+        left: 31%;
+        top: 50%; }
+    .tb-flat-banner-wrapper .winning-chip {
+        box-shadow: 4em 4em 8em rgba(0, 0, 0, 0.5);
+        height: 45em;
+        left: 35%;
+        top: -1.5em;
+        width: 45em; }
+    .tb-flat-banner-wrapper .winning-chip .ch {
+        font-size: 28em;
+        left: 17%;
+        text-shadow: 10px 10px 10px yellow, -10px -10px 10px yellow; }
+    .tb-flat-banner-wrapper .winning-chip.for-player .ch, .tb-flat-banner-wrapper .winning-chip.for-tie .ch {
+        left: 19%;
+        top: 4%; }
+    .tb-flat-banner-wrapper .winning-chip.for-big6 .ch {
+        font-size: 16em;
+        left: 13%;
+        top: -20%; }
+    .tb-flat-banner-wrapper .winning-chip.for-big6 .ch > span {
+        font-size: 2em;
+        top: 150px; }
+
+    .tb-flat-banners {
+        left: 8.5%; } }

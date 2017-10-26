@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body>
+
+  <section class="container-fluid">
+      <div class="col-xs-12" style="margin-top:15px;">
+          <button class="btn btn-primary"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#modal-bonuses">Launch Issue Print Voucher Modal</button>
+      </div>
+      <div class="col-xs-12">
+          <div class="modal fade modal-vouchers"
+               id="modal-bonuses"
+               tabindex="-1"
+               role="dialog"
+               aria-labelledby="myBonusModal">
+
+              <div class="modal-dialog" role="document" >
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title" id="myBonusModal">
+                              Issue/Print Voucher
+                          </h4>
+                      </div>
+                      <div class="modal-body">
+
+                          <section id="section-issue-print">
+
+                              <div class="row">
+                                  <div class="col-xs-12">
+                                      <div class="pull-right">
+
+                                          <a class="table-action-option collapsed"
+                                             role="button"
+                                             data-toggle="collapse"
+                                             href="#filters-bonuses"
+                                             aria-expanded="false"
+                                             aria-controls="filters-bonuses">
+                                              <span class="caret"></span> Filters
+                                          </a>
+
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12">
+                                      <div class="collapse table-filters" id="filters-bonuses">
+                                          <div class="row table-filters-content">
+
+                                              <div class="col-xs-2">
+
+                                                  <div class="filter-title">
+                                                      Status
+                                                  </div>
+
+                                                  <div class="dropdown dropdown-block">
+                                                      <button class="btn btn-secondary btn-block dropdown-toggle"
+                                                              type="button"
+                                                              id="filters-status-filter"
+                                                              data-toggle="dropdown"
+                                                              aria-haspopup="true"
+                                                              aria-expanded="true">
+                                                          All <span class="caret"></span>
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="filters-status-filter">
+                                                          <div class="dropdown-body">
+                                                              <div class="dropdown-content">
+                                                                  <ul class="nav dropdown-nav">
+                                                                      <li class="dropdown-nav-item">
+                                                                          <div class="dropdown-nav-link">
+                                                                              <div class="checkbox">
+                                                                                  <input type="checkbox" class="input-checkbox" id="paid1-status">
+                                                                                  <label for="paid1-status">Paid</label>
+                                                                                  <span class="pull-right">100</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-2">
+
+                                                  <div class="filter-title">
+                                                      Table
+                                                  </div>
+
+                                                  <div class="dropdown dropdown-block">
+                                                      <button class="btn btn-secondary btn-block dropdown-toggle"
+                                                              type="button" id="filters-table-filter"
+                                                              data-toggle="dropdown"
+                                                              aria-haspopup="true"
+                                                              aria-expanded="true">
+                                                          All <span class="caret"></span>
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="filters-table-filter">
+                                                          <div class="dropdown-body">
+                                                              <div class="dropdown-content">
+                                                                  <ul class="nav dropdown-nav">
+                                                                      <li class="dropdown-nav-item">
+                                                                          <div class="dropdown-nav-link">
+                                                                              <div class="checkbox">
+                                                                                  <input type="checkbox" class="input-checkbox" id="paid2-status">
+                                                                                  <label for="paid2-status">Paid</label>
+                                                                                  <span class="pull-right">100</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-2">
+
+                                                  <div class="filter-title">
+                                                      Player ID
+                                                  </div>
+
+                                                  <div class="dropdown dropdown-block">
+                                                      <button class="btn btn-secondary btn-block dropdown-toggle"
+                                                              type="button"
+                                                              id="filters-playerid-filter"
+                                                              data-toggle="dropdown"
+                                                              aria-haspopup="true"
+                                                              aria-expanded="true">
+                                                          All <span class="caret"></span>
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="filters-playerid-filter">
+                                                          <div class="dropdown-body">
+                                                              <div class="dropdown-content">
+                                                                  <ul class="nav dropdown-nav">
+                                                                      <li class="dropdown-nav-item">
+                                                                          <div class="dropdown-nav-link">
+                                                                              <div class="checkbox">
+                                                                                  <input type="checkbox" class="input-checkbox" id="paid3-status">
+                                                                                  <label for="paid3-status">Paid</label>
+                                                                                  <span class="pull-right">100</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-2">
+
+                                                  <div class="filter-title">
+                                                      Player Name
+                                                  </div>
+
+                                                  <div class="dropdown dropdown-block">
+                                                      <button class="btn btn-secondary btn-block dropdown-toggle"
+                                                              type="button"
+                                                              id="filters-playername-filter"
+                                                              data-toggle="dropdown"
+                                                              aria-haspopup="true"
+                                                              aria-expanded="true">
+                                                          All <span class="caret"></span>
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="filters-playername-filter">
+                                                          <div class="dropdown-body">
+                                                              <div class="dropdown-content">
+                                                                  <ul class="nav dropdown-nav">
+                                                                      <li class="dropdown-nav-item">
+                                                                          <div class="dropdown-nav-link">
+                                                                              <div class="checkbox">
+                                                                                  <input type="checkbox" class="input-checkbox" id="paid4-status">
+                                                                                  <label for="paid4-status">Paid</label>
+                                                                                  <span class="pull-right">100</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-2">
+
+                                                  <div class="filter-title">
+                                                      PP ID
+                                                  </div>
+
+                                                  <div class="dropdown dropdown-block">
+                                                      <button class="btn btn-secondary btn-block dropdown-toggle"
+                                                              type="button"
+                                                              id="filters-ppid-filter"
+                                                              data-toggle="dropdown"
+                                                              aria-haspopup="true"
+                                                              aria-expanded="true">
+                                                          All <span class="caret"></span>
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="filters-ppid-filter">
+                                                          <div class="dropdown-body">
+                                                              <div class="dropdown-content">
+                                                                  <ul class="nav dropdown-nav">
+                                                                      <li class="dropdown-nav-item">
+                                                                          <div class="dropdown-nav-link">
+                                                                              <div class="checkbox">
+                                                                                  <input type="checkbox" class="input-checkbox" id="paid5-status">
+                                                                                  <label for="paid5-status">Paid</label>
+                                                                                  <span class="pull-right">100</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-2">
+                                                  <div class="row">
+                                                      <p class="dummy-para">&nbsp;</p>
+                                                      <button type="button" class="btn btn-primary">Apply Filters</button>
+                                                      <button type="button" class="btn btn-secondary">Clear Filters</button>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="has-filters-above has-fixed-header">
+                                  <div class="table-wrapper">
+                                      <div class="container1">
+                                          <table class="table-default">
+                                              <thead>
+                                              <tr>
+                                                  <th>
+                                                      <div class="sorting-btns">
+                                                          <span class="caret caret-up"></span>
+                                                          <span class="caret caret-down"></span>
+                                                      </div>
+                                                      <div>Status</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Award ID</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Award Time</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Table</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Amount</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Session ID</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Player ID</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>Player Name</div>
+                                                  </th>
+                                                  <th>
+                                                      <div>PP ID</div>
+                                                  </th>
+                                                  <th style="width:1%;">
+                                                      <!--<div>&lt;!&ndash; Print Button&ndash;&gt;</div>-->
+                                                  </th>
+                                              </tr>
+                                              </thead>
+                                              <tbody>
+                                              <tr class="voucher">
+
+                                                  <td>
+                                                      <!--<span class="voucher-indicator status-issued"></span>-->
+                                                      Issued
+                                                  </td>
+                                                  <td>1</td>
+                                                  <td>04:40&nbsp;16-Mar-17</td>
+                                                  <td>Tab01</td>
+                                                  <td>200</td>
+                                                  <td>1</td>
+                                                  <td>10023</td>
+                                                  <td>Siep, Ten</td>
+                                                  <td>101</td>
+                                                  <td class="toggleCollapse" data-toggle="collapse"
+                                                      data-target=".collapse1"
+                                                      role="button"
+                                                      aria-expanded="false"
+                                                      aria-controls=".collapse1">
+                                                      <div class='text-center' style="width:100%;">
+                                                          <span class="caret caret-right pull-right"></span>
+                                                      </div>
+
+                                                      <!--<button class="btn btn-primary">-->
+                                                          <!---->
+                                                          <!--<span class="glyphicon glyphicon-plus-sign"></span>-->
+                                                      <!--</button>-->
+                                                  </td>
+
+                                              </tr>
+                                              <tr class="collapse collapse1">
+                                                  <td colspan="9">
+                                                      <div class="collapse collapse1">
+                                                          <div class="well">
+                                                              <table class="table-default">
+                                                                  <thead>
+                                                                  <tr>
+                                                                      <th>Bonus ID</th>
+                                                                      <th>Bonus Name</th>
+                                                                      <th>Expiration</th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr>
+                                                                      <td>1001</td>
+                                                                      <td>Promo HNY</td>
+                                                                      <td>12:00&nbsp;31-Mar-17</td>
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+                                              <tr class="voucher"
+                                                  data-toggle="collapse"
+                                                  data-target=".collapse2"
+                                                  role="button"
+                                                  aria-expanded="false"
+                                                  aria-controls=".collapse2">
+
+                                                  <td>
+                                                      <span class="voucher-indicator status-active"></span>
+                                                      Paid
+                                                  </td>
+                                                  <td>1</td>
+                                                  <td>04:40&nbsp;16-Mar-17</td>
+                                                  <td>Tab01</td>
+                                                  <td>200</td>
+                                                  <td>1</td>
+                                                  <td>10023</td>
+                                                  <td>Siep, Ten</td>
+                                                  <td>101
+                                                      <span class="caret caret-right pull-right"></span>
+                                                  </td>
+                                                  <td>
+                                                      <!--<button class="btn btn-primary btn-sm">-->
+                                                          <!--Print-->
+                                                      <!--</button>-->
+                                                  </td>
+
+                                              </tr>
+                                              <tr class="collapse collapse2">
+                                                  <td colspan="9">
+                                                      <div class="collapse collapse2">
+                                                          <div class="well">
+                                                              <table class="table-default">
+                                                                  <thead>
+                                                                  <tr>
+                                                                      <th>Bonus ID</th>
+                                                                      <th>Bonus Name</th>
+                                                                      <th>Expiration</th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr>
+                                                                      <td>1001</td>
+                                                                      <td>Promo HNY</td>
+                                                                      <td>12:00&nbsp;31-Mar-17</td>
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+                                              <tr class="voucher"
+                                                  data-toggle="collapse"
+                                                  data-target=".collapse3"
+                                                  role="button"
+                                                  aria-expanded="false"
+                                                  aria-controls=".collapse3">
+
+                                                  <td>
+                                                      <span class="voucher-indicator status-issued"></span>
+                                                      Issued
+                                                  </td>
+                                                  <td>1</td>
+                                                  <td>04:40&nbsp;16-Mar-17</td>
+                                                  <td>Tab01</td>
+                                                  <td>200</td>
+                                                  <td>1</td>
+                                                  <td>10023</td>
+                                                  <td>Siep, Ten</td>
+                                                  <td>101
+                                                      <span class="caret caret-right pull-right"></span>
+                                                  </td>
+                                                  <td>
+                                                      <!--<button class="btn btn-primary btn-sm">-->
+                                                          <!--Print-->
+                                                      <!--</button>-->
+                                                  </td>
+
+                                              </tr>
+                                              <tr class="collapse collapse3">
+                                                  <td colspan="9">
+                                                      <div class="collapse collapse3">
+                                                          <div class="well">
+                                                              <table class="table-default">
+                                                                  <thead>
+                                                                  <tr>
+                                                                      <th>Bonus ID</th>
+                                                                      <th>Bonus Name</th>
+                                                                      <th>Expiration</th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr>
+                                                                      <td>1001</td>
+                                                                      <td>Promo HNY</td>
+                                                                      <td>12:00&nbsp;31-Mar-17</td>
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+                                              <tr class="voucher"
+                                                  data-toggle="collapse"
+                                                  data-target=".collapse4"
+                                                  role="button"
+                                                  aria-expanded="false"
+                                                  aria-controls=".collapse4">
+
+                                                  <td>
+                                                      <span class="voucher-indicator status-active"></span>
+                                                      Paid
+                                                  </td>
+                                                  <td>1</td>
+                                                  <td>04:40&nbsp;16-Mar-17</td>
+                                                  <td>Tab01</td>
+                                                  <td>200</td>
+                                                  <td>1</td>
+                                                  <td>10023</td>
+                                                  <td>Siep, Ten</td>
+                                                  <td>101
+                                                      <span class="caret caret-right pull-right"></span>
+                                                  </td>
+                                                  <td>
+                                                      <!--<button class="btn btn-primary btn-sm">-->
+                                                          <!--Print-->
+                                                      <!--</button>-->
+                                                  </td>
+
+                                              </tr>
+                                              <tr class="collapse collapse4">
+                                                  <td colspan="9">
+                                                      <div class="collapse collapse4">
+                                                          <div class="well">
+                                                              <table class="table-default">
+                                                                  <thead>
+                                                                  <tr>
+                                                                      <th>Bonus ID</th>
+                                                                      <th>Bonus Name</th>
+                                                                      <th>Expiration</th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr>
+                                                                      <td>1001</td>
+                                                                      <td>Promo HNY</td>
+                                                                      <td>12:00&nbsp;31-Mar-17</td>
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+                                              <tr class="voucher"
+                                                  data-toggle="collapse"
+                                                  data-target=".collapse5"
+                                                  role="button"
+                                                  aria-expanded="false"
+                                                  aria-controls=".collapse5">
+
+                                                  <td>
+                                                      <span class="voucher-indicator status-active"></span>
+                                                      Paid
+                                                  </td>
+                                                  <td>1</td>
+                                                  <td>04:40&nbsp;16-Mar-17</td>
+                                                  <td>Tab01</td>
+                                                  <td>200</td>
+                                                  <td>1</td>
+                                                  <td>10023</td>
+                                                  <td>Siep, Ten</td>
+                                                  <td>101
+                                                      <span class="caret caret-right pull-right"></span>
+                                                  </td>
+                                                  <td>
+                                                      <!--<button class="btn btn-primary btn-sm">-->
+                                                          <!--Print-->
+                                                      <!--</button>-->
+                                                  </td>
+
+                                              </tr>
+                                              <tr class="collapse collapse5">
+                                                  <td colspan="9">
+                                                      <div class="collapse collapse5">
+                                                          <div class="well">
+                                                              <table class="table-default">
+                                                                  <thead>
+                                                                  <tr>
+                                                                      <th>Bonus ID</th>
+                                                                      <th>Bonus Name</th>
+                                                                      <th>Expiration</th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr>
+                                                                      <td>1001</td>
+                                                                      <td>Promo HNY</td>
+                                                                      <td>12:00&nbsp;31-Mar-17</td>
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+
+                                              </tbody>
+                                          </table>
+                                      </div>
+
+                                  </div>
+                              </div>
+
+                          </section>
+
+                      </div>
+
+                  </div>
+                  <div class="modal-footer">
+                      <div class="pull-right">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="../js/demo.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

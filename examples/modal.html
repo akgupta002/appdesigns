@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../vendor/treegrid/css/jquery.treegrid.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+    <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Modal window</h1>
+      </div>
+
+    <div class="row">
+
+        <div class="col-xs-6">
+
+            <h3>Normal modal window</h3>
+
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">
+                OPEN MODAL WINDOW
+              </button>
+
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Title</h4>
+                    </div>
+
+                    <div class="modal-body">
+                      Content
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+            <h3>Modal window with inline Close button</h3>
+
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal2">
+                OPEN MODAL WINDOW
+              </button>
+
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Title</h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <p>Content</p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            
+            <h3>Modal window with wide content</h3>
+
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal3">
+                OPEN MODAL WINDOW
+            </button>
+
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Title</h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <p>Wide content triggers the modal window to expand by width to fit the content</p>
+                      <img src="http://placehold.it/800x300" />
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+                
+            <h3>Full screen modal window</h3>
+
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal4">
+                OPEN MODAL WINDOW
+            </button>
+
+            <div class="modal fade modal-fullscreen" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Title</h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <p>Content</p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            
+            <h3>Roll Time</h3>
+            
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal5">
+                OPEN MODAL WINDOW
+            </button>
+            
+            <div class="modal modal-roll-time auto-height fade in " id="modal5" tabindex="-1" role="dialog" aria-labelledby="rollTime">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+                        <header class="modal-sticky-header navbar-fixed-top">
+                            <div class='row'>
+                                <div class="col-xs-12">
+                                    <div class="dealer-search-player-options text-center">
+                                        Show Roll Time
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 dropup open">
+                                    <div id="roll-time-picker-1" class="input-append date datetimepicker hideable not-visible">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                            <a class="add-on input-group-addon">
+                                                <span class="glyphicon icon-time"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class='col-xs-8'>
+
+                                    <button class="btn btn-secondary table-action-option btn-change-roll-time" type="button">
+                                      CHANGE ROLL TIME
+                                    </button>
+                                    
+
+                                </div>
+                            </div>
+                        </header>
+                        <div class="modal-body">
+                            <div class='table-responsive'>
+                                <table class="table-default table-alerts">
+                                    <thead>
+                                        <th class="narrow">
+                                          <div class="checkbox">
+                                            <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox0">
+                                            <label for="checkbox0"></label>
+                                          </div>
+                                        </th>
+                                        <th>Nodes</th>
+                                        <th>Roll Time</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="narrow">
+                                              <div class="checkbox">
+                                                <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox11">
+                                                <label for="checkbox11"></label>
+                                              </div>
+                                            </td>
+                                            <td class="md-width">
+                                                <ol class="breadcrumb">
+                                                  <li>MGM</li>
+                                                  <li>Casino</li>
+                                                  <li>VIP</li>
+                                                  <li>Pit 1</li>
+                                                  <li class="highlight">Table 1</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="input11" class="sr-only">Roll Time</label>
+                                                    <input type="text" class="form-control input-text" id="input11" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="narrow">
+                                              <div class="checkbox">
+                                                <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox12">
+                                                <label for="checkbox12"></label>
+                                              </div>
+                                            </td>
+                                            <td class="md-width">
+                                                <ol class="breadcrumb">
+                                                  <li>MGM</li>
+                                                  <li>Casino</li>
+                                                  <li>VIP</li>
+                                                  <li>Pit 1</li>
+                                                  <li class="highlight">Table 2</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="input12" class="sr-only">Roll Time</label>
+                                                    <input type="text" class="form-control input-text" id="input12" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="narrow">
+                                              <div class="checkbox">
+                                                <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox21">
+                                                <label for="checkbox21"></label>
+                                              </div>
+                                            </td>
+                                            <td class="md-width">
+                                                <ol class="breadcrumb">
+                                                  <li>MGM</li>
+                                                  <li>Casino</li>
+                                                  <li>VIP</li>
+                                                  <li>Pit 2</li>
+                                                  <li class="highlight">Table 1</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="input21" class="sr-only">Roll Time</label>
+                                                    <input type="text" class="form-control input-text" id="input21" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="narrow">
+                                              <div class="checkbox">
+                                                <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox22">
+                                                <label for="checkbox22"></label>
+                                              </div>
+                                            </td>
+                                            <td class="md-width">
+                                                <ol class="breadcrumb">
+                                                  <li>MGM</li>
+                                                  <li>Casino</li>
+                                                  <li>VIP</li>
+                                                  <li>Pit 2</li>
+                                                  <li class="highlight">Table 3</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="input22" class="sr-only">Roll Time</label>
+                                                    <input type="text" class="form-control input-text" id="input22" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-sticky-footer navbar-fixed-bottom">
+                            <div class="modal-footer" >
+                                <div class="pull-left">
+                                    <p class="text-info">* Select the node(s) to roll the time.</p>
+                                </div>
+                                
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Tree Grid</h3>
+
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal6">
+                OPEN MODAL WINDOW
+            </button>
+            
+            <div class="modal auto-height fade in" id="modal6" tabindex="-1" role="dialog" aria-labelledby="treeGrid">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+                        <header class="modal-sticky-header navbar-fixed-top">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="dealer-search-player-options text-center">
+                                        <h4>Show Roll Time</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="modal-body">
+                            <div class='table-responsive'>
+                                <table class="tree table-default">
+                                    <thead>
+                                        <th>
+                                            <span class="checkbox">
+                                                <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox0">
+                                                <label for="checkbox0"></label>
+                                            </span>
+                                            Nodes</th>
+                                        <th>Roll Time</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="treegrid-1">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox1">
+                                                    <label for="checkbox1"></label>
+                                                </span>
+                                                MGM
+                                            </td>
+                
+                                            <td></td>
+                
+                                        </tr>
+                                        <tr class="treegrid-2 treegrid-parent-1">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox2">
+                                                    <label for="checkbox2"></label>
+                                                </span>
+                                                Casino
+                                            </td>
+                
+                                            <td></td>
+                
+                                        </tr>
+
+                                        <tr class="treegrid-3 treegrid-parent-2">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox3">
+                                                    <label for="checkbox3"></label>
+                                                </span>
+                                                MASS
+                                            </td>
+                
+                                            <td></td>
+                
+                                        </tr>
+                                        <tr class="treegrid-4 treegrid-parent-2">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox4">
+                                                    <label for="checkbox4"></label>
+                                                </span>
+                                                VIP
+                                            </td>
+                
+                                            <td></td>
+                
+                                        </tr>
+                                        <tr class="treegrid-5 treegrid-parent-4">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox5">
+                                                    <label for="checkbox5"></label>
+                                                </span>
+                                                Pit 1
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="treegrid-6 treegrid-parent-5">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox6">
+                                                    <label for="checkbox6"></label>
+                                                </span>
+                                                Table 1
+                                            </td>
+
+                                            <td class="aligned-top md-width">
+                                              <div id="roll-time-picker-1" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                  <a class="add-on input-group-addon">
+                                                    <span class="glyphicon icon-time"></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="treegrid-7 treegrid-parent-5">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox7">
+                                                    <label for="checkbox7"></label>
+                                                </span>
+                                                Table 2
+                                            </td>
+                                            <td class="aligned-top md-width">
+                                              <div id="roll-time-picker-2" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                  <a class="add-on input-group-addon">
+                                                    <span class="glyphicon icon-time"></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="treegrid-8 treegrid-parent-4">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox8">
+                                                    <label for="checkbox8"></label>
+                                                </span>
+                                                Pit 2
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="treegrid-9 treegrid-parent-8">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox9">
+                                                    <label for="checkbox9"></label>
+                                                </span>
+                                                Table 3
+                                            </td>
+                                            <td class="aligned-top md-width">
+                                              <div id="roll-time-picker-3" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                  <a class="add-on input-group-addon">
+                                                    <span class="glyphicon icon-time"></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="treegrid-10 treegrid-parent-8">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox10">
+                                                    <label for="checkbox10"></label>
+                                                </span>
+                                                Table 4
+                                            </td>
+                                            <td class="aligned-top md-width">
+                                              <div id="roll-time-picker-4" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                  <a class="add-on input-group-addon">
+                                                    <span class="glyphicon icon-time"></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="treegrid-11 treegrid-parent-1">
+                                            <td>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox11">
+                                                    <label for="checkbox11"></label>
+                                                </span>
+                                                Treasury
+                                            </td>
+                
+                                            <td></td>
+                
+                                        </tr>
+                                    </tbody>    
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-sticky-footer navbar-fixed-bottom">
+                            <div class="modal-footer">
+                                  <button type="submit" class="btn btn-primary">CHANGE ROLL TIME</button>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            
+            <h3>Full screen modal - Nodes tree view</h3>
+            
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal7">
+                OPEN MODAL WINDOW
+            </button>
+
+            <div class="modal fade modal-fullscreen in" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalShowRollTime">
+                <div class="modal-dialog" role="document" >
+                    <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+                      <header class="modal-sticky-header navbar-fixed-top" style="background-color:#eee7dd;">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="dealer-search-player-options text-center">
+                              Show Roll Time
+                            </div>
+                            <div class='table-responsive'>
+                              <table class="table-default table-collapse">
+                                <thead>
+                                  <tr>
+                                    <th class="narrow">
+                                      <div class="checkbox">
+                                        <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox0">
+                                        <label for="checkbox0"></label>
+                                      </div>
+                                    </th>
+                                    <th width="30%">Node / Table</th>
+                                    <th>Roll Time</th>
+                                    <th>Gaming Day</th>
+                                  </tr>
+                                </thead>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+
+                      <div class="modal-body">
+                        <div class='table-responsive'>
+                          <table class="table-default table-collapse">
+                            <tbody>
+                              <tr>
+                                <td class="narrow aligned-top">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox0">
+                                    <label for="checkbox0"></label>
+                                  </div>
+                                </td>
+                                <td class="collapse-tree" colspan="3">
+                                  <a data-toggle="collapse" href="#roll-collapse0"><span class="glyphicon glyphicon-plus"></span>MGM</a>
+                                  <div class="table-responsive collapse" id="roll-collapse0">
+                                    <table class="table-default table-collapse">
+                                      <tbody>
+                                        <tr>
+                                          <td class="narrow aligned-top">
+                                            <div class="checkbox">
+                                              <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox11">
+                                              <label for="checkbox11"></label>
+                                            </div>
+                                          </td>
+
+                                          <td class="collapse-tree">
+                                            <a data-toggle="collapse" href="#roll-collapse11"><span class="glyphicon glyphicon-plus"></span>Casino</a>
+                                            <div class="table-responsive collapse" id="roll-collapse11">
+                                              <table class="table-default table-collapse">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="narrow aligned-top">
+                                                      <div class="checkbox">
+                                                        <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox21">
+                                                        <label for="checkbox21"></label>
+                                                      </div>
+                                                    </td>
+                                                    <td class="collapse-tree">
+                                                      <a data-toggle="collapse" href="#roll-collapse21"><span class="glyphicon glyphicon-plus"></span>VIP</a>
+                                                      <div class="table-responsive collapse" id="roll-collapse21">
+                                                        <table class="table-default table-collapse">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td class="narrow aligned-top">
+                                                                <div class="checkbox">
+                                                                  <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox31">
+                                                                  <label for="checkbox31"></label>
+                                                                </div>
+                                                              </td>
+                                                              <td class="collapse-tree">
+                                                                <a data-toggle="collapse" href="#roll-collapse31"><span class="glyphicon glyphicon-plus"></span>Pit 1</a>
+                                                                <div class="table-responsive collapse" id="roll-collapse31">
+                                                                  <table class="table-default table-collapse">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td class="narrow aligned-top">
+                                                                          <div class="checkbox">
+                                                                            <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox41">
+                                                                            <label for="checkbox41"></label>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>MB001</td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="roll-time-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-time"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="gaming-day-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-date-format="dd/mm/yyyy" placeholder="Set Current Gaming Day">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-calendar"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td class="narrow">
+                                                                          <div class="checkbox">
+                                                                            <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox42">
+                                                                            <label for="checkbox42"></label>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>MB002</td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="roll-time-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-time"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="gaming-day-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-date-format="dd/mm/yyyy" placeholder="Set Current Gaming Day">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-calendar"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td class="narrow">
+                                                                          <div class="checkbox">
+                                                                            <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox43">
+                                                                            <label for="checkbox43"></label>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>MB003</td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="roll-time-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-time"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="gaming-day-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-date-format="dd/mm/yyyy" placeholder="Set Current Gaming Day">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-calendar"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td class="narrow">
+                                                                          <div class="checkbox">
+                                                                            <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox44">
+                                                                            <label for="checkbox44"></label>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>MB004</td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="roll-time-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-time"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td class="aligned-top">
+                                                                          <div id="gaming-day-picker" class="input-append date datetimepicker">
+                                                                            <div class="input-group">
+                                                                              <input type="text" class="form-control input-text input-datetimepicker" data-date-format="dd/mm/yyyy" placeholder="Set Current Gaming Day">
+                                                                              <a class="add-on input-group-addon">
+                                                                                <span class="glyphicon icon-calendar"></span>
+                                                                              </a>
+                                                                            </div>
+                                                                          </div>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                    </tbody>
+                                                                  </table>
+                                                                </div>
+                                                              </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                              <td class="narrow">
+                                                                <div class="checkbox">
+                                                                  <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox32">
+                                                                  <label for="checkbox32"></label>
+                                                                </div>
+                                                              </td>
+                                                              <td class="collapse-tree">
+                                                                <a data-toggle="collapse" data-target=".roll-collapse32"><span class="glyphicon glyphicon-plus"></span>Pit 2</a>
+                                                              </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                              <td class="narrow">
+                                                                <div class="checkbox">
+                                                                  <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox33">
+                                                                  <label for="checkbox33"></label>
+                                                                </div>
+                                                              </td>
+                                                              <td class="collapse-tree">
+                                                                <a data-toggle="collapse" data-target=".roll-collapse33"><span class="glyphicon glyphicon-plus"></span>Pit 3</a>
+                                                              </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                              <td class="narrow">
+                                                                <div class="checkbox">
+                                                                  <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox34">
+                                                                  <label for="checkbox34"></label>
+                                                                </div>
+                                                              </td>
+                                                              <td class="collapse-tree">
+                                                                <a data-toggle="collapse" data-target=".roll-collapse31"><span class="glyphicon glyphicon-plus"></span>Pit 4</a>
+                                                              </td>
+                                                            </tr>
+
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="narrow">
+                                                      <div class="checkbox">
+                                                        <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox22">
+                                                        <label for="checkbox22"></label>
+                                                      </div>
+                                                    </td>
+                                                    <td>MASS</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td class="narrow">
+                                            <div class="checkbox">
+                                              <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox12">
+                                              <label for="checkbox12"></label>
+                                            </div>
+                                          </td>
+                                          <td>Treasury</td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="modal-sticky-footer navbar-fixed-bottom">
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">CHANGE ROLL TIME</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Full screen modal - Trend Board</h3>
+
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-tb">
+                <span class="glyphicon glyphicon-fullscreen"></span>&nbsp;&nbsp;Fullscreen Trend Board
+            </button>
+
+            <div class="modal fade modal-fullscreen" id="modal-tb" tabindex="-1" role="dialog" aria-labelledby="modalShowTrendBoard">
+                <div class="modal-dialog" role="document" >
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <h4 class="modal-title">Trend Board</h4>
+                        </header>
+
+                        <div class="modal-body">
+                            <aside id="tb-result-wrapper" class="tb-result-wrapper container has-drop-shadow hide-panel">
+
+                                <section id="tb-edit-result">
+                                    <header class="clearfix">
+                                        <h3 class="pull-left">Edit Trend Result</h3>
+                                        <button id="btn-edit" type="button" class="btn btn-primary pull-right">Edit</button>
+                                    </header>
+                                    <main class="box down-arw">
+                                        <div class="inner-box rt-bdr">
+                                            <div class="inner-most-box btm-bdr">
+                                                <button type="button" class="btn btn-secondary">P</button>
+                                            </div>
+                                            <div class="inner-most-box btm-bdr">
+                                                <button type="button" class="btn btn-secondary">B</button>
+                                            </div>
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">T</button>
+                                            </div>
+                                        </div>
+                                        <div class="inner-box rt-bdr">
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">Natural</button>
+                                            </div>
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">Dragon7</button>
+                                            </div>
+                                        </div>
+                                        <div class="inner-box">
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">PP</button>
+                                            </div>
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">BP</button>
+                                            </div>
+                                            <div class="inner-most-box ">
+                                                <button type="button" class="btn btn-secondary">PP,BP</button>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </section>
+                                <section id="tb-new-result">
+                                    <header class="clearfix">
+                                        <h3 class="pull-left">New Trend Result</h3>
+                                    </header>
+                                    <main class="box">
+                                        <div class="inner-box rt-bdr">
+                                            <div class="inner-most-box">
+                                                <button type="button" class="btn btn-secondary">P</button>
+                                            </div>
+                                        </div>
+                                        <div class="inner-box rt-bdr">
+                                            <div class="inner-most-box">
+                                                <button type="button" class="btn btn-secondary">Dragon7</button>
+                                            </div>
+                                        </div>
+                                        <div class="inner-box">
+                                            <div class="inner-most-box">
+                                                <button type="button" class="btn btn-secondary">PP,BP</button>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </section>
+
+                                <footer>
+                                    <div class="pull-right">
+                                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-secondary">Submit</button>
+                                    </div>
+                                </footer>
+                            </aside>
+                        </div>
+                        <div class="modal-footer affix-bottom">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+        <!-- .container -->
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+      <div class="well">
+
+        <p>Modal windows have a wrapper <code>.modal</code> and an ID and it can have class name <code>.modal-fullscreen</code> for fullscreen modals. The child wrappers are <code>.modal-dialog</code> and <code>.modal-content</code>.</p>
+
+        <p>The toggle element has attributes <code>data-toggle="modal"</code> and <code>data-target</code> referencing to the modal's ID.</p>
+
+      </div>
+
+      <pre class="prettyprint">
+          <code>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">
+              OPEN MODAL WINDOW
+            </button>
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    {Modal header}
+                  </div>
+                  <div class="modal-body">
+                    {Modal content}
+                  </div>
+                  <div class="modal-footer">
+                    {Modal footer}
+                  </div>
+                </div>
+              </div>
+            </div>
+        </code>
+      </pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/alerts.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+    <script>
+        $("#btn-edit").on("click", showPanel);
+
+        function showPanel(){
+            $this = $(this);
+            $parent = $this.closest(".tb-result-wrapper");
+
+            $parent.toggleClass("hide-panel");
+
+            if($parent.hasClass("hide-panel")){
+                $this.html("Edit");
+            } else {
+                $this.html("Close");
+            }
+
+        }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Modal window - Contents</h1>
+        </div>
+
+        <h3>Chip tray prompt</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-chip-tray">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="modal-chip-tray" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+
+                        <p class="text-center">LOWER TRAY TO SCAN TOP</p>
+
+                        <p class="top-buffer bottom-buffer"><img src="../assets/img/chip-tray.svg" width="228" height="46" alt="Chip tray" /></p>
+
+                        <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                        <a href="#" class="btn btn-primary btn-margins" data-dismiss="modal">DONE</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Full screen iframe</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-full-screen-iframe">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center scale-iframe-modal" id="modal-full-screen-iframe" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content no-paddings">
+
+                    <iframe src="../dealer/demos/dealer-game.html" width="800" height="480"></iframe>
+                    <a class="iframe-dealer-screen-link" data-dismiss="modal"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Open table</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-open-table">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="modal-open-table" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content no-paddings">
+
+                    <div class="modal-body modal-section extra-paddings bg-grey vertical-align text-center">
+
+                        <span>PIT 2</span>
+                        <h1 class="modal-label">Table 001</h1>
+                        <p class="big">
+                            <span class="modal-label">Gaming Day 10/06</span>
+                            <br> Table Closed.
+                        </p>
+
+                    </div>
+
+                    <div class="modal-body modal-section extra-paddings vertical-align text-center">
+
+                        <span><img src="../assets/img/swipe-player-id-card.svg" width="143" height="104" /></span>
+                        <h1>Swipe ID Card to Login.</h1>
+                        <p><a href="#" class="underlined">LOGIN WITH PIN CODE</a></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Set gaming day</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-gaming-day">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="modal-gaming-day" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+
+                        <p class="text-center">SET GAMING DAY</p>
+
+                        <div id="carousel-gaming-day" class="carousel-gaming-day carousel" data-ride="carousel" data-interval="false" data-wrap="false">
+
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="item">
+                                    10/05
+                                </div>
+
+                                <div class="item active">
+                                    10/06
+                                </div>
+
+                                <div class="item">
+                                    10/07
+                                </div>
+
+                            </div>
+
+
+                            <a class="left carousel-control" href="#carousel-gaming-day" role="button" data-slide="prev">
+                                <span class="glyphicon icon-arrow-left"></span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-gaming-day" role="button" data-slide="next">
+                                <span class="glyphicon icon-arrow-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                        <a href="#" class="btn btn-primary btn-margins" data-dismiss="modal">DONE</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Add player</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#add-player">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="add-player" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog has-outer-footer" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body modal-section vertical-align">
+
+                        <h1>
+                <img src="../assets/img/swipe-player-id-card.svg" class="pull-right" width="143" height="104" />
+                Swipe<br>Player ID Card
+              </h1>
+
+                    </div>
+
+                    <div class="modal-outer-footer text-right">
+                        <a href="#" class="btn btn-primary">
+                            <span class="glyphicon icon-search-btn"></span> SEARCH PLAYER
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Inventory</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-inventory">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade modal-fullscreen" id="modal-inventory" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+
+                    <header class="modal-sticky-header navbar-fixed-top">
+
+                        <p class="text-center">CHECK INVENTORY</p>
+
+                        <h3 class="tab-content-header-title">178 CHIPS</h3>
+
+                        <div class="pull-right">
+
+                            <span class="dropdown-prefix">
+                  Sort by
+                </span>
+
+                            <div class="dropdown dropdown-select">
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="sort-menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    ALL CHIP SETS
+                                    <span class="caret"></span>
+                                </button>
+
+                                <div class="dropdown-menu">
+
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-body">
+                                            <ul class="nav dropdown-select-nav">
+
+                                                <li class="dropdown-nav-item">
+                                                    <a href="#" class="dropdown-nav-link">Standard chipsets</a>
+                                                </li>
+
+                                                <li class="dropdown-nav-item">
+                                                    <a href="#" class="dropdown-nav-link">VIP chipsets</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown dropdown-select table-sorting-option">
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="sort-menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    BOTH TRAYS
+                                    <span class="caret"></span>
+                                </button>
+
+                                <div class="dropdown-menu">
+
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-body">
+                                            <ul class="nav dropdown-select-nav">
+
+                                                <li class="dropdown-nav-item">
+                                                    <a href="#" class="dropdown-nav-link">Bottom tray</a>
+                                                </li>
+
+                                                <li class="dropdown-nav-item">
+                                                    <a href="#" class="dropdown-nav-link">Top tray</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </header>
+
+                    <div class="modal-body">
+
+                        <div class="row">
+
+                            <div class="col-xs-6">
+
+                                <div class="table-responsive">
+                                    <table class="table-default table-inventory sticky-table-header">
+                                        <thead>
+
+                                            <tr>
+                                                <th class="narrow"></th>
+                                                <th>Denomination</th>
+                                                <th>Total</th>
+                                                <th>Value</th>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-50-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-10-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-500-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-100-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-50-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-10-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-1-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-6">
+
+                                <div class="table-responsive">
+                                    <table class="table-default table-inventory sticky-table-header">
+                                        <thead>
+
+                                            <tr>
+                                                <th class="narrow"></th>
+                                                <th>Denomination</th>
+                                                <th>Total</th>
+                                                <th>Value</th>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-500" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-250" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-100" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-50" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-25" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="narrow">
+                                                    <div class="table-inventory-box">
+                                                        <span class="glyphicon icon-chip">
+                                <svg class="icon-chip-color chip-50-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                </svg>
+                              </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10,000,000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">10</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-inventory-box">100,000,000</div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <footer class="modal-sticky-footer navbar-fixed-bottom">
+
+                        <div class="row vertical-align bottom-buffer-sm">
+
+                            <div class="col-xs-3">
+                                <div class="item-data-label">
+                                    Actual Value
+                                </div>
+                                <div class="item-data-value">
+                                    100,000,000
+                                </div>
+                            </div>
+
+                            <div class="col-xs-3">
+                                <div class="item-data-label">
+                                    Expected Value
+                                </div>
+                                <div class="item-data-value">
+                                    100,000,000
+                                </div>
+                            </div>
+
+                            <div class="col-xs-3">
+                                <div class="item-data-label">
+                                    Variance
+                                </div>
+                                <div class="item-data-value">
+                                    100,000,000
+                                </div>
+                            </div>
+
+                            <div class="col-xs-3">
+                                <div class="item-data-label">
+                                    Last Scan
+                                </div>
+                                <div class="item-data-value">
+                                    Just Now
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">DONE</button>
+                        </div>
+
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Player details</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#player-information">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="player-information" tabindex="-1" role="dialog">
+
+            <a href="#" class="btn btn-primary btn-sm close-full-width-modal" data-dismiss="modal" aria-label="Close">
+                <span class="glyphicon icon-close"></span>
+            </a>
+
+            <div class="modal-dialog fluid-dialog" role="document">
+
+                <div class="player-details-number">1</div>
+
+                <div class="player-details clearfix">
+
+                    <div class="player-details-col">
+
+                        <header class="player-details-box-header">
+                            <div class="player-details-name">MIKE S.</div>
+                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="Mike S.">
+                        </header>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">
+                                <span class="player-details-item-header-link">SESSION</span>
+                                <a href="#" class="player-details-item-header-link">DAY</a>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Rating:</span>
+                                <span class="item-data-value pull-right">15</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Chips in:</span>
+                                <span class="item-data-value pull-right">300,000,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Win/Loss:</span>
+                                <span class="item-data-value pull-right">(100,350)</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Turnover:</span>
+                                <span class="item-data-value pull-right">70,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Avg. bet:</span>
+                                <span class="item-data-value pull-right">500,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Start time:</span>
+                                <span class="item-data-value pull-right">13:21</span>
+                            </div>
+
+                        </div>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">CURRENT BET</div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">P</span>
+                                <span class="item-data-value pull-right">100,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">B</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">PP</span>
+                            </div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">BP</span>
+                                <span class="item-data-value pull-right">70,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">T</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player-details-col">
+
+                        <header class="player-details-box-header">
+                            <div class="player-details-name">RICHARD T.</div>
+                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="Richard T.">
+                        </header>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">
+                                <span class="player-details-item-header-link">SESSION</span>
+                                <a href="#" class="player-details-item-header-link">DAY</a>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Rating:</span>
+                                <span class="item-data-value pull-right">15</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Chips in:</span>
+                                <span class="item-data-value pull-right">300,000,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Win/Loss:</span>
+                                <span class="item-data-value pull-right">(100,350)</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Turnover:</span>
+                                <span class="item-data-value pull-right">70,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Avg. bet:</span>
+                                <span class="item-data-value pull-right">500,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Start time:</span>
+                                <span class="item-data-value pull-right">13:21</span>
+                            </div>
+
+                        </div>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">CURRENT BET</div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">P</span>
+                                <span class="item-data-value pull-right">100,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">B</span>
+                                <span class="item-data-value pull-right">70,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">PP</span>
+                            </div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">BP</span>
+                                <span class="item-data-value pull-right">70,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">T</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player-details-col">
+
+                        <header class="player-details-box-header">
+                            <div class="player-details-name">JOHN K.</div>
+                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="John K.">
+                        </header>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">
+                                <span class="player-details-item-header-link">SESSION</span>
+                                <a href="#" class="player-details-item-header-link">DAY</a>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Rating:</span>
+                                <span class="item-data-value pull-right">15</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Chips in:</span>
+                                <span class="item-data-value pull-right">300,000,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Win/Loss:</span>
+                                <span class="item-data-value pull-right">(100,350)</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Turnover:</span>
+                                <span class="item-data-value pull-right">70,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Avg. bet:</span>
+                                <span class="item-data-value pull-right">500,000</span>
+                            </div>
+
+                            <div class="player-details-item-row">
+                                <span class="item-data-label">Start time:</span>
+                                <span class="item-data-value pull-right">13:21</span>
+                            </div>
+
+                        </div>
+
+                        <div class="player-details-section clearfix">
+
+                            <div class="player-details-item-header">CURRENT BET</div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">P</span>
+                                <span class="item-data-value pull-right">100,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">B</span>
+                            </div>
+
+                            <div class="player-details-bet-row empty">
+                                <span class="item-data-label">PP</span>
+                            </div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">BP</span>
+                                <span class="item-data-value pull-right">70,000,000</span>
+                            </div>
+
+                            <div class="player-details-bet-row">
+                                <span class="item-data-label">T</span>
+                                <span class="item-data-value pull-right">70,000,000</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>Player details expanded</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#player-information-expanded">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="player-information-expanded" tabindex="-1" role="dialog">
+
+            <a href="#" class="btn btn-primary btn-sm close-full-width-modal" data-dismiss="modal" aria-label="Close">
+                <span class="glyphicon icon-close"></span>
+            </a>
+
+            <div class="modal-dialog fluid-dialog horizontal-scroll" role="document">
+
+                <div class="carousel-player-details carousel slide" id="player-details-carousel" data-ride="carousel" data-interval="0" data-wrap="false">
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+
+                            <div class="player-details expanded clearfix">
+
+                                <div class="player-details-col-2">
+
+                                    <div class="player-details-box">
+
+                                        <header class="player-details-box-header">
+                                            <div class="player-details-seat-number">5</div>
+                                            <div class="player-details-name player-data-name">MIKE S.</div>
+                                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="Mike S.">
+                                        </header>
+
+                                        <div class="row">
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">HISTORY</div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Rating:</span>
+                                                        <span class="item-data-value pull-right">15</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Chips in:</span>
+                                                        <span class="item-data-value pull-right">300,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Win/Loss:</span>
+                                                        <span class="item-data-value pull-right">(100,350)</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Turnover:</span>
+                                                        <span class="item-data-value pull-right">70,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Avg. bet:</span>
+                                                        <span class="item-data-value pull-right">500,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Start time:</span>
+                                                        <span class="item-data-value pull-right">13:21</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">CURRENT BET</div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">P</span>
+                                                        <span class="item-data-value pull-right">100,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">B</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">PP</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">BP</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">T</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-col-1">
+
+                                    <div class="player-details-box">
+                                        <div class="player-details-item-col">
+
+                                            <div class="player-details-item-header">NOTES</div>
+
+                                            <textarea class="textarea player-details-notes-textarea">A note here.</textarea>
+
+                                            <div class="player-details-item-footer">
+                                                <a href="#" class="btn btn-primary">ADD NOTE</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-btns">
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-chips-in"></span>
+                                        </span>
+                                        Chips-in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-swipe-in"></span>
+                                        </span>
+                                        Swipe in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-move-seat"></span>
+                                        </span>
+                                        Move seat
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-cancel-rating"></span>
+                                        </span>
+                                        Cancel Rating
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-clock-out"></span>
+                                        </span>
+                                        Clock-out
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="player-details expanded clearfix">
+
+                                <div class="player-details-col-2">
+
+                                    <div class="player-details-box">
+
+                                        <header class="player-details-box-header">
+                                            <div class="player-details-seat-number">5</div>
+                                            <div class="player-details-name player-data-name">RICHARD T.</div>
+                                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="Richard T.">
+                                        </header>
+
+                                        <div class="row">
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">HISTORY</div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Rating:</span>
+                                                        <span class="item-data-value pull-right">15</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Chips in:</span>
+                                                        <span class="item-data-value pull-right">300,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Win/Loss:</span>
+                                                        <span class="item-data-value pull-right">(100,350)</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Turnover:</span>
+                                                        <span class="item-data-value pull-right">70,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Avg. bet:</span>
+                                                        <span class="item-data-value pull-right">500,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Start time:</span>
+                                                        <span class="item-data-value pull-right">13:21</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">CURRENT BET</div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">P</span>
+                                                        <span class="item-data-value pull-right">100,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">B</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">PP</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">BP</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">T</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-col-1">
+
+                                    <div class="player-details-box">
+                                        <div class="player-details-item-col">
+
+                                            <div class="player-details-item-header">NOTES</div>
+
+                                            <textarea class="textarea player-details-notes-textarea">A note here.</textarea>
+
+                                            <div class="player-details-item-footer">
+                                                <a href="#" class="btn btn-primary">ADD NOTE</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-btns">
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-chips-in"></span>
+                                        </span>
+                                        Chips-in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-swipe-in"></span>
+                                        </span>
+                                        Swipe in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-move-seat"></span>
+                                        </span>
+                                        Move seat
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-cancel-rating"></span>
+                                        </span>
+                                        Cancel Rating
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-clock-out"></span>
+                                        </span>
+                                        Clock-out
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="player-details expanded clearfix">
+
+                                <div class="player-details-col-2">
+
+                                    <div class="player-details-box">
+
+                                        <header class="player-details-box-header">
+                                            <div class="player-details-seat-number">5</div>
+                                            <div class="player-details-name player-data-name">JOHN K.</div>
+                                            <img class="player-details-image" src="../assets/img/game-player-default.svg" alt="John K.">
+                                        </header>
+
+                                        <div class="row">
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">HISTORY</div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Rating:</span>
+                                                        <span class="item-data-value pull-right">15</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Chips in:</span>
+                                                        <span class="item-data-value pull-right">300,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Win/Loss:</span>
+                                                        <span class="item-data-value pull-right">(100,350)</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Turnover:</span>
+                                                        <span class="item-data-value pull-right">70,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Avg. bet:</span>
+                                                        <span class="item-data-value pull-right">500,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-item-row">
+                                                        <span class="item-data-label">Start time:</span>
+                                                        <span class="item-data-value pull-right">13:21</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6">
+                                                <div class="player-details-item-col">
+
+                                                    <div class="player-details-item-header">CURRENT BET</div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">P</span>
+                                                        <span class="item-data-value pull-right">100,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">B</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row empty">
+                                                        <span class="item-data-label">PP</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">BP</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                    <div class="player-details-bet-row">
+                                                        <span class="item-data-label">T</span>
+                                                        <span class="item-data-value pull-right">70,000,000</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-col-1">
+
+                                    <div class="player-details-box">
+                                        <div class="player-details-item-col">
+
+                                            <div class="player-details-item-header">NOTES</div>
+
+                                            <textarea class="textarea player-details-notes-textarea">A note here.</textarea>
+
+                                            <div class="player-details-item-footer">
+                                                <a href="#" class="btn btn-primary">ADD NOTE</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="player-details-btns">
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-chips-in"></span>
+                                        </span>
+                                        Chips-in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-swipe-in"></span>
+                                        </span>
+                                        Swipe in
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-move-seat"></span>
+                                        </span>
+                                        Move seat
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-cancel-rating"></span>
+                                        </span>
+                                        Cancel Rating
+                                    </a>
+
+                                    <a href="#" class="player-details-btn">
+                                        <span class="player-details-btn-icon">
+                        <span class="glyphicon icon-clock-out"></span>
+                                        </span>
+                                        Clock-out
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <a class="left carousel-control" href="#player-details-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon icon-arrow-left-lg"></span>
+                    </a>
+
+                    <a class="right carousel-control" href="#player-details-carousel" role="button" data-slide="next">
+                        <span class="glyphicon icon-arrow-right-lg"></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>View limits modal</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-view-limits">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center has-sidebar" id="modal-view-limits" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content">
+
+                    <div class="modal-sidebar">
+
+                        <p class="modal-label">Limits</p>
+
+                        <ul class="list-unstyled modal-sidebar-link-list">
+
+                            <li class="modal-sidebar-link-list-item">
+                                <a href="#" class="modal-sidebar-link">$10 - 1,000</a>
+                            </li>
+
+                            <li class="modal-sidebar-link-list-item active">
+                                <a href="#" class="modal-sidebar-link">$1,000 - 10,000</a>
+                            </li>
+
+                            <li class="modal-sidebar-link-list-item">
+                                <a href="#" class="modal-sidebar-link">$10,000 - 100,000</a>
+                            </li>
+
+                            <li class="modal-sidebar-link-list-item">
+                                <a href="#" class="modal-sidebar-link">$100,000 - 1,000,000</a>
+                            </li>
+
+                            <li class="modal-sidebar-link-list-item">
+                                <a href="#" class="modal-sidebar-link">$1,000,000 - 10,000,000</a>
+                            </li>
+
+                        </ul>
+
+                        <span class="modal-sidebar-item-last">
+                <a href="#">
+                  <span class="glyphicon icon-edit"></span> EDIT TEMPLATES
+                        </a>
+                        </span>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <p class="extra-bottom-margin">DETAILS</p>
+
+                        <ul class="list-unstyled list-limits">
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Label</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">$1,000 - 10,000</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Version</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">1</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Insurance</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">No</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Min Player / Banker Bet</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">$25</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Turn Mode</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">No</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="row list-limits-data-row">
+                                    <div class="col-xs-6">
+                                        <span class="item-data-label">Max Player / Banker Bet</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="item-data-value">$50,000</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                        <a href="#" class="btn btn-primary btn-margins">APPLY TO TABLE</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <h3>Toast notifications modal window</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#notification1" data-backdrop="false">
+            OPEN TOAST
+        </button>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#notification2" data-backdrop="false">
+            OPEN TOAST 2
+        </button>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#notification3" data-backdrop="false">
+            OPEN TOAST 3
+        </button>
+
+        <h3>Information toast</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#information-toast" data-backdrop="false">
+            OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade modal-information-toast" id="information-toast" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="row">
+
+                            <div class="col-xs-8 col-vertical-center">
+                                SEAT 3: Player Clocked-Out
+                            </div>
+
+                            <div class="col-xs-3 col-vertical-center">
+                                <a href="#" class="btn btn-primary" data-dismiss="modal">UNDO</a>
+                            </div>
+
+                            <a href="#" class="modal-close-btn" data-dismiss="modal">
+                                <span class="glyphicon icon-close-sm-gold"></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>Manual Rating Form</h3>
+
+        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#modal-manual-ratings">
+            OPEN MANUAL RATING FORM
+        </button>
+
+        <!-- DISPLAY MANUAL RATINGS FORM MODAL TO CREATE -->
+        <div class="modal fade vertical-center manual-rating-modal" id="modal-manual-ratings" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title highlight" id="manual-rating-form-title">MANUAL RATING FORM</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="rating-table-name" class="control-label">Table</label>
+                                    <input type="text" class="form-control input-text" id="rating-table-name" placeholder="" readonly="readonly" value="MB001" data-toggle="tooltip" data-placement="bottom" title="Table name" />
+                                </div>
+
+                                <div class="col-xs-6">
+                                    <label for="rating-created-by" class="control-label">Created By</label>
+                                    <input type="text" class="form-control input-text" id="rating-created-by" placeholder="" readonly="readonly" value="Username (Id#)" data-toggle="tooltip" data-placement="bottom" title="Created by" />
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="form-control-separator"></div>
+
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            Start Time
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="start-time-picker" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control input-text input-datetimepicker empty" data-format="hh:mm" placeholder="00:00">
+                                                    <a class="add-on input-group-addon">
+                                                        <span class="glyphicon icon-time"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            Stop Time
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="stop-time-picker" class="input-append date datetimepicker">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control input-text input-datetimepicker empty" data-format="hh:mm" placeholder="00:00">
+                                                    <a class="add-on input-group-addon">
+                                                        <span class="glyphicon icon-time"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            Total Time
+                                            <input type="text" class="form-control input-text" id="rating-total-time-played" readonly="readonly" value="Show Total Time" data-toggle="tooltip" data-placement="bottom" title="Total time played" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-control-separator"></div>
+
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-xs-8">
+                                    <label for="rating-player-id" class="control-label">Player</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-text hover" id="rating-player-id" placeholder="Enter Player Name or Id" />
+                                        <a class="input-group-addon player-search-btn">
+                                            <div class="glyphicon icon-search2"></div>
+
+                                            <div class="search-loader not-visible">
+                                                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                    <path opacity="0.3" fill="#bb9156" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"
+                                                    />
+                                                    <path fill="#bb9156" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.75s" repeatCount="indefinite" />
+                                                    </path>
+                                                </svg>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <div class="error-text">
+                                        <p>
+                                            <span class="glyphicon icon-error">!</span> Player Name/Id is not correct. Try again.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <label for="rating-seat-id" class="control-label">Seat Number</label>
+                                    <div class="number-selector">
+                                        <input type="text" class="form-control input-text input-number-selector" id="rating-seat-id" placeholder="Select" min="1" max="8" />
+                                        <div class=number-selector-btns>
+                                            <a href="#" class="number-selector-btn number-selector-increase">
+                                                <span class="caret caret-up"></span>
+                                            </a>
+                                            <a href="#" class="number-selector-btn number-selector-decrease">
+                                                <span class="caret"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-control-separator"></div>
+
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <label for="rating-cash-buyin">Cash Buy In</label>
+                                    <div>
+                                        <input type="text" class="form-control input-text hover text-right active" id="rating-cash-buyin" placeholder="Enter buyin value" value="0" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <label for="rating-average-bet">Average Bet</label>
+                                    <input type="text" class="form-control input-text hover text-right active" id="rating-average-bet" placeholder="Enter average bet value" value="0" />
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <label for="rating-average-bet">Casino W/L</label>
+                                    <input type="text" class="form-control input-text hover text-right active" id="rating-casino-winloss" placeholder="Enter casino W/L value" value="0" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-control-separator"></div>
+
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-xs-12 pull-right">
+                                    <a href="#" class="btn btn-primary btn-margins" data-dismiss="modal">CREATE</a>
+                                    <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">SAVE</a>
+                                    <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <h3>Create Chip Set Label</h3>
+
+        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#modal-create-chipset">
+            OPEN EDIT CHIP SET LABEL
+        </button>
+
+        <div class="modal fade modal-new-chipset" id="modal-create-chipset" tabindex='-1' role='dialog' aria-labelledby='createNewChip Set' aria-hidden='true' data-backdrop='true'>
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class='col-xs-12'>
+                                <p class='text-center'>Edit Chip Set Label</p>
+                            </div>
+                            <div class='col-xs-12'>
+                                <div class="item-view-row">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="item-data-label item-view-data-label">Chip Set Labels</div>
+                                            <div class='dropdown dropdown-select active'>
+                                                <select id='selectedChipset' class="form-control">
+                                                    <option value='1'>DEFAULT_1</option>
+                                                    <option value='2'>DEFAULT_2</option>
+                                                    <option value='3'>DEFAULT_3</option>
+                                                    <option value='4'>DEFAULT_4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="chipset-details-1 fade in">
+                                            <div class="col-xs-9">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Company Id</div>
+                                                        <div class="item-data-value item-view-data-value">1001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Site Id</div>
+                                                        <div class="item-data-value item-view-data-value">2001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Chip Set Id</div>
+                                                        <div class="item-data-value item-view-data-value">3001</div>
+                                                    </div>
+
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">
+                                                            <a href="#" data-toggle="collapse" data-target=".collapse1">View Denoms <span class="caret"></span>
+                                                        </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="collapse collapse1 in">
+                                                    <!-- <hr> -->
+                                                    <div class="row">
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-50-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">50 M</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10 M</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-500-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">500 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-100-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">100 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-50-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">50 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-5-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">5 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-1-thousand" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">1 K</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-500" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">500</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-250" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">250</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-100" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">100</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-50" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">50</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-25" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">25</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chipset-details-2 fade hide">
+                                            <div class="col-xs-9">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Company Id</div>
+                                                        <div class="item-data-value item-view-data-value">1001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Site Id</div>
+                                                        <div class="item-data-value item-view-data-value">2001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Chip Set Id</div>
+                                                        <div class="item-data-value item-view-data-value">3002</div>
+                                                    </div>
+
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">
+                                                            <a href="#" data-toggle="collapse" data-target=".collapse1">
+                                                          View Denoms <span class="caret"></span>
+                                                      </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="collapse collapse1 in">
+                                                    <!-- <hr> -->
+                                                    <div class="row">
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                          <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                              <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                              <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                              <line x1="14" y1="1" x2="14" y2="6"/>
+                                                              <line x1="14" y1="22" x2="14" y2="27"/>
+                                                              <line x1="22" y1="14" x2="27" y2="14"/>
+                                                              <line x1="1" y1="14" x2="6" y2="14"/>
+                                                              <line x1="24" y1="4" x2="19" y2="9"/>
+                                                              <line x1="9" y1="19" x2="5" y2="24"/>
+                                                              <line x1="19" y1="19" x2="24" y2="24"/>
+                                                              <line x1="4" y1="4" x2="9" y2="9"/>
+                                                          </svg>
+                                                      </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                            <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                <line x1="4" y1="4" x2="9" y2="9"/>
+                                                            </svg>
+                                                        </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                            <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                <line x1="4" y1="4" x2="9" y2="9"/>
+                                                            </svg>
+                                                        </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chipset-details-3 fade hide">
+                                            <div class="col-xs-9">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Company Id</div>
+                                                        <div class="item-data-value item-view-data-value">1001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Site Id</div>
+                                                        <div class="item-data-value item-view-data-value">2001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Chip Set Id</div>
+                                                        <div class="item-data-value item-view-data-value">3003</div>
+                                                    </div>
+
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">
+                                                            <a href="#" data-toggle="collapse" data-target=".collapse1">View Denoms <span class="caret"></span>
+                                                        </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="collapse collapse1 in">
+                                                    <!-- <hr> -->
+                                                    <div class="row">
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                              <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                  <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                  <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                  <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                  <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                  <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                  <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                  <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                  <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                  <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                  <line x1="4" y1="4" x2="9" y2="9"/>
+                                                              </svg>
+                                                          </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chipset-details-4 fade hide">
+                                            <div class="col-xs-9">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Company Id</div>
+                                                        <div class="item-data-value item-view-data-value">1001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Site Id</div>
+                                                        <div class="item-data-value item-view-data-value">2001</div>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">Chip Set Id</div>
+                                                        <div class="item-data-value item-view-data-value">3004</div>
+                                                    </div>
+
+                                                    <div class="col-xs-3">
+                                                        <div class="item-data-label item-view-data-label">
+                                                            <a href="#" data-toggle="collapse" data-target=".collapse1">
+                                                            View Denoms <span class="caret"></span>
+                                                        </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="collapse collapse1 in">
+                                                    <!-- <hr> -->
+                                                    <div class="row">
+
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="chipset-denom-block">
+                                                                <span class="glyphicon icon-chip btn-margins">
+                                                                <svg class="icon-chip-color chip-10" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                    <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                    <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                    <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                    <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                    <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                    <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                    <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                    <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                    <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                    <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                </svg>
+                                                            </span>
+                                                                <span class="denom-label btn-margins">10</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- <div class='col-xs-12 sr-only'>
+                            <div class='text-center btn-move'>
+                              <button class="btn btn-secondary btn-margins">
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                              </button>
+                              <button class="btn btn-secondary btn-margins">
+                                <span class="glyphicon glyphicon-chevron-up"></span>
+                              </button>
+                            </div>
+                        </div> -->
+
+                            <div class='col-xs-12 top-buffer'>
+                                <div class="item-view-row">
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="item-data-label item-view-data-label">Select/Enter a new Chip Set Label</div>
+                                        </div>
+                                        <div class="col-xs-3">
+
+                                            <!-- <div class='dropdown dropdown-select'>
+                                            <select id='selectedChip SetNew' class="form-control">
+                                                <option value='1'>DEFAULT_1</option>
+                                                <option value='2'>DEFAULT_2</option>
+                                                <option value='3'>DEFAULT_3</option>
+                                                <option value='4'>DEFAULT_4</option>
+                                            </select>
+                                        </div> -->
+
+                                            <div class="dropdown dropdown-select">
+                                                <div class="btn btn-secondary dropdown-toggle no-padding" data-toggle="dropdown">
+                                                    <!-- SELECT DROPDOWN<span class="caret"></span> -->
+                                                    <div class="form-group bottom-margin">
+                                                        <label for="input1" class="sr-only">NORMAL</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control input-text" id="input1" placeholder="Placeholder" />
+                                                            <div class="input-group-addon left-border-only"><span class="caret"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown-menu">
+
+                                                    <div class="dropdown-body">
+                                                        <div class="dropdown-content">
+                                                            <ul class="nav dropdown-select-nav">
+
+                                                                <li class="dropdown-nav-item">
+                                                                    <a href="#" class="dropdown-nav-link" data-value="1">DEFAULT_1</a>
+                                                                </li>
+
+                                                                <li class="dropdown-nav-item">
+                                                                    <a href="#" class="dropdown-nav-link" data-value="2">DEFAULT_2</a>
+                                                                </li>
+
+                                                                <li class="dropdown-nav-item">
+                                                                    <a href="#" class="dropdown-nav-link" data-value="3">DEFAULT_3</a>
+                                                                </li>
+
+                                                                <li class="dropdown-nav-item">
+                                                                    <a href="#" class="dropdown-nav-link" data-value="4">DEFAULT_4</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <!-- <span class="btn-margins">OR,</span>
+
+                                            <div class="form-group inline">
+                                            <label for="inputChip SetName" class="sr-only">New Chip Set Name Input</label>
+                                            <input type="text" class="form-control input-text" id="inputChip SetName" placeholder="Enter New Chip Set Name" />
+                                        </div> -->
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-xs-12">
+                                            <div class="table-responsive">
+                                                <table class="table-default new-chipset-table top-buffer">
+                                                    <thead>
+                                                        <th>Company Id</th>
+                                                        <th>Site Id</th>
+                                                        <th>Chip Set Id</th>
+                                                        <th class="wider">Denoms</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class='empty'>
+                                                            <td colspan='5' class="instruction-text">Select the denom(s) from the above table.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                            <a href="#" class="btn btn-primary btn-margins">SAVE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- <div class="hidden">
+
+      <h3>Create Chip Set Label</h3>
+
+      <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#modal-create-chipset0">
+        OPEN CREATE NEW CHIP SET
+      </button>
+
+      <div class="modal fade modal-new-chipset0" id="modal-create-chipset0" tabindex='-1' role='dialog' aria-labelledby='createNewChip Set0' aria-hidden='true' data-backdrop='true'>
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class='col-xs-12'>
+                  <p class='text-center'>CREATE NEW CHIP SET</p>
+                </div>
+                <div class='col-xs-12'>
+                  <div class='row'>
+                    <div class='col-xs-6'>
+                      <h4>EXISTING LABELS</h4>
+                      <div class='dropdown dropdown-select'>
+                        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                          DEFAULT_1
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-body">
+                            <div class="dropdown-content">
+                              <ul class="nav dropdown-select-nav">
+
+                                <li class="dropdown-nav-item">
+                                  <a href="#" class="dropdown-nav-link">DEFAULT_2</a>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <a href="#" class="dropdown-nav-link">DEFAULT_3</a>
+                                </li>
+
+                                <li class="dropdown-nav-item">
+                                  <a href="#" class="dropdown-nav-link">DEFAULT_4</a>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="table-responsive">
+                        <table class="table-default table-inventory sticky-table-header" data-chipset='default-1'>
+                          <thead>
+
+                            <tr>
+                              <th class="narrow"></th>
+                              <th>Denomination</th>
+                              <th>Total</th>
+                              <th>Value</th>
+                            </tr>
+
+                          </thead>
+
+                          <tbody>
+
+                            <tr class='chip-denom-row'>
+                              <td class="narrow">
+                                <div class="table-inventory-box">
+                                  <span class="glyphicon icon-chip">
+                                                                        <svg class="icon-chip-color chip-50-million" xmlns="http://www.w3.org/2000/svg" version="1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve">
+                                                                            <path d="M14 2c7 0 12 5 12 12s-5 12-12 12S2 21 2 14 7 2 14 2M14 0C6 0 0 6 0 14s6 14 14 14 14-6 14-14S22 0 14 0L14 0z"/>
+                                                                            <path d="M14 7c4 0 7 3 7 7s-3 7-7 7 -7-3-7-7S10 7 14 7M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9S19 5 14 5L14 5z"/>
+                                                                            <line x1="14" y1="1" x2="14" y2="6"/>
+                                                                            <line x1="14" y1="22" x2="14" y2="27"/>
+                                                                            <line x1="22" y1="14" x2="27" y2="14"/>
+                                                                            <line x1="1" y1="14" x2="6" y2="14"/>
+                                                                            <line x1="24" y1="4" x2="19" y2="9"/>
+                                                                            <line x1="9" y1="19" x2="5" y2="24"/>
+                                                                            <line x1="19" y1="19" x2="24" y2="24"/>
+                                                                            <line x1="4" y1="4" x2="9" y2="9"/>
+                                                                        </svg>
+                                                                    </span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="table-inventory-box">10,000,000</div>
+                              </td>
+                              <td>
+                                <div class="table-inventory-box">10</div>
+                              </td>
+                              <td>
+                                <div class="table-inventory-box">100,000,000</div>
+                              </td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+
+                    <div class='col-xs-6'>
+                      <h4>ENTER NEW CHIP SET LABEL</h4>
+                      <div class="form-group">
+                        <label for="new-chipset-label" class='sr-only'>New Chip Set Label</label>
+                        <input type="text" class="form-control input-text" id="new-chipset-label" placeholder="Enter new chipset label" />
+                      </div>
+                      <small><span id="instruction-texts" class="help-block ">Example: DEFAULT_00</span></small>
+
+                      <div class='chip-denom-drop-target'>
+                        <div class="table-responsive">
+                          <table class="table-default table-inventory sticky-table-header">
+                            <thead>
+
+                              <tr>
+                                <th class="narrow"></th>
+                                <th>Denomination</th>
+                                <th>Total</th>
+                                <th>Value</th>
+                              </tr>
+
+                            </thead>
+                            <tbody>
+                              <!-  Append here -->
+        <!-- </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                <a href="#" class="btn btn-primary btn-margins">CREATE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+
+    </div>
+
+    <!-- .container -->
+
+    <div class="toast-modals">
+
+        <div class="modal fade modal-notification" id="notification1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="modal-notification-header clearfix">
+                            <span class="modal-label">Bet Change</span>
+                            <span class="modal-notification-time pull-right">Now</span>
+                        </div>
+                        Seat 8, Richard T.
+                        <br>
+                        <span class="alert-highlight">-250,000 Banker</span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">DISMISS</button>
+                    </div>
+
+                </div>
+            </div>``
+        </div>
+
+        <div class="modal fade modal-notification" id="notification2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="modal-notification-header clearfix">
+                            <span class="modal-label">Bet Change</span>
+                            <span class="modal-notification-time pull-right">Now</span>
+                        </div>
+                        Seat 5, Gabriela K.
+                        <br>
+                        <span class="alert-highlight">-500,000 Banker</span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">DISMISS</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-notification" id="notification3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="modal-notification-header clearfix">
+                            <span class="modal-label">Bet Change</span>
+                            <span class="modal-notification-time pull-right">Now</span>
+                        </div>
+                        Seat 2, JOHN F.
+                        <br>
+                        <span class="alert-highlight">-350,000 Banker</span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">DISMISS</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Documentation -->
+
+    <div class="container documentation">
+
+        <div class="well">
+
+            <p>Vertically centered modal windows can have class name <code>.vertical-center</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="modal-chip-tray" tabindex="-1" role="dialog">
+  ...
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Fullscreen iframe modals have an additional class <code>.scale-iframe-modal</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center scale-iframe-modal" id="modal-full-screen-iframe" tabindex="-1" role="dialog">
+  ...
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Modal content can contain several <code>.modal-section</code> blocks.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="modal-open-table" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content no-paddings">
+      <div class="modal-body modal-section extra-paddings bg-grey vertical-align text-center">
+        ...
+      </div>
+      <div class="modal-body modal-section extra-paddings vertical-align text-center">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Set gaming day modal window has a carousel component with extra attributes <code>data-interval</code> to disable autoplay and <code>data-wrap</code> to disable continuous scrolling.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="modal-gaming-day" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <p class="text-center">SET GAMING DAY</p>
+        <div id="carousel-gaming-day" class="carousel-gaming-day carousel" data-ride="carousel" data-interval="false" data-wrap="false">
+          <div class="carousel-inner" role="listbox">
+            <div class="item">
+              10/05
+            </div>
+            <div class="item active">
+              10/06
+            </div>
+            <div class="item">
+              10/07
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-gaming-day" role="button" data-slide="prev">
+            <span class="glyphicon icon-arrow-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-gaming-day" role="button" data-slide="next">
+            <span class="glyphicon icon-arrow-right"></span>
+          </a>
+        </div>
+        <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+        <a href="#" class="btn btn-primary btn-margins" data-dismiss="modal">DONE</a>
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Modal windows can have footer content positioned outside the actual modal by adding class name <code>.has-outer-footer</code> to the <code>.modal-dialog</code> element. The actual footer content is inside element <code>.modal-outer-footer</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="add-player" tabindex="-1" role="dialog">
+  <div class="modal-dialog has-outer-footer" role="document">
+    <div class="modal-content">
+      <div class="modal-body modal-section vertical-align">
+        <h1>
+          <img src="../assets/img/swipe-player-id-card.svg" class="pull-right" width="143" height="104" />
+          Swipe<br>Player ID Card
+        </h1>
+      </div>
+      <div class="modal-outer-footer text-right">
+        <a href="#" class="btn btn-primary">
+          <span class="glyphicon icon-search-btn"></span>
+          SEARCH PLAYER
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Inventory modal window has sticky header and footer elements. It uses familiar methor to use class names <code>.has-sticky-header</code> and <code>.has-sticky-footer</code> for the <code>.modal-content</code> wrapper.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade modal-fullscreen" id="modal-inventory" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+      <header class="modal-sticky-header navbar-fixed-top">
+        ...
+      </header>
+      <div class="modal-body">
+        ...
+      </div>
+      <footer class="modal-sticky-footer navbar-fixed-bottom">
+        ...
+      </footer>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Player details modal window has class name <code>.fluid-dialog</code> for <code>.modal-dialog</code> element to allow fluid width content. Also, it doesn't have <code>.modal-content</code> element, but instead three column elements holding
+                player details. Each column has class name <code>.player-details-col</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="player-information" tabindex="-1" role="dialog">
+  <a href="#" class="btn btn-primary btn-sm close-full-width-modal" data-dismiss="modal" aria-label="Close">
+    <span class="glyphicon icon-close"></span>
+  </a>
+  <div class="modal-dialog fluid-dialog" role="document">
+    <div class="player-details-number">1</div>
+    <div class="player-details clearfix">
+      <div class="player-details-col">
+        <header class="player-details-box-header">
+          ...
+        </header>
+        <div class="player-details-section clearfix">
+          ...
+        </div>
+        <div class="player-details-section clearfix">
+          ...
+        </div>
+      </div>
+      <div class="player-details-col">
+        ...
+      </div>
+      ...
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Player details expanded modal window contains a carousel <code>.carousel-player-details</code> to rotate through the all the players info. Otherwise it consists of mainly the same elements as player details modal window.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="player-information-expanded" tabindex="-1" role="dialog">
+  <a href="#" class="btn btn-primary btn-sm close-full-width-modal" data-dismiss="modal" aria-label="Close">
+    <span class="glyphicon icon-close"></span>
+  </a>
+  <div class="modal-dialog fluid-dialog horizontal-scroll" role="document">
+    <div class="carousel-player-details carousel slide" id="player-details-carousel" data-ride="carousel" data-interval="0" data-wrap="false">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="player-details expanded clearfix">
+            <div class="player-details-col-2">
+              ...
+            </div>
+            <div class="player-details-col-1">
+              ...
+            </div>
+            <div class="player-details-btns">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          ...
+        </div>
+        ...
+      </div>
+      <a class="left carousel-control" href="#player-details-carousel" role="button" data-slide="prev">
+        <span class="glyphicon icon-arrow-left-lg"></span>
+      </a>
+      <a class="right carousel-control" href="#player-details-carousel" role="button" data-slide="next">
+        <span class="glyphicon icon-arrow-right-lg"></span>
+      </a>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>View limits modal window has class name <code>.has-sidebar</code>, which makes it more wide. On the same level with <code>.modal-body</code> is an additional <code>.modal-sidebar</code> element, which hosts the selectors for table limits.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center has-sidebar" id="modal-view-limits" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-sidebar">
+        ...
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+        <a href="#" class="btn btn-primary btn-margins">APPLY TO TABLE</a>
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Toast modals are all located inside container <code>.toast-modals</code>, which is fixed positioned to the top right corner. Toast modals have class name <code>.modal-notification</code>, which makes them smaller than usual modal windows.</p>
+
+            <p>There can be multiple toast modals opened at the same time as the new ones appear below the previous ones.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="toast-modals">
+  <div class="modal fade modal-notification" id="notification1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-notification-header clearfix">
+            <span class="modal-label">Bet Change</span>
+            <span class="modal-notification-time pull-right">Now</span>
+          </div>
+          Seat 8, Richard T.<br>
+          <span class="alert-highlight">-250,000 Banker</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">DISMISS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+
+        <div class="well">
+
+            <p>Information toast modal is similar to the other toast modal, but doesn't require a special container element. They have class name <code>.modal-information-toast</code>, which gives them red background and a position at the bottom left of
+                the screen.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade modal-information-toast" id="information-toast" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-8 col-vertical-center">
+            SEAT 3: Player Clocked-Out
+          </div>
+          <div class="col-xs-3 col-vertical-center">
+            <a href="#" class="btn btn-primary" data-dismiss="modal">UNDO</a>
+          </div>
+          <a href="#" class="modal-close-btn" data-dismiss="modal">
+            <span class="glyphicon icon-close-sm-gold"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </code></pre>
+
+    </div>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+    <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="../js/dropdowns.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/demo.js"></script>
+    <script src="../js/chipset.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../vendor/prettify/css/prettify.css" />
+    <script src="../vendor/prettify/js/prettify.js"></script>
+    <script>
+        $(function() {
+            prettyPrint()
+        })
+    </script>
+
+</body>
+
+</html>

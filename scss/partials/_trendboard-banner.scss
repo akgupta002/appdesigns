@@ -1,0 +1,918 @@
+.main-section {
+  overflow: hidden;
+
+  > .row {
+    z-index: 999;
+  }
+}
+
+.banner-wrapper {
+  margin: 0 auto;
+  min-height: 200px;
+  min-width: 200px;
+  position: relative;
+  z-index: 1;
+  display:none;
+}
+
+.banner {
+  background: url("../assets/img/banner-rounded.png") no-repeat top left transparent;
+  background-position:center;
+  opacity:0;
+  transform: translate(0,0) scale(1);
+  transition: all 1000ms cubic-bezier(0.5,0,0,1);
+  z-index: 10;
+
+  .show-me & {
+    opacity:1;
+  }
+
+  @at-root {
+    @media (max-width:2200px) {
+      & {
+        min-height: 900px;
+        background-size:90%;
+      }
+    }
+    @media (max-width:1750px) {
+      & {
+        min-height: 648px;
+        background-size:80%;
+      }
+
+      .trend-bg & {
+        height: 100vh;
+        background-position: 50% 70%;
+      }
+    }
+  }
+}
+
+.deck-playing-cards {
+  width: 100%;
+  min-height: 250px;
+  position: absolute;
+  left: 0;
+  display:flex;
+  flex:1;
+  padding: 0 10em;
+  z-index:20;
+
+  @at-root {
+    @media (max-width:2200px) {
+      & {
+        top: 200px;
+      }
+    }
+    @media (max-width:1750px) {
+      & {
+        top: 185px;
+      }
+
+      .trend-bg & {
+        top: 285px;
+      }
+    }
+  }
+}
+
+//Styles for showing all cards with values
+.card {
+  position: relative;
+  background: transparent left top no-repeat;
+  background-size:cover;
+  margin-left:1em;
+  margin-right:1em;
+  box-shadow: 0 0 60px #000;
+  border-radius: 8px;
+
+  &-c1 { background-image:url("../assets/cards/Ace_Clubs.png"); }
+  &-c2 { background-image:url("../assets/cards/2_Clubs.png"); }
+  &-c3 { background-image:url("../assets/cards/3_Clubs.png"); }
+  &-c4 { background-image:url("../assets/cards/4_Clubs.png"); }
+  &-c5 { background-image:url("../assets/cards/5_Clubs.png"); }
+  &-c6 { background-image:url("../assets/cards/6_Clubs.png"); }
+  &-c7 { background-image:url("../assets/cards/7_Clubs.png"); }
+  &-c8 { background-image:url("../assets/cards/8_Clubs.png"); }
+  &-c9 { background-image:url("../assets/cards/9_Clubs.png"); }
+  &-c10 { background-image:url("../assets/cards/10_Clubs.png"); }
+  &-c11 { background-image:url("../assets/cards/Jack_Clubs.png"); }
+  &-c12 { background-image:url("../assets/cards/Queen_Clubs.png"); }
+  &-c13 { background-image:url("../assets/cards/King_Clubs.png"); }
+
+  &-d1 { background-image:url("../assets/cards/Ace_Diamonds.png"); }
+  &-d2 { background-image:url("../assets/cards/2_Diamonds.png"); }
+  &-d3 { background-image:url("../assets/cards/3_Diamonds.png"); }
+  &-d4 { background-image:url("../assets/cards/4_Diamonds.png"); }
+  &-d5 { background-image:url("../assets/cards/5_Diamonds.png"); }
+  &-d6 { background-image:url("../assets/cards/6_Diamonds.png"); }
+  &-d7 { background-image:url("../assets/cards/7_Diamonds.png"); }
+  &-d8 { background-image:url("../assets/cards/8_Diamonds.png"); }
+  &-d9 { background-image:url("../assets/cards/9_Diamonds.png"); }
+  &-d10 { background-image:url("../assets/cards/10_Diamonds.png"); }
+  &-d11 { background-image:url("../assets/cards/Jack_Diamonds.png"); }
+  &-d12 { background-image:url("../assets/cards/Queen_Diamonds.png"); }
+  &-d13 { background-image:url("../assets/cards/King_Diamonds.png"); }
+
+  &-h1 { background-image:url("../assets/cards/Ace_Hearts.png"); }
+  &-h2 { background-image:url("../assets/cards/2_Hearts.png"); }
+  &-h3 { background-image:url("../assets/cards/3_Hearts.png"); }
+  &-h4 { background-image:url("../assets/cards/4_Hearts.png"); }
+  &-h5 { background-image:url("../assets/cards/5_Hearts.png"); }
+  &-h6 { background-image:url("../assets/cards/6_Hearts.png"); }
+  &-h7 { background-image:url("../assets/cards/7_Hearts.png"); }
+  &-h8 { background-image:url("../assets/cards/8_Hearts.png"); }
+  &-h9 { background-image:url("../assets/cards/9_Hearts.png"); }
+  &-h10 { background-image:url("../assets/cards/10_Hearts.png"); }
+  &-h11 { background-image:url("../assets/cards/Jack_Hearts.png"); }
+  &-h12 { background-image:url("../assets/cards/Queen_Hearts.png"); }
+  &-h13 { background-image:url("../assets/cards/King_Hearts.png"); }
+
+  &-s1 { background-image:url("../assets/cards/Ace_Spades.png"); }
+  &-s2 { background-image:url("../assets/cards/2_Spades.png"); }
+  &-s3 { background-image:url("../assets/cards/3_Spades.png"); }
+  &-s4 { background-image:url("../assets/cards/4_Spades.png"); }
+  &-s5 { background-image:url("../assets/cards/5_Spades.png"); }
+  &-s6 { background-image:url("../assets/cards/6_Spades.png"); }
+  &-s7 { background-image:url("../assets/cards/7_Spades.png"); }
+  &-s8 { background-image:url("../assets/cards/8_Spades.png"); }
+  &-s9 { background-image:url("../assets/cards/9_Spades.png"); }
+  &-s10 { background-image:url("../assets/cards/10_Spades.png"); }
+  &-s11 { background-image:url("../assets/cards/Jack_Spades.png"); }
+  &-s12 { background-image:url("../assets/cards/Queen_Spades.png"); }
+  &-s13 { background-image:url("../assets/cards/King_Spades.png"); }
+}
+
+.show-2cards,
+.show-3cards {
+  opacity:0;
+
+  @at-root {
+    @media (max-width: 2200px){
+      & {
+        width: 288px !important;
+        height: 393.6px !important;
+      }
+    }
+    @media (max-width: 1750px){
+      & {
+        width: 180px !important;
+        height: 246px !important;
+      }
+    }
+  }
+}
+
+//Styles for 3 divs(columns) in a banner
+.show-area {
+  flex: 1;
+}
+
+.player-cards,
+.banker-cards {
+  flex: 2;
+}
+
+.show-area,
+.player-cards,
+.banker-cards {
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.player-cards {
+
+  .show-3cards {
+    transition: all 0.4s ease 100ms;
+  }
+
+  @at-root {
+    @media (max-width:2200px) {
+      & .show-3cards {
+        &:nth-child(1){
+          transform: translate(80px, -15px) rotateZ(0deg) scale(0.5);
+        }
+        &:nth-child(2){
+          transform: translate(-60px, -15px) rotateZ(0deg) scale(0.5);
+        }
+        &:nth-child(3){
+          transform: translate(-470px, 105px) rotateZ(90deg) scale(0.5);
+        }
+      }
+    }
+    @media (max-width:1750px) {
+      & .show-3cards {
+        &:nth-child(1) {
+          transform: translate(80px, -35px) rotateZ(0deg) scale(0.5);
+        }
+
+        &:nth-child(2) {
+          transform: translate(-20px, -35px) rotateZ(0deg) scale(0.5);
+        }
+
+        &:nth-child(3) {
+          transform: translate(15px, 55px) rotateZ(90deg) scale(0.5);
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.banker-cards {
+
+  .show-3cards {
+    transition: all 0.4s ease 100ms;
+  }
+
+  @at-root {
+    @media (max-width:2200px) {
+      & .show-3cards {
+        &:nth-child(1){
+          transform: translate(95px, -15px) rotateZ(0deg) scale(0.5);
+        }
+        &:nth-child(2){
+          transform: translate(-45px, -15px) rotateZ(0deg) scale(0.5);
+        }
+        &:nth-child(3){
+          transform: translate(-450px, 105px) rotateZ(90deg) scale(0.5);
+        }
+      }
+    }
+    @media (max-width:1750px) {
+      & .show-3cards {
+        &:nth-child(1) {
+          transform: translate(20px, -35px) rotateZ(0deg) scale(0.5);
+        }
+
+        &:nth-child(2) {
+          transform: translate(-80px, -35px) rotateZ(0deg) scale(0.5);
+        }
+
+        &:nth-child(3) {
+          transform: translate(-50px, 55px) rotateZ(90deg) scale(0.5);
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.show-me {
+  .player-cards .show-3cards,
+  .banker-cards .show-3cards {
+    opacity:1;
+  }
+}
+
+// Showing winning chip for Player, Banker and Tie wins
+.winning-chip {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #000;
+  opacity: 0;
+  transition: all 1s ease-in-out 100ms;
+  z-index: 50;
+
+  @at-root {
+    @media (max-width: 2200px) {
+      & {
+        top: 120px;
+        width: 300px;
+        height: 300px;
+      }
+    }
+    @media (max-width: 1750px) {
+      & {
+        top: 60px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.winning-chip {
+  &.player {
+    background: url("../assets/img/ball_player.png") no-repeat transparent;
+    background-size: 106%;
+    background-position: -6px;
+    left: 20%;
+    transform: translate(0px, 120px) scale(0.1) rotateX(235deg);
+
+    .show-me & {
+      opacity: 1;
+      transition: all 700ms ease-in 700ms;
+    }
+
+  }
+
+  &.banker {
+    background: url("../assets/img/ball_banker.png") no-repeat transparent;
+    background-size: 106%;
+    background-position: -6px;
+    left: 63.5%;
+    transform: translate(-50px, 120px) scale(0.1) rotateX(-235deg);
+
+    .show-me & {
+      opacity: 1;
+      transition: all 700ms ease-in 700ms;
+    }
+  }
+}
+
+.winning-chip {
+  @at-root {
+    @media (max-width:2200px) {
+      &.banker {
+        .show-me & {
+          transform: translate(-405px, 120px) scale(2) rotateX(0deg);
+        }
+      }
+    }
+
+    @media (max-width:1750px) {
+
+      &.player {
+        .trend-bg .show-me & {
+          transform: translate(330px, 220px) scale(2) rotateX(0deg);
+        }
+      }
+
+      &.banker {
+        .show-me & {
+          transform: translate(-295px, 120px) scale(2) rotateX(0deg);
+        }
+
+        .trend-bg .show-me & {
+          transform: translate(-295px, 220px) scale(2) rotateX(0deg);
+        }
+      }
+
+      &.tie {
+        left:40%;
+        transform: translate(45px, 120px) scale(2);
+
+        .trend-bg & {
+          transform: translate(45px, 220px) scale(2);
+        }
+
+        .trend-bg .show-me & {
+          transform: translate(45px, 220px) scale(2);
+        }
+      }
+    }
+  }
+
+  &.tie {
+    background: url("../assets/img/ball_tie.png") no-repeat transparent;
+    background-size: 106%;
+    background-position: -6px;
+
+    .show-me & {
+      opacity: 1;
+      transition: all 400ms linear 1200ms;
+    }
+  }
+}
+
+//Showing glow effect on player and Banker wins
+.sparkle {
+  background: url(../assets/img/flare.png) no-repeat top left;
+  background-size: 100%;
+  position: absolute;
+  z-index: 40;
+  width: 1000px;
+  height: 1000px;
+  left: 15%;
+  opacity: 0;
+
+  @at-root {
+    @media (max-width: 2200px) {
+      & {
+        top: -130px;
+      }
+    }
+    @media (max-width: 1750px) {
+      & {
+        top: -220px;
+      }
+
+      .trend-bg & {
+        top: -130px;
+      }
+    }
+  }
+}
+
+.show-me {
+  .player + .sparkle {
+    animation: player-sparkling 900ms ease-in-out 1200ms;
+    animation-fill-mode: forwards;
+  }
+
+  .banker + .sparkle {
+    animation: sparkling 900ms ease-in-out 1200ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+//Styles for showing banners and glow on html having trendUI
+.trend-bg .show-me {
+  .player + .sparkle {
+    animation: player-sparkling2 900ms ease-in-out 1300ms;
+    animation-fill-mode: forwards;
+  }
+  .banker + .sparkle {
+    animation: sparkling2 900ms ease-in-out 1300ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+//Media queries 2200px: Animating glow effect from left to right for Banker win
+@media (max-width: 2200px) {
+  @keyframes sparkling {
+    0% {
+      opacity: 0;
+      top: -120px;
+      left: 28%;
+      transform: rotateZ(0deg) scale(1.6);
+    }
+
+    5% {
+      opacity:1;
+    }
+
+    100% {
+      opacity: 0;
+      left: 75%;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+
+  @keyframes player-sparkling {
+    0% {
+      opacity: 0;
+      top: -120px;
+      left: -22%;
+      transform: rotateZ(0deg) scale(1.6);
+    }
+
+    5% {
+      opacity:1;
+    }
+
+    100% {
+      opacity: 0;
+      left: 15%;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+}
+
+
+//Media queries 1750px: Animating glow effect from left to right for Player win
+@media (max-width: 1750px) {
+  @keyframes sparkling {
+    0% {
+      opacity: 0;
+      top: -130px;
+      left: 15%;
+      transform: rotateZ(0deg) scale(1);
+    }
+
+    5% {
+      opacity:1;
+    }
+
+    80% {
+      opacity:1;
+      transform: rotateZ(30deg) scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      left: 70%;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+
+  @keyframes player-sparkling {
+    0% {
+      opacity: 0;
+      top: -220px;
+      left: -20%;
+      transform: rotateZ(0deg) scale(1);
+    }
+
+    25% {
+      opacity:1;
+    }
+
+    80% {
+      opacity:1;
+      left: 15%;
+      transform: rotateZ(30deg) scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+
+  @keyframes sparkling2 {
+    0% {
+      opacity: 1;
+      top: -130px;
+      left: 15%;
+      transform: rotateZ(0deg) scale(1);
+    }
+    80% {
+      opacity:0.7;
+      transform: rotateZ(30deg) scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      left: 60%;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+
+  @keyframes player-sparkling2 {
+    0% {
+      opacity: 1;
+      top: -130px;
+      left: -45%;
+      transform: rotateZ(0deg) scale(1);
+    }
+
+    80% {
+      opacity:0.7;
+      transform: rotateZ(30deg) scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      left: 15%;
+      transform: rotateZ(45deg) scale(0);
+    }
+  }
+}
+
+// Showing stars on Tie banner show
+
+.tie-sparkle {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  opacity:1;
+
+  .show-me & {
+    transition: all 1s linear;
+  }
+
+  @at-root {
+    @media (max-width: 2200px) {
+      & {
+        top: 4em;
+        left: 3%;
+        transform: scale(1.25);
+      }
+    }
+    @media (max-width: 1750px) {
+      & {
+        top: 0;
+        left: 2%;
+        transform: scale(1);
+      }
+
+      .trend-bg & {
+        top: 7em;
+        left: 2%;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+// Distributing stars around the Tie-winning chip
+
+.sm-sparkling {
+  $class-size: size !default;
+  @for $i from 1 through 20 {
+    &.#{$class-size}#{$i*10}{
+      width: 5px + $i*10;
+      height: 5px + $i*10;
+    }
+  }
+
+  $class-left: left !default;
+  @for $l from 6 through 12 {
+    &.#{$class-left}#{$l*5} {
+      left: percentage(($l * 5)/100);
+    }
+  }
+
+  $class-top: top !default;
+  @for $t from 0 through 6 {
+    &.#{$class-top}#{$t*5} {
+      top: ($t * 5) + em;
+    }
+  }
+
+  background: url("../assets/icons/sparkle-green.svg") no-repeat 0px 0px transparent;
+  background-size: 100%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 45;
+  transform: rotateZ(30deg) scale(0);
+
+  .show-me & {
+    opacity: 1;
+    animation: star-sparkles 900ms ease-in-out 400ms;
+    animation-fill-mode: forwards;
+    transition: all 900ms ease-in-out 400ms;
+  }
+}
+
+// Animating stars for Tie win
+@keyframes star-sparkles {
+  0% {
+    transform: rotateZ(30deg) scale(0);
+  }
+
+  50% {
+    transform: rotateZ(120deg) scale(1.5);
+  }
+
+  100% {
+    transform: rotateZ(210deg) scale(0);
+  }
+}
+
+.trend-bg {
+  background:
+          url("../assets/img/trend-bg.jpg")
+          no-repeat
+          top center / 100% 100%
+          fixed
+          padding-box
+          content-box
+          silver;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.btn-bar {
+  background-color: rgba(255, 228, 196, 0.8);//bisque
+  padding:4px;
+  box-shadow: 0px -4px 10px #000;
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+
+  .btn {
+    box-shadow: 1px 1px 4px #000;
+  }
+}
+
+//Dragon7 splash screen CSS styles
+.dragon7-wrapper {
+  display:none;
+  height: 100vh;
+}
+
+.dragon7-win {
+  height: 100vh;
+  position: relative;
+  z-index:500;
+}
+
+.dragon7-overlay {
+  height: 100vh;
+  width: 100vw;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 73, 39,0.7) 0%, rgba(0, 0, 0,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 73, 39,0.7) 0%, rgba(0, 0, 0,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(255, 73, 39,0.7) 0%, rgba(0, 0, 0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03000000', endColorstr='#FF4927',GradientType=1 );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:450;
+}
+
+.dragon7-bg {
+  background: url("../assets/img/dragon7-bg-sprite.png") no-repeat 0px 0px transparent;
+  width: 750px;
+  height: 740px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 21%;
+  opacity: 0.5;
+  transform: scaleX(2);
+  animation: bg-sprite 1500ms steps(10) infinite reverse;
+  z-index: 400;
+ }
+
+/* Adding new bg */
+.dragon7-bg {
+  background: url("../assets/img/starburst-bg-2048.png") no-repeat 0px 0px transparent;
+  width: 2048px;
+  height: 2048px;
+  position: fixed;
+  top: calc(50vh - 70em);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.5;
+  transform: rotate(0deg);
+  animation: bg-spin 20s linear infinite;
+  z-index: 400;
+}
+
+@keyframes bg-sprite {
+  100% {
+    background-position: -7500px 0px;
+  }
+}
+@keyframes bg-spin {
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.dragon7-flame {
+  background: url("../assets/img/dragon7-flame-sprite.png") 0 0 no-repeat transparent;
+  background-position: 0 0;
+  position: absolute;
+  left: 21%;
+  top: -10px;
+  width: 825px;
+  height: 750px;
+  transform: scale(0.1);
+  opacity: 0.1;
+  transition: all 1s linear;
+  z-index:500;
+
+  .show-me & {
+    animation: flame-sprite 2s steps(13) infinite;
+    //transform: scale(1);
+    opacity:0.8;
+    transform: scale(1.5);
+    top: 23em;
+    left: 34%;
+  }
+}
+
+@keyframes flame-sprite {
+  100% {
+    background-position: -10729px 0;
+  }
+}
+
+.dragon7-chip {
+  background: url("../assets/img/dragon7-splash-sprite.png") no-repeat 0 0 transparent;
+  width: 579.45px;
+  height: 574px;
+  overflow: hidden;
+  position: relative;
+  left: 30%;
+  top: 75px;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 900ms ease-in;
+  animation: dragon7-sprite 2s steps(22) reverse;
+  z-index:510;
+
+  .show-me & {
+    transform: scale(1.4);
+    opacity:1;
+    top: 27em;
+    left: 39%;
+  }
+}
+
+.dragon7-sm-anim {
+  background: url("../assets/img/dragon7-sm-sprite.png") no-repeat 0 0 transparent;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 30%;
+  top: 75px;
+  opacity: 0;
+  z-index:510;
+  animation: dragon7-sm-spin 1s steps(59) infinite;
+
+  .show-me & {
+    opacity: 1;
+  }
+
+  &.lg-anim {
+    transform: scale(2);
+  }
+}
+
+.dragon7-gif {
+  background: url("../assets/img/dragon7-30fps.gif") no-repeat 0 0 transparent;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 30%;
+  top: 75px;
+  z-index:510;
+}
+
+@keyframes dragon7-sm-spin {
+  100% {
+    background-position: -2655px 0;
+  }
+}
+
+@keyframes dragon7-sprite {
+  100% {
+    background-position: -12751px 0;
+  }
+}
+
+@keyframes curve-path {
+  0%{
+    transform: translate(0,0);
+  }
+  25%{
+    transform: translate(0,-300px);
+  }
+  60%,100%{
+    transform: translate(0,0);
+  }
+}
+
+.dragon7-chinese {
+  background: url("../assets/img/dragon7-chinese.png") no-repeat 0 0 transparent;
+  width: 235px;
+  height: 260px;
+  position: absolute;
+  top: 30%;
+  opacity:0;
+  transform: scale(0.5);
+  transition: all 900ms ease-in 400ms;
+  z-index:500;
+
+  &.pull-left {
+    left: 40%;
+  }
+
+  &.pull-right {
+    right: 40%;
+  }
+}
+
+.show-me .dragon7-chinese {
+  &.pull-left {
+    left: 15%;
+    opacity:1;
+    transform: scale(2);
+  }
+  &.pull-right {
+    right: 15%;
+    opacity:1;
+    transform: scale(2);
+  }
+}
+
+//Styles to remove flicker from the elements
+.banner,
+.player-cards .show-3cards,
+.banker-cards .show-3cards,
+.winning-chip.player,
+.winning-chip.banker,
+.show-me .player + .sparkle,
+.show-me .banker + .sparkle,
+.trend-bg .show-me .player + .sparkle,
+.trend-bg .show-me .banker + .sparkle,
+.sm-sparkling,
+.dragon7-bg,
+.dragon7-flame,
+.dragon7-chinese,
+.btn-bar
+{
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+  transform-style: preserve-3d;
+}
+
+
+.flat-ui {
+  .cell,
+  .sm-cell {
+    border-radius: 0;
+  }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PP1.2 | Trendboard Banner</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+    <section class="main-section banker-win">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="btn-group-lg">
+                    <!--<button id="btn-show1" class="btn btn-primary btn-lg">Show Player Win</button>-->
+                    <button id="btn-show" class="btn btn-primary btn-lg">Show Banker Win</button>
+                    <!--<button id="btn-show3" class="btn btn-primary btn-lg">Show Tie Win</button>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-wrapper">
+            <!-- show banner first -->
+            <div class="banner"></div>
+
+            <!-- ...then show 2x2 cards -->
+            <div class="deck-playing-cards game-with-4cards hide">
+
+                <div class="player-cards pull-left">
+                    <div class="card card-d1 show-2cards"></div>
+                    <div class="card card-d2 show-2cards"></div>
+                </div>
+                <div class="show-area"></div>
+                <div class="banker-cards pull-right">
+                    <div class="card card-d4 show-2cards"></div>
+                    <div class="card card-d6 show-2cards"></div>
+                </div>
+
+            </div>
+
+            <!-- ...then show 3x3 cards -->
+            <div class="deck-playing-cards game-with-6cards">
+
+                <div class="player-cards pull-left">
+                    <div class="card card-d1 show-3cards"></div>
+                    <div class="card card-d2 show-3cards"></div>
+                    <div class="card card-d3 show-3cards"></div>
+
+                </div>
+                <div class="show-area"></div>
+                <div class="banker-cards pull-right">
+                    <div class="card card-d4 show-3cards"></div>
+                    <div class="card card-d6 show-3cards"></div>
+                    <div class="card card-d6 show-3cards"></div>
+                </div>
+
+            </div>
+
+            <!-- ...then show winning coin/chip -->
+            <div class="winning-chip banker"></div>
+
+            <!-- ...simultaneously show winning effect -->
+            <div class="sparkle"></div>
+
+            <!-- and finally hide the banner -->
+
+        </div>
+
+    </section>
+
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+    <script src="../vendor/jquery-ui.js"></script>
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+
+    <script>
+        $('#btn-show').on('click',function(){
+            $("body").find(".banner-wrapper").toggleClass("show-me").find('.winning-chip').addClass("banker");
+        });
+    </script>
+</body>
+</html>

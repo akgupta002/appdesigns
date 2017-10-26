@@ -1,0 +1,305 @@
+// **************** UI TABLE FIXED CSS By KUSH MALHOTRA *************** //
+
+.table-wrapper {
+  position: relative;
+  padding-top: 5em;
+  overflow-x: hidden;
+
+  .table-default,
+  .table-defaultModalSearch {
+    th {
+      padding-top:0;
+      padding-bottom:0;
+    }
+    thead > tr {
+      border-bottom: inherit;
+    }
+  }
+}
+
+.table-default .narrow,
+.table-defaultModal .narrow {
+  width: 1%;
+  padding-right: 0;
+  margin-left: 20px;
+}
+
+.container1 {
+  border-top: 1px dashed rgba(187, 145, 86, 0.2);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-bottom: 50px;
+  min-height: .01%;
+  transition: height 1s;
+}
+
+.has-fixed-header {
+  margin-top: 0;
+
+  &.has-filters-above {
+    height: inherit;
+  }
+}
+
+/*
+Calculating Height for Sessions, Games, Manual Ratings and Bankroll tables
+*/
+
+.table-filters ~ .has-fixed-header .container1 {
+  height: calc(100vh - 500px);
+}
+
+.table-filters.collapse ~ .has-fixed-header .container1 {
+  height: calc(100vh - 440px);
+}
+
+.has-fixed-header .container1 {
+  height: calc(100vh - 500px);
+}
+
+/*
+Calculating Height for modal-searched-result table
+ */
+.modal-searched-result.has-fixed-header .container1 {
+  height: calc(100vh - 680px);
+}
+
+.sortorderCasinoManGamingArea:after,
+.sortorderCasinoManPit:after,
+.sortorderCasinoManTable:after,
+.sortorderCasinoManSupervisor:after,
+.sortorderCasinoManDealer:after,
+.sortorderCasinoManRolled:after,
+.sortorderCasinoManOpener:after,
+.sortorderCasinoManCloser:after,
+.sortorderCasinoManCas:after,
+.sortorderCasinoManBuyIn:after,
+.sortorderCasinoManStatus:after,
+.sortorderCasinoManRatingStatus:after,
+.sortorderCasinoManRatingTable:after,
+.sortorderCasinoManRatingPlayer:after,
+.sortorderCasinoManRatingStartTime:after,
+.sortorderCasinoManRatingStopTime:after,
+.sortorderCasinoManRatingTotalTime:after,
+.sortorderCasinoManRatingSeat:after,
+.sortorderCasinoManRatingCashBuyIn:after,
+.sortorderCasinoManRatingAvgBet:after,
+.sortorderCasinoManRatingCasinoWL:after,
+.sortorderCasinoManRatingIRC:after,
+.sortorderCasinoManRatingCretBy:after,
+.sortorderCasinoManRatingApprBy:after,
+.sortorderCasinoManRatingRID:after,
+.sortorderCasinoManRatingTables:after,
+.sortorderCasinoManRatingType3:after,
+.sortorderOtherTables:after,
+.sortorderOtherPPTables:after,
+.sortorderCasinoManPlayersTAB:after{
+  content: '\25b2';
+  font-size: 10px;
+  top: 0;
+  position: relative;
+  left: 0; }
+
+.sortorderCasinoManGamingArea.reverse:after,
+.sortorderCasinoManPit.reverse:after,
+.sortorderCasinoManTable.reverse:after,
+.sortorderCasinoManSupervisor.reverse:after,
+.sortorderCasinoManDealer.reverse:after,
+.sortorderCasinoManRolled.reverse:after,
+.sortorderCasinoManOpener.reverse:after,
+.sortorderCasinoManCloser.reverse:after,
+.sortorderCasinoManCas.reverse:after,
+.sortorderCasinoManBuyIn.reverse:after,
+.sortorderCasinoManStatus.reverse:after,
+.sortorderCasinoManRatingStatus.reverse:after,
+.sortorderCasinoManRatingTable.reverse:after,
+.sortorderCasinoManRatingPlayer.reverse:after,
+.sortorderCasinoManRatingStartTime.reverse:after,
+.sortorderCasinoManRatingStopTime.reverse:after,
+.sortorderCasinoManRatingTotalTime.reverse:after,
+.sortorderCasinoManRatingSeat.reverse:after,
+.sortorderCasinoManRatingCashBuyIn.reverse:after,
+.sortorderCasinoManRatingAvgBet.reverse:after,
+.sortorderCasinoManRatingCasinoWL.reverse:after,
+.sortorderCasinoManRatingIRC.reverse:after,
+.sortorderCasinoManRatingCretBy.reverse:after,
+.sortorderCasinoManRatingApprBy.reverse:after,
+.sortorderCasinoManRatingRID.reverse:after,
+.sortorderCasinoManRatingTables.reverse:after,
+.sortorderCasinoManRatingType3.reverse:after,
+.sortorderOtherTables.reverse:after,
+.sortorderOtherPPTables.reverse:after,
+.sortorderCasinoManPlayersTAB.reverse:after{
+  content: '\25bc';
+  color: #bb9156;
+}
+
+.sortorderCasinoManGamingArea:after {
+  left: 48px;
+}
+
+.sortorderCasinoManPit:after{
+  left:20px;
+}
+
+.sortorderCasinoManTable:after{
+  left:35px;
+}
+
+.sortorderCasinoManSupervisor:after{
+  left:68px;
+}
+
+.sortorderCasinoManDealer:after{
+  left:44px;
+}
+
+.sortorderCasinoManRolled:after{
+  left:42px;
+
+}
+
+.sortorderCasinoManOpener:after{
+  left:50px;
+}
+
+.sortorderCasinoManCloser:after{
+  left:40px;
+}
+
+.sortorderCasinoManCas:after{
+  left:45px;
+}
+
+.sortorderCasinoManBuyIn:after{
+  left:25px;
+}
+
+.sortorderCasinoManStatus:after{
+  left:40px;
+}
+.sortorderCasinoManRatingStatus:after{
+  left:18px;
+  top:15px;
+}
+.sortorderCasinoManRatingTable:after{
+  left:37px;
+}
+.sortorderCasinoManRatingPlayer:after{
+  left:41px;
+}
+.sortorderCasinoManRatingStartTime:after{
+  left:35px;
+}
+.sortorderCasinoManRatingStopTime:after{
+  left:31px;
+}
+.sortorderCasinoManRatingTotalTime:after{
+  left:35px;
+}
+.sortorderCasinoManRatingSeat:after{
+  left:18px;
+  top:15px;
+}
+.sortorderCasinoManRatingCashBuyIn:after{
+  left:31px;
+}
+.sortorderCasinoManRatingAvgBet:after{
+  left:40px;
+  top:15px;
+}
+.sortorderCasinoManRatingCasinoWL:after{
+  left:35px;
+  top:15px;
+}
+.sortorderCasinoManRatingIRC:after{
+  left:25px;
+}
+.sortorderCasinoManRatingCretBy:after{
+  left:52px;
+}
+.sortorderCasinoManRatingApprBy:after{
+  left:63px;
+}
+.sortorderCasinoManRatingRID:after{
+  left:30px;
+  top:15px;
+}
+.sortorderCasinoManRatingTables:after{
+  left: 35px;
+  top:15px;
+}
+.sortorderCasinoManRatingType3:after{
+  left: 15px;
+  top:29px;
+}
+.sortorderOtherTables:after{
+  left:20px;
+  top:30px;
+}
+.sortorderOtherPPTables:after{
+  left: 35px;
+}
+.sortorderCasinoManPlayersTAB:after{
+  left:20px;
+  top:45px;
+}
+
+.table-default th div,
+.table-defaultModal th div {
+  position: absolute;
+  background: transparent;
+  color: #bb9156;
+  padding: 19px 25px;
+  top: -10px;
+  max-width:3%;
+  margin-left: -25px;
+  line-height: normal;
+  border-left: 0px solid #800; }
+
+.chinese .table-default th div,
+.chinese .table-defaultModal th div {
+  max-width: inherit;
+  margin-left: -15px; }
+
+.chinese .table-default th {
+  font-size: 10px !important;
+  padding-left: 5px; }
+
+.chinese .table-default td {
+  font-size: 13px; }
+
+.table-defaultModalSearch th div {
+  position: absolute;
+  background: transparent;
+  color: #bb9156;
+  padding: 19px 25px;
+
+  top: -10px;
+  margin-left: -25px;
+  line-height: normal;
+  border-left: 0px solid #800;
+
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-default th, .table-default td {
+  min-width: 6ch;
+  padding-left: 14px; }
+
+
+.table-defaultModal th, .table-defaultModal td {
+
+  padding-left: 31px; }
+
+.table-defaultModalSearch th, .table-defaultModalSearch td{
+
+  padding-left: 54px;
+
+}

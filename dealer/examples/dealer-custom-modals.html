@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+
+  <body class="dealer">
+
+    <section class="main-content">
+
+      <div class="container">
+
+        <div class="page-header">
+          <h1>Dealer - Custom modal windows</h1>
+        </div>
+
+        <h3>Player data modal window</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#player-data">
+          OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center scale-in" id="player-data" tabindex="-1" role="dialog">
+
+          <div class="modal-dialog fluid-dialog" role="document"  data-dismiss="modal">
+
+            <div class="dealer-player-data-name text-center">TIM NASH</div>
+            <div class="dealer-player-data-number text-center">#24252</div>
+
+            <img class="dealer-player-image dealer-player-image-lg" src="../../assets/img/game-player-dealer-default.svg" alt="Tim Nash" />
+
+          </div>
+
+        </div>
+
+        <h3>Swipe player modal window</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#add-player">
+          OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="add-player" tabindex="-1" role="dialog">
+
+          <a class="dealer-menu-close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon icon-dealer-close"></span>
+          </a>
+
+          <div class="modal-dialog has-outer-footer" role="document">
+            <div class="modal-content">
+
+              <div class="modal-body modal-section vertical-align">
+
+                <h1>
+                  <img src="../../assets/img/swipe-player-id-card.svg" class="pull-right" width="143" height="104" />
+                  Swipe<br>Player ID Card
+                </h1>
+
+              </div>
+
+              <div class="modal-outer-footer text-right">
+                <a href="#" class="btn btn-primary">
+                  <span class="glyphicon icon-search-btn"></span>
+                  SEARCH PLAYER
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <h3>Player information modal window</h3>
+
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#player-information">
+          OPEN MODAL WINDOW
+        </button>
+
+        <div class="modal fade vertical-center" id="player-information" tabindex="-1" role="dialog">
+
+          <a class="dealer-menu-close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon icon-dealer-close"></span>
+          </a>
+
+          <div class="modal-dialog fluid-dialog" role="document">
+
+            <div class="player-details dealer-player-details expanded clearfix">
+
+              <div class="player-details-col-2">
+
+                <div class="player-details-box">
+
+                  <header class="player-details-box-header">
+                    <div class="player-details-seat-number">5</div>
+                    <div class="player-details-name dealer-player-details-name dealer-player-data-name">MIKE STEVENSON</div>
+                    <img class="player-details-image dealer-player-details-image" src="../../assets/img/game-player-dealer-default.svg" alt="Mike Stevenson">
+                  </header>
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+                      <div class="player-details-item-col">
+
+                        <div class="player-details-item-header">HISTORY</div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Rating:</span>
+                          <span class="item-data-value pull-right">15</span>
+                        </div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Chips in:</span>
+                          <span class="item-data-value pull-right">300,000,000</span>
+                        </div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Win/Loss:</span>
+                          <span class="item-data-value pull-right">(100,350)</span>
+                        </div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Turnover:</span>
+                          <span class="item-data-value pull-right">70,000</span>
+                        </div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Avg. bet:</span>
+                          <span class="item-data-value pull-right">500,000</span>
+                        </div>
+
+                        <div class="player-details-item-row">
+                          <span class="item-data-label">Start time:</span>
+                          <span class="item-data-value pull-right">13:21</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="player-details-item-col">
+
+                        <div class="player-details-item-header">CURRENT BET</div>
+
+                        <div class="player-details-bet-row">
+                          <span class="item-data-label">P</span>
+                          <span class="item-data-value pull-right">100,000,000</span>
+                        </div>
+
+                        <div class="player-details-bet-row empty">
+                          <span class="item-data-label">B</span>
+                        </div>
+
+                        <div class="player-details-bet-row empty">
+                          <span class="item-data-label">PP</span>
+                        </div>
+
+                        <div class="player-details-bet-row">
+                          <span class="item-data-label">BP</span>
+                          <span class="item-data-value pull-right">70,000,000</span>
+                        </div>
+
+                        <div class="player-details-bet-row">
+                          <span class="item-data-label">T</span>
+                          <span class="item-data-value pull-right">70,000,000</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-change"></span>
+                  </span>
+                  Change
+                </a>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-buy-in"></span>
+                  </span>
+                  Buy-in
+                </a>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-swipe-player"></span>
+                  </span>
+                  Swipe<br>Player
+                </a>
+
+              </div>
+
+              <div class="player-details-col-1">
+
+                <div class="player-details-box">
+                  <div class="player-details-item-col">
+
+                    <div class="player-details-item-header">NOTES</div>
+
+                    <textarea class="textarea player-details-notes-textarea">A note here.</textarea>
+
+                    <div class="player-details-item-footer">
+                      <a href="#" class="btn btn-primary">ADD NOTE</a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-cancel-rating"></span>
+                  </span>
+                  Cancel<br>Rating
+                </a>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-move-player"></span>
+                  </span>
+                  Move<br>Player
+                </a>
+
+                <a href="#" class="player-details-btn">
+                  <span class="player-details-btn-icon">
+                    <span class="glyphicon icon-dealer-clock-out"></span>
+                  </span>
+                  Clock-<br>out
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><!-- .container -->
+
+
+      <!-- Documentation -->
+
+      <div class="container documentation">
+
+        <div class="well">
+
+          <p>Vertically centered modal windows can have class name <code>.vertical-center</code>. Extra class name <code>.scale-in</code> creates a zoom in effect for modal opening.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center scale-in" id="player-data" tabindex="-1" role="dialog">
+  <div class="modal-dialog fluid-dialog" role="document"  data-dismiss="modal">
+    <div class="dealer-player-data-name text-center">TIM NASH</div>
+    <div class="dealer-player-data-number text-center">#24252</div>
+    <img class="dealer-player-image dealer-player-image-lg" src="../../assets/img/game-player-dealer-default.svg" alt="Tim Nash" />
+  </div>
+</div>
+        </code></pre>
+
+
+        <div class="well">
+
+          <p>Modal windows can have footer content positioned outside the actual modal by adding class name <code>.has-outer-footer</code> to the <code>.modal-dialog</code> element. The actual footer content is inside element  <code>.modal-outer-footer</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="add-player" tabindex="-1" role="dialog">
+  <a class="dealer-menu-close" data-dismiss="modal" aria-label="Close">
+    <span class="glyphicon icon-dealer-close"></span>
+  </a>
+  <div class="modal-dialog has-outer-footer" role="document">
+    <div class="modal-content">
+      <div class="modal-body modal-section vertical-align">
+        <h1>
+          <img src="../../assets/img/swipe-player-id-card.svg" class="pull-right" width="143" height="104" />
+          Swipe<br>Player ID Card
+        </h1>
+      </div>
+      <div class="modal-outer-footer text-right">
+        <a href="#" class="btn btn-primary">
+          <span class="glyphicon icon-search-btn"></span>
+          SEARCH PLAYER
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+        </code></pre>
+
+
+        <div class="well">
+
+          <p>Player information modal window has class name <code>.fluid-dialog</code> for <code>.modal-dialog</code> element to allow fluid width content. Also, it doesn't have <code>.modal-content</code> element, but instead column elements holding player details <code>.player-details-col-2</code> and <code>.player-details-col-1</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="modal fade vertical-center" id="player-information" tabindex="-1" role="dialog">
+  <a class="dealer-menu-close" data-dismiss="modal" aria-label="Close">
+    <span class="glyphicon icon-dealer-close"></span>
+  </a>
+  <div class="modal-dialog fluid-dialog" role="document">
+    <div class="player-details dealer-player-details expanded clearfix">
+      <div class="player-details-col-2">
+        ...
+      </div>
+      <div class="player-details-col-1">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+        </code></pre>
+
+      </div>
+
+    </section>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../js/modals.js"></script>
+    <script src="../../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../../vendor/prettify/css/prettify.css" />
+    <script src="../../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

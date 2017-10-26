@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Perfect Pay UI Library</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+  </head>
+
+  <body class="dealer notification-demo">
+
+    <section class="main-content">
+
+      <div class="container">
+
+        <div class="page-header">
+          <h1>Dealer - Notification bar</h1>
+        </div>
+
+        <div class="dealer-notification-bar win-notification">
+
+          <div class="dealer-notification-text text-sm">PLAYER WINS - SEAT 1</div>
+          <div class="dealer-notification-text text-lg">100,000,000</div>
+
+        </div>
+
+        <div class="dealer-notification-bar alert-notification carousel slide" id="alert-notification-1" data-ride="carousel" data-interval="false">
+
+          <ol class="carousel-indicators">
+            <li data-target="#alert-notification-1" data-slide-to="0" class="active"></li>
+            <li data-target="#alert-notification-1" data-slide-to="1"></li>
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <div class="dealer-notification-text text-sm">SEAT 4 - B</div>
+              <div class="dealer-notification-text text-lg">OVER 20 CHIPS ON BANKER</div>
+            </div>
+
+            <div class="item">
+              <div class="dealer-notification-text text-sm">DIFFERENTIAL - B</div>
+              <div class="dealer-notification-text text-lg">-453,400</div>
+            </div>
+
+            <a class="left carousel-control" href="#alert-notification-1" role="button" data-slide="prev">
+              <span class="glyphicon icon-dealer-lsaquo" aria-hidden="true"></span>
+            </a>
+
+            <a class="right carousel-control" href="#alert-notification-1" role="button" data-slide="next">
+              <span class="glyphicon icon-dealer-rsaquo" aria-hidden="true"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div><!-- .container -->
+
+
+      <!-- Documentation -->
+
+      <div class="container documentation">
+
+        <div class="well">
+
+          <p>Notification <code>.dealer-notification-bar</code> is fixed element positioned from the top. It can consist static content or an alert carousel <code>.alert-notification</code>.</p>
+
+        </div>
+
+        <pre class="prettyprint"><code>
+<div class="dealer-notification-bar win-notification">
+  <div class="dealer-notification-text text-sm">PLAYER WINS - SEAT 1</div>
+  <div class="dealer-notification-text text-lg">100,000,000</div>
+</div>
+        </code></pre>
+
+        <pre class="prettyprint"><code>
+<div class="dealer-notification-bar alert-notification carousel slide" id="alert-notification-1" data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#alert-notification-1" data-slide-to="0" class="active"></li>
+    <li data-target="#alert-notification-1" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="dealer-notification-text text-sm">SEAT 4 - B</div>
+      <div class="dealer-notification-text text-lg">OVER 20 CHIPS ON BANKER</div>
+    </div>
+    <div class="item">
+      <div class="dealer-notification-text text-sm">DIFFERENTIAL - B</div>
+      <div class="dealer-notification-text text-lg">-453,400</div>
+    </div>
+    <a class="left carousel-control" href="#alert-notification-1" role="button" data-slide="prev">
+      <span class="glyphicon icon-dealer-lsaquo" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control" href="#alert-notification-1" role="button" data-slide="next">
+      <span class="glyphicon icon-dealer-rsaquo" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+        </code></pre>
+
+      </div>
+
+    </section>
+
+    <script src="../../vendor/jquery-1.11.3.js"></script>
+    <script src="../../vendor/jquery-ui.js"></script>
+    <script src="../../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../../js/demo.js"></script>
+
+    <!-- Documentation purpose only -->
+    <link rel="stylesheet" href="../../vendor/prettify/css/prettify.css" />
+    <script src="../../vendor/prettify/js/prettify.js"></script>
+    <script>$(function() { prettyPrint() })</script>
+
+  </body>
+</html>

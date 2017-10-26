@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Perfect Pay UI Library</title>
+        <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <h3>Create User</h3>
+
+            <button datatype="button" class="btn btn-secondary clickable" data-toggle="modal" data-href="create-user.html">
+              OPEN MODAL WINDOW
+            </button>
+
+            <h3>Create User Type 2</h3>
+
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-create-user-2">
+              OPEN MODAL WINDOW
+            </button>
+
+            <h3>Create User Type 3</h3>
+
+            <button type="button" class="btn btn-secondary clickable" data-toggle="modal" data-href="create-user-v3.html">
+              OPEN MODAL WINDOW
+            </button>
+
+        
+
+
+            <div class="modal fade create-user" id="modal-create-user-2" tabindex="-1" role="dialog" aria-labelledby="createUserModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content sm-paddings">
+
+                        <div class="modal-header text-center no-border">
+                            <h4 class="modal-title" id="myModalLabel">Create New User
+                            </h4>
+                        </div>
+
+                        <div class="modal-body clearfix">
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <!-- <li class="count-label">1/3</li> -->
+                                <li role="presentation" class="thin-band active">
+                                    <span data-target="#tab1" class="tab" role="tab" data-toggle="tab">Profile</span>
+                                </li>
+                                <li role="presentation" class="thin-band">
+                                    <span data-target="#tab2" class="tab" role="tab" data-toggle="tab">Role</span>
+                                </li>
+                                <li role="presentation" class="thin-band">
+                                    <span data-target="#tab3" class="tab" role="tab" data-toggle="tab">Access Group</span>
+                                </li>
+                            </ul>
+                            <!-- /.nav-tabs -->
+
+                            <div class="tab-content top-buffer">
+
+                                <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+
+                                    <div class="form-horizontal clearfix">
+                                        <div class="col-xs-4">
+                                            <img class="user-image" src="../assets/img/game-player-default.svg" alt="User Name">
+                                            <!-- <div class="divider"></div> -->
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <!-- <div class="col-xs-4"> -->
+                                                    <label for="first-name" class="control-label">First Name</label>
+                                                <!-- </div> -->
+                                                <!-- <div class="col-xs-8"> -->
+                                                    <input type="text" class="form-control" id="first-name" placeholder="First Name"/>
+                                                    <!-- <p class="text-muted">First name</p> -->
+                                                <!-- </div> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <div class="col-xs-4"> -->
+                                                    <label for="last-name" class="control-label">Last Name</label>
+                                                <!-- </div> -->
+                                                <!-- <div class="col-xs-8"> -->
+                                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name"/>
+                                                <!-- </div> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <div class="col-xs-4"> -->
+                                                    <label for="title" class="control-label">Title</label>
+                                                <!-- </div>
+                                                <div class="col-xs-8"> -->
+                                                    <input type="text" class="form-control" id="title" placeholder="Title"/>
+                                                <!-- </div> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <div class="col-xs-4"> -->
+                                                    <label for="emp-num" class="control-label">Employee Number</label>
+                                                <!-- </div>
+                                                <div class="col-xs-8"> -->
+                                                    <input type="text" class="form-control" id="emp-num" placeholder="Employee Number"/>
+                                                <!-- </div> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <div class="col-xs-4"> -->
+                                                    <label for="user-name" class="control-label">User Name</label>
+                                                <!-- </div>
+                                                <div class="col-xs-8"> -->
+                                                    <input type="text" class="form-control" id="user-name" placeholder="User Name"/>
+                                                <!-- </div> -->
+                                            </div>
+                                            <!-- <div class="form-horizontal"> -->
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            <label for="lang" class="control-label">Language</label>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <div class="dropup">
+                                                                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                    Chinese <span class="caret caret-up"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <div class="dropdown-body">
+                                                                        <div class="dropdown-content">
+                                                                            <ul class="nav dropdown-nav">
+                                                                                <li class="dropdown-nav-item">
+                                                                                    <a href="#" class="dropdown-nav-link">English</a>
+                                                                                </li>
+                                                                                <li class="dropdown-nav-item">
+                                                                                    <a href="#" class="dropdown-nav-link">Language 3</a>
+                                                                                </li>
+                                                                                <li class="dropdown-nav-item">
+                                                                                    <a href="#" class="dropdown-nav-link">Language 4</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 modal-footer">
+                                        <div class="pull-right">
+                                            <a href="#tab2" class="btn btn-primary btn-margins next-btn" data-toggle="tab" role="tab">NEXT</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /#tab1 -->
+                                <div role="tabpanel" class="tab-pane fade" id="tab2" arialabelledby="user role">
+
+                                    <div class='row'>
+                                        <div class='col-xs-5'>
+                                            <div class='left-wrapper'>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Pit Manager
+                                                        <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item selected">Supervisor
+                                                        <span class="pull-right">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item">Surveillance
+                                                        <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item selected">Dealer
+                                                        <span class="pull-right">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item">Technician
+                                                        <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item">Role 1
+                                                        <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="list-group-item">Role 2
+                                                        <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-2'>
+                                            <div class='middle-wrapper'>
+                                                <!-- <div class="btn btn-secondary">
+                                                    <span class="glyphicon glyphicon-chevron-right btn-margins"></span>
+                                                </div> -->
+                                                <img src="../assets/icons/icon-arrow-right-lg.svg" width='50' height='50'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-5'>
+                                            <div class='right-wrapper'>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Casino Admin
+                                                        <span class="pull-right">
+                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 modal-footer">
+                                        <div class="pull-right">
+                                            <a href="#tab1" class="btn btn-secondary btn-margins" data-toggle="tab" role="tab">BACK</a>
+                                            <a href="#tab3" class="btn btn-primary btn-margins" data-toggle="tab" role="tab">NEXT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab3">
+                                    <!-- Create an access group -->
+                                    <!-- This may create a table to select from the topology to provide access to the user -->
+                                    <div class='view-topology-button'>
+                                        <div class="btn btn-secondary">
+                                            <span class="icon-tree"></span>
+                                        </div>
+                                    </div>
+                                    <div class='table-responsive'>
+                                        <table class='table-default table-tables'>
+                                            <thead>
+                                                <tr>
+                                                    <th>Applications</th>
+                                                    <th>Access Groups</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CAM</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                My Custom Group 1<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Cashier</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Select Group<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 1</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Casino Manager</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Select Group<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 1</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dealer Display</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Select Group<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 1</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Table Dashboard</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Select Group<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 1</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Treasury Manager</td>
+                                                    <td>
+                                                        <div class="dropdown dropdown-right full-width">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Select Group<span class="caret right-aligned"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 1</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 2</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">My Custom Group 3</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-xs-12 modal-footer">
+                                        <div class="pull-right">
+                                            <a href="#tab2" class="btn btn-secondary btn-margins" data-toggle="tab" role="tab">BACK</a>
+                                            <a id='save-user-btn' href="#" class="btn btn-primary btn-margins">SAVE</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="view-tree-block fade">
+                                        <h4 class="text-center highlight">Assigned Access</h4>
+                                        <div class="wrapper">
+                                            <ul class="master">
+                                                <li id='node-0'>
+                                                    <a href="#">MGM</a>
+                                                    <ul id='node-1'>
+                                                        <li id='node-1-1'>
+                                                            <a href="#">Casino</a>
+                                                            <ul id='node-2'>
+                                                                <li id='node-2-1'>
+                                                                    <a href="#">VIP</a>
+                                                                    <ul id='node-3'>
+                                                                        <li id='node-3-1'>
+                                                                            <a href="#">Pit 1</a>
+                                                                            <ul>
+                                                                                <li id='node-0-1-1-1-1'>
+                                                                                    <span href="#">Table 1</span>
+                                                                                </li>
+                                                                                <li id='node-0-1-1-1-2'>
+                                                                                    <span href="#">Table 2</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li id='node-3-2'>
+                                                                            <a href="#">Pit 2</a>
+                                                                            <ul id='node-4'>
+                                                                                <li id='node-4-1'>
+                                                                                    <span href="#">Table 3</span>
+                                                                                </li>
+                                                                                <li id='node-4-2'>
+                                                                                    <span href="#">Table 4</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li id='node-2-2'>
+                                                                    <a href="#">MASS</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id='node-1-2'>
+                                                            <a href="#">Treasury</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class='divider'></div>
+                                            <ul id='node-3'>
+                                                <li id='node-3-1'>
+                                                    <a href="#">Pit 1</a>
+                                                    <ul>
+                                                        <li id='node-0-1-1-1-1'>
+                                                            <span href="#">Table 1</span>
+                                                        </li>
+                                                        <li id='node-0-1-1-1-2'>
+                                                            <span href="#">Table 2</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class='divider'></div>
+                                            <ul id='node-4'>
+                                                <li id='node-4-1'>
+                                                    <a href="#">Pit 2</a>
+                                                    <ul>
+                                                        <li id='node-0-1-1-1-1-4'>
+                                                            <span href="#">Table 1</span>
+                                                        </li>
+                                                        <li id='node-0-1-1-1-2-4'>
+                                                            <span href="#">Table 2</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class='divider'></div>
+                                            <ul id='node-4'>
+                                                <li id='node-4-1'>
+                                                    <a href="#">Pit 2</a>
+                                                    <ul>
+                                                        <li id='node-0-1-1-1-1-4'>
+                                                            <span href="#">Table 1</span>
+                                                        </li>
+                                                        <li id='node-0-1-1-1-2-4'>
+                                                            <span href="#">Table 2</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class='divider'></div>
+                                            <ul id='node-4'>
+                                                <li id='node-4-1'>
+                                                    <a href="#">Pit 2</a>
+                                                    <ul>
+                                                        <li id='node-0-1-1-1-1-4'>
+                                                            <span href="#">Table 1</span>
+                                                        </li>
+                                                        <li id='node-0-1-1-1-2-4'>
+                                                            <span href="#">Table 2</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- /.tab-content -->
+
+
+                        </div>
+                        <!-- /.modal-body -->
+
+
+                    </div>
+                    <!-- /.modal-content -->
+
+                </div>
+                <!-- /.modal-dialog -->
+
+                <!-- <div class="modal fade access-group-contents vertical-center" id="modal-show-group-contents" tabindex="-1" role="dialog" aria-labelledby="showGroupContents">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content sm-paddings">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-left" id="myModalLabel">Group Details <span class=close data-dismiss="#myModalLabel">&times;</span></h3>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-primary btn-margins" data-dismiss="#myModalLabel">DONE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+            <!-- /.modal -->
+
+
+
+        <script src="../vendor/jquery-1.11.3.js"></script>
+        <script src="../vendor/jquery-ui.js"></script>
+        <script src="../vendor/jquery.keyboard-focus.js"></script>
+        <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+        <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.min.js"></script>
+        <script src="../vendor/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+        <script src="../js/dropdowns.js"></script>
+        <script src="../js/alerts.js"></script>
+        <script src="../js/main.js"></script>
+        <script src='../js/user.js'></script>
+        <script src="../js/demo.js"></script>
+        <script src="../js/topology.js"></script>
+
+    </body>
+</html>
