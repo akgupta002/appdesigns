@@ -66,6 +66,106 @@
 
        </section>
 
+       <section id="chips-add-agent">
+           <section class="col-xs-12">
+               <h1 class="highlight">Place Chips on Antenna</h1>
+           </section>
+           <section class="col-xs-12">
+               <div class="add-agent-block center-block">
+
+                   <section class="col-xs-12 associate-options">
+
+                       <div class="form-group">
+                           <div class="radio">
+                               <input type="radio" class="input-radio" name="radio-buyin" id="associate-player">
+                               <label for="associate-player">Associate Player</label>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <div class="radio">
+                               <input type="radio" class="input-radio" name="radio-buyin" id="associate-agent">
+                               <label for="associate-agent">Associate Agent </label>
+                           </div>
+                       </div>
+
+                       <!-- Label needed to add either player or agent -->
+                       <h4 class="associate-one-only">Associate Player</h4>
+                   </section>
+
+                   <section class="col-xs-12 search-section">
+                       <h4 class="pull-left">Search By</h4>
+                       <div class="btn-group" role="group" aria-label="search-options">
+                           <button id='btn-swipe-card' class="btn btn-primary active" type="button" aria-label="swipe-card">Swipe Player ID Card</button>
+                           <button id='btn-player-name' class="btn btn-secondary" type="button" aria-label="player-name">Player Name</button>
+                           <button id='btn-player-id' class="btn btn-secondary" type="button" aria-label="player-id">Player ID</button>
+                       </div>
+                       <br/>
+                       <br/>
+
+                       <div class="row" id="search-card">
+                           <div class="col-xs-12">
+                               <div class="swipe-card">
+                                   <h3>Swipe Player ID Card</h3>
+                                   <img src="../../assets/img/swipe-player-id-card.svg" width="130px"/>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="row" id="search-name">
+                           <div class="col-xs-12">
+                               <div class="input-group pull-left" role="group" aria-label="search-input">
+                                   <input type="text" class="form-control" placeholder="First Name">
+                               </div>
+                               <div class="input-group" role="group" aria-label="search-input">
+                                   <input type="text" class="form-control ls-name" placeholder="Last Name" aria-discribedby="search-lname-btn">
+                                   <span class="input-group-addon" id="search-lname-btn"><img src="../../assets/icons/icon-search2.svg" width="24"/></span>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="row" id="search-id">
+                           <div class="col-xs-12">
+                               <div class="input-group" role="group" aria-label="search-input">
+                                   <input type="text" class="form-control ls-name" placeholder="Enter player ID" aria-discribedby="search-id-btn">
+                                   <span class="input-group-addon" id="search-id-btn"><img src="../../assets/icons/icon-search2.svg" width="24"/></span>
+                               </div>
+                           </div>
+                       </div>
+
+                   </section>
+
+               </div>
+           </section>
+
+           <!-- Showing Searched Player -->
+           <section class="col-xs-12">
+               <div id="show-searched-players" class="searched-players-wrapper">
+                   <div class="searched-player-details">
+                       <img class="img-circle pull-left" width="50px" height="50px" src="../../assets/icons/icon-player-dash.svg"/>
+                       <span class="">Besterman, Brian<br>(123015)</span>
+                   </div>
+               </div>
+           </section>
+
+           <!-- Showing Added Player -->
+           <section class="col-xs-12 affix affix-bottom">
+               <div class="added-player-thumbnail pull-left">
+                   <p>Player</p>
+                   <div class="added-player-details">
+                       <img class="img-circle pull-left" width="50px" height="50px" src="../../assets/icons/icon-player-dash.svg"/>
+                       <span class="">Besterman, Brian<br>(123015)</span>
+                   </div>
+
+               </div>
+               <div class="add-new-player-thumbnail">
+                   <img class="pull-left" src="../../assets/icons/icon-add-player.svg"/>
+                   <h1>Agent</h1>
+               </div>
+           </section>
+
+       </section>
+
+
    </header><!-- .sub-navbar -->
 
 
@@ -83,6 +183,27 @@
     <script src="../../js/forms.js"></script>
     <script src="../../js/table.js"></script>
     <script src="../../js/main.js"></script>
+
+  <script>
+
+      $(".search-section").find(".btn").on("click",function(){
+          var $this = $(this);
+          var $parent = $this.closest('.search-section');
+          var $siblings = $this.siblings('.btn');
+          var $activeclasses = "btn-primary active";
+          var $active = $this.hasClass("active");
+
+          if($active) return;
+      });
+
+      $("#btn-swipe-card").on('click',function(){ $('#search-name').hide();$('#search-id').hide();$('#search-card').show();});
+      $("#btn-player-name").on('click',function(){ $('#search-card').hide();$('#search-id').hide();$('#search-name').show();});
+      $("#btn-player-id").on('click',function(){ $('#search-card').hide();$('#search-name').hide();$('#search-id').show();});
+
+      $(".add-new-player-thumbnail").on('click',function(){
+          $('.associate-options').find('.form-group').hide().parent().find('.associate-one-only').show();
+      });
+  </script>
 
   </body>
 </html>

@@ -7999,7 +7999,7 @@ Styles for Winning banners for Banker/Player/Tie
   background-color: rgba(187, 145, 86, 0.2); }
   .buyin-categories .form-group {
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 20px;
     margin-bottom: 0; }
     .buyin-categories .form-group:first-child {
       padding-left: 15px; }
@@ -8007,19 +8007,186 @@ Styles for Winning banners for Banker/Player/Tie
     line-height: 50px; }
     .buyin-categories .radio label {
       line-height: 30px;
-      padding-left: 15px; }
+      padding-left: 12px;
+      color: #bb9156; }
+      .buyin-categories .radio label:hover {
+        cursor: hand; }
       .buyin-categories .radio label:before {
         width: 30px;
         height: 30px;
         border-width: 3px; }
+    .buyin-categories .radio .input-radio:checked ~ label {
+      color: #9c1c23; }
     .buyin-categories .radio .input-radio:checked + label:after {
       top: 7px;
       left: 7px;
       width: 16px;
-      height: 16px; }
+      height: 16px;
+      background-color: #9c1c23; }
+    .buyin-categories .radio .input-radio:checked + label:before {
+      border-color: #9c1c23; }
     .buyin-categories .radio input[type='radio'] {
       top: 12px;
       left: 0;
       width: 30px;
       height: 30px;
       margin: 0; }
+
+.add-agent-block {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 550px;
+  height: 250px; }
+
+.associate-options {
+  border-bottom: 1px dashed #bb9156; }
+  .associate-options .form-group {
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0; }
+  .associate-options .radio {
+    line-height: 50px;
+    padding-right: 0; }
+    .associate-options .radio label {
+      line-height: 30px;
+      padding-left: 14px;
+      color: #bb9156;
+      font-size: 16px; }
+      .associate-options .radio label:before {
+        content: '';
+        left: 0;
+        width: 30px;
+        height: 30px;
+        margin-left: -20px;
+        background-color: #fff;
+        border: 3px solid #bb9156;
+        border-radius: 50%; }
+      .associate-options .radio label:before, .associate-options .radio label:after {
+        position: absolute;
+        cursor: pointer;
+        display: inline-block; }
+    .associate-options .radio .input-radio {
+      opacity: 0; }
+      .associate-options .radio .input-radio:checked + label:after {
+        top: 7px;
+        left: 7px;
+        width: 16px;
+        height: 16px;
+        background-color: #9c1c23;
+        border-radius: 50%;
+        content: ' '; }
+      .associate-options .radio .input-radio:checked + label:before {
+        border-color: #9c1c23; }
+      .associate-options .radio .input-radio:checked + label {
+        color: #9c1c23; }
+    .associate-options .radio input[type='radio'] {
+      top: 12px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      margin: 0; }
+
+.search-section {
+  padding-top: 10px; }
+  .search-section .input-group {
+    width: 50%;
+    margin: 0 auto; }
+    .search-section .input-group .form-control {
+      background-color: #fff;
+      color: #333;
+      height: 40px;
+      border: 1px solid #bb9156;
+      border-radius: 4px; }
+    .search-section .input-group .ls-name {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .search-section .input-group:first-child {
+      padding-right: 10px; }
+  .search-section h4 {
+    padding-right: 10px; }
+
+.swipe-card {
+  display: block;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #bb9156;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: -10px; }
+  .swipe-card h3 {
+    margin: 10px 0;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1; }
+  .swipe-card * {
+    display: inline-block; }
+
+#search-name, #search-id {
+  display: none; }
+
+.searched-player-details {
+  width: 550px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px; }
+  .searched-player-details:hover {
+    background-color: white;
+    cursor: pointer; }
+
+.added-player-thumbnail {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #bb9156;
+  width: 200px;
+  cursor: default;
+  user-select: none;
+  display: inline-block; }
+  .added-player-thumbnail p {
+    border-bottom: 1px solid #bb9156;
+    padding: 5px;
+    margin: 0;
+    width: 100%; }
+  .added-player-thumbnail .img-circle {
+    border: 1px solid #bb9156;
+    margin-right: 5px; }
+
+.added-player-details {
+  padding: 5px;
+  overflow: hidden; }
+
+.add-new-player-thumbnail {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(187, 145, 86, 0.6);
+  width: 200px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 5px;
+  margin-left: 10px; }
+  .add-new-player-thumbnail:hover {
+    background-color: white;
+    border: 1px solid #bb9156; }
+  .add-new-player-thumbnail img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px; }
+
+.affix.affix-bottom {
+  bottom: 10px; }
+
+.searched-players-wrapper {
+  overflow: hidden;
+  height: calc(100vh - 535px);
+  overflow-y: auto; }
+
+.associate-one-only {
+  color: #bb9156;
+  display: none;
+  margin: 0;
+  line-height: 51px; }

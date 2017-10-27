@@ -67,7 +67,7 @@
  //align radio buttons horizontally
  .form-group {
    display: inline-block;
-   padding-right: 30px;
+   padding-right: 20px;
    margin-bottom: 0;
 
    &:first-child {
@@ -81,7 +81,12 @@
 
    label {
      line-height: 30px;
-     padding-left: 15px;
+     padding-left: 12px;
+     color: #bb9156;
+
+     &:hover {
+       cursor: hand;
+     }
 
      //enlarge the radio button size
      &:before {
@@ -91,12 +96,23 @@
      }
    }
 
+   .input-radio:checked ~ label {
+     color: #9c1c23;
+   }
    //resize of radio clicked state
-   .input-radio:checked + label:after {
-     top: 7px;
-     left: 7px;
-     width: 16px;
-     height: 16px;
+   .input-radio:checked {
+     + label:after {
+       top: 7px;
+       left: 7px;
+       width: 16px;
+       height: 16px;
+       background-color: #9c1c23;
+     }
+
+     + label:before {
+       border-color: #9c1c23;
+     }
+
    }
 
    //resize and aligning radio hotspot
@@ -109,3 +125,232 @@
    }
  }
 }
+
+//styles for section:'add agent'
+.add-agent-block {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 550px;
+  height: 250px;
+}
+
+.associate-options {
+  border-bottom: 1px dashed #bb9156;
+
+  .form-group {
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .radio {
+    line-height: 50px;
+    padding-right:0;
+
+    label {
+      line-height: 30px;
+      padding-left: 14px;
+      color: #bb9156;
+      font-size: 16px;
+
+      //&:hover {
+      //  cursor: pointer;
+      //}
+
+      //enlarge the radio button size
+      &:before {
+        content:'';
+        left: 0;
+        width: 30px;
+        height: 30px;
+        margin-left: -20px;
+        background-color: #fff;
+        border: 3px solid #bb9156;
+        border-radius: 50%;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+
+    //.input-radio:checked ~ label {
+    //  color: #9c1c23;
+    //}
+    //resize of radio clicked state
+
+    .input-radio{
+      opacity: 0;
+
+      &:checked + label:after {
+        top: 7px;
+        left: 7px;
+        width: 16px;
+        height: 16px;
+        background-color: #9c1c23;
+        border-radius: 50%;
+        content: ' ';
+      }
+
+      &:checked + label:before {
+        border-color: #9c1c23;
+      }
+
+      &:checked + label {
+        color: #9c1c23;
+      }
+    }
+
+    //resize and aligning radio hotspot
+    input[type='radio']{
+      top: 12px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+    }
+  }
+}
+
+.search-section {
+  padding-top: 10px;
+
+  .input-group {
+    width: 50%;
+    margin: 0 auto;
+
+    .form-control {
+      background-color: #fff;
+      color: #333;
+      height: 40px;
+      border:1px solid #bb9156;
+      border-radius: 4px;
+    }
+
+    .ls-name {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:first-child {
+      padding-right: 10px;
+    }
+  }
+
+
+  h4 {
+    padding-right: 10px;
+  }
+}
+
+.swipe-card {
+  display: block;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #bb9156;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: -10px;
+
+  h3 {
+    margin: 10px 0;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  * {
+    display: inline-block;
+  }
+}
+
+#search-name, #search-id { display: none; }
+
+.searched-player-details {
+  width: 550px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+  }
+}
+
+.added-player-thumbnail {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #bb9156;
+  width: 200px;
+  cursor: default;
+  user-select: none;
+  display: inline-block;
+
+  p {
+    border-bottom: 1px solid #bb9156;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    //color: hsl(hue,saturation,lightness())
+  }
+
+  .img-circle {
+    border:1px solid #bb9156;
+    margin-right:5px;
+  }
+}
+
+.added-player-details {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.add-new-player-thumbnail {
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(187,145,86,0.6);
+  width: 200px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 5px;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(187,145,86,1);
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+}
+
+.affix.affix-bottom {
+  bottom: 10px;
+}
+
+.searched-players-wrapper {
+  overflow: hidden;
+  height: calc(100vh - 535px);
+  overflow-y: auto;
+}
+
+.associate-one-only {
+  color: #bb9156;
+  display:none;
+  margin:0;
+  line-height:51px;
+}
+
